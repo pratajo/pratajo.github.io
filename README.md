@@ -458,7 +458,7 @@ Our most active contributors are welcome to join the maintainers team. If you ar
 
 ### All Contributors
 
-<a href="https://contrib.rocks">
+<a href="https://github.com/pratajo/pratajo.github.io/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=pratajo/pratajo.github.io&max=50&columns=12" />
 </a>
 
