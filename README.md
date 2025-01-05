@@ -12,10 +12,10 @@
 [![Maintainers](https://img.shields.io/badge/maintainers-3-success.svg)](#maintainers)
 [![GitHub contributors](https://img.shields.io/github/contributors/pratajo/pratajo.github.io.svg)](https://github.com/pratajo/pratajo.github.io/graphs/contributors/)
 [![Docker Image Version](https://img.shields.io/docker/v/amirpourmand/al-folio?sort=semver&label=docker%20image&color=blueviolet)](https://hub.docker.com/r/amirpourmand/al-folio)
-[![Docker Image Size](https://img.shields.io/docker/image-size/pratajo/pratajo.github.io?sort=date&label=docker%20image%20size&color=blueviolet)](https://hub.docker.com/r/pratajo/pratajo.github.io)
-[![Docker Pulls](https://img.shields.io/docker/pulls/pratajo/pratajo.github.io?color=blueviolet)](https://hub.docker.com/r/pratajo/pratajo.github.io)
+# [![Docker Image Size](https://img.shields.io/docker/image-size/pratajo/pratajo.github.io?sort=date&label=docker%20image%20size&color=blueviolet)](https://hub.docker.com/r/pratajo/pratajo.github.io)
+# [![Docker Pulls](https://img.shields.io/docker/pulls/pratajo/pratajo.github.io?color=blueviolet)](https://hub.docker.com/r/pratajo/pratajo.github.io)
 
-[![GitHub release](https://img.shields.io/github/v/release/pratajo/pratajo.github.io)](https://github.com/pratajo/pratajo.github.io/releases/latest)
+# [![GitHub release](https://img.shields.io/github/v/release/pratajo/pratajo.github.io)](https://github.com/pratajo/pratajo.github.io/releases/latest)
 [![GitHub license](https://img.shields.io/github/license/pratajo/pratajo.github.io?color=blue)](https://github.com/pratajo/pratajo.github.io/blob/main/LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/pratajo/pratajo.github.io)](https://github.com/pratajo/pratajo.github.io)
 [![GitHub forks](https://img.shields.io/github/forks/pratajo/pratajo.github.io)](https://github.com/pratajo/pratajo.github.io/fork)
