@@ -464,14 +464,12 @@ Our most active contributors are welcome to join the maintainers team. If you ar
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=pratajo/pratajo.github.io&type=Date)](https://star-history.com/#pratajo/pratajo.github.io&Date)
-
 <a href="https://star-history.com/#pratajo/pratajo.github.io&Date">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=alshedivat/al-folio&type=Date&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=alshedivat/al-folio&type=Date" />
-    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=alshedivat/al-folio&type=Date" />
-  </picture>
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=pratajo/pratajo.github.io&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=pratajo/pratajo.github.io&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=pratajo/pratajo.github.io&type=Date" />
+ </picture>
 </a>
 
 ## License
