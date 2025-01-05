@@ -464,7 +464,7 @@ Our most active contributors are welcome to join the maintainers team. If you ar
 
 ## Star History
 
-<a href="https://star-history.com/#alshedivat/al-folio&Date">
+<a href="https://star-history.com/#pratajo/pratajo.github.io&Date">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=alshedivat/al-folio&type=Date&theme=dark" />
     <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=alshedivat/al-folio&type=Date" />
