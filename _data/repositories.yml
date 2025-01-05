@@ -1,6 +1,5 @@
 github_users:
   - pratajo
-  - torvalds
 
 repo_description_lines_max: 2
 
@@ -8,5 +7,4 @@ github_repos:
   - pratajo/pratajo.github.io
   - jekyll/jekyll
   - twbs/bootstrap
-  - jquery/jquery
   - jquery/jquery
