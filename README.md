@@ -1,4 +1,4 @@
-# Jorge Prata
+# al-folio
 
 <div align="center">
 
@@ -8,14 +8,17 @@
 
 ---
 
-[![deploy](https://github.com/alshedivat/al-folio/actions/workflows/deploy.yml/badge.svg)](https://github.com/pratajo/pratajo.github.io/actions/workflows/deploy.yml)
-[![Maintainers](https://img.shields.io/badge/maintainers-3-success.svg)](#maintainers)
-[![GitHub contributors](https://img.shields.io/github/contributors/pratajo/pratajo.github.io.svg)](https://github.com/pratajo/pratajo.github.io/graphs/contributors/)
+[![deploy](https://github.com/alshedivat/al-folio/actions/workflows/deploy.yml/badge.svg)](https://github.com/alshedivat/al-folio/actions/workflows/deploy.yml)
+[![Maintainers](https://img.shields.io/badge/maintainers-4-success.svg)](#maintainers)
+[![GitHub contributors](https://img.shields.io/github/contributors/alshedivat/al-folio.svg)](https://github.com/alshedivat/al-folio/graphs/contributors/)
 [![Docker Image Version](https://img.shields.io/docker/v/amirpourmand/al-folio?sort=semver&label=docker%20image&color=blueviolet)](https://hub.docker.com/r/amirpourmand/al-folio)
+[![Docker Image Size](https://img.shields.io/docker/image-size/amirpourmand/al-folio?sort=date&label=docker%20image%20size&color=blueviolet)](https://hub.docker.com/r/amirpourmand/al-folio)
+[![Docker Pulls](https://img.shields.io/docker/pulls/amirpourmand/al-folio?color=blueviolet)](https://hub.docker.com/r/amirpourmand/al-folio)
 
-[![GitHub license](https://img.shields.io/github/license/pratajo/pratajo.github.io?color=blue)](https://github.com/pratajo/pratajo.github.io/blob/main/LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/pratajo/pratajo.github.io)](https://github.com/pratajo/pratajo.github.io)
-[![GitHub forks](https://img.shields.io/github/forks/pratajo/pratajo.github.io)](https://github.com/pratajo/pratajo.github.io/fork)
+[![GitHub release](https://img.shields.io/github/v/release/alshedivat/al-folio)](https://github.com/alshedivat/al-folio/releases/latest)
+[![GitHub license](https://img.shields.io/github/license/alshedivat/al-folio?color=blue)](https://github.com/alshedivat/al-folio/blob/main/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/alshedivat/al-folio)](https://github.com/alshedivat/al-folio)
+[![GitHub forks](https://img.shields.io/github/forks/alshedivat/al-folio)](https://github.com/alshedivat/al-folio/fork)
 
 </div>
 
@@ -442,6 +445,7 @@ Our most active contributors are welcome to join the maintainers team. If you ar
   <tbody>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="http://maruan.alshedivat.com"><img src="https://avatars.githubusercontent.com/u/2126561?v=4" width="100px;" alt=""/><br /><sub><b>Maruan</b></sub></a></td>
+      <td align="center" valign="top" width="14.28%"><a href="http://rohandebsarkar.github.io"><img src="https://avatars.githubusercontent.com/u/50144004?v=4" width="100px;" alt=""/><br /><sub><b>Rohan Deb Sarkar</b></sub></a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://amirpourmand.ir"><img src="https://avatars.githubusercontent.com/u/32064808?v=4" width="100px;" alt=""/><br /><sub><b>Amir Pourmand</b></sub></a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://george-gca.github.io/"><img src="https://avatars.githubusercontent.com/u/31376482?v=4" width="100px;" alt=""/><br /><sub><b>George</b></sub></a></td>
     </tr>
@@ -455,18 +459,18 @@ Our most active contributors are welcome to join the maintainers team. If you ar
 
 ### All Contributors
 
-<a href="https://github.com/pratajo/pratajo.github.io/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=pratajo/pratajo.github.io&max=50&columns=12" />
+<a href="https://contrib.rocks">
+  <img src="https://contrib.rocks/image?repo=alshedivat/al-folio&max=500&columns=24" />
 </a>
 
 ## Star History
 
-<a href="https://star-history.com/#pratajo/pratajo.github.io&Date">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=pratajo/pratajo.github.io&type=Date&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=pratajo/pratajo.github.io&type=Date" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=pratajo/pratajo.github.io&type=Date" />
- </picture>
+<a href="https://star-history.com/#alshedivat/al-folio&Date">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=alshedivat/al-folio&type=Date&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=alshedivat/al-folio&type=Date" />
+    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=alshedivat/al-folio&type=Date" />
+  </picture>
 </a>
 
 ## License
