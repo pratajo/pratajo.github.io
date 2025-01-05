@@ -1,11 +1,11 @@
 github_users:
   - torvalds
-  - alshedivat
+  - pratajo
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
+  - pratajo/pratajo
   - jekyll/jekyll
   - twbs/bootstrap
   - jquery/jquery
