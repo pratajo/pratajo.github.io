@@ -16,6 +16,8 @@ social: true # includes social icons at the bottom of the page
 ---
 
 
+
+
 Este site fornece informação acessível sobre o processo de instalação do Sistema Operativo Linux Fedora no seu computador… e não só!
 
 Pretende ser um “guia” pois inclui configurações pessoais do sistema operativo.
