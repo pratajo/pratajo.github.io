@@ -437,7 +437,7 @@ ninja.data = [{
           section: "News",handler: () => {
               window.location.href = "/news/announcement_2/";
             },},{id: "news-fedora-linux-41-released",
-          title: 'Fedora Linux 41 released!',
+          title: 'Fedora Linux 41 released',
           description: "",
           section: "News",},{id: "news-my-website-https-www-pratajo-com-en-is-being-converted-to-github-sparkles-smile",
           title: 'My website https://www.pratajo.com/en/ is being converted to Github! :sparkles: :smile:',
