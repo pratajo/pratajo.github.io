@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Fedora Linux 41 released!
+<a href="https://fedoraproject.org/">Fedora Linux 41</a> released
