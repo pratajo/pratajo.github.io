@@ -15,11 +15,10 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Este site fornece informação acessível sobre o processo de instalação do Sistema Operativo Linux Fedora no seu computador… e não só!  
+This site provides accessible information about the installation process of the Fedora Linux Operating System on your computer… and not only!
 
-Pretende ser um “guia” pois inclui configurações pessoais do sistema operativo.  
-Use estas informações por sua conta e risco.  
+It is intended to be a “guide” as it includes personal settings for the operating system.
 
-Lembre-se de fazer um backup de toda a informação crítica antes de tentar fazer algo.  
+Use this information at your own risk. Remember to make a backup of all critical information before trying to do anything.
 
-O meu sistema produtivo é formado por um desktop montado por mim, um HP Laptop 15s-eq0011np e um Victus by HP Laptop 16, todos com processadores AMD Ryzen 5 e gráficos Radeon.
+My production system consists of a desktop set up by me, an HP Laptop 15s-eq0011np and a Victus by HP Laptop 16, all with AMD Ryzen 5 processors and Radeon graphics.
