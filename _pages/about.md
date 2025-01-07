@@ -14,8 +14,6 @@ news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
-\
-\
 This site provides accessible information about the installation process of the Fedora Linux Operating System on your computer… and not only!
 
 It is intended to be a “guide” as it includes personal settings for the operating system.
