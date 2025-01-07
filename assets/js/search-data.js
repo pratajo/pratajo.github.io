@@ -431,15 +431,15 @@ ninja.data = [{
           window.location.href = "/blog/2015/formatting-and-links/";
         
       },
-    },{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
+    },{id: "news-fedora-linux-41-released",
+          title: 'Fedora Linux 41 released',
+          description: "",
+          section: "News",},{id: "news-tratado-de-estenografia-sistema-martiniano-1ª-edição-exclusive-to-the-portuguese-language",
+          title: 'Tratado de Estenografia - Sistema Martiniano, 1ª edição (Exclusive to the Portuguese language)...',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_2/";
-            },},{id: "news-fedora-linux-41-released",
-          title: 'Fedora Linux 41 released',
-          description: "",
-          section: "News",},{id: "news-my-website-is-being-converted-to-github-sparkles-smile",
+            },},{id: "news-my-website-is-being-converted-to-github-sparkles-smile",
           title: 'My website  is being converted to Github! :sparkles: :smile:',
           description: "",
           section: "News",},{id: "projects-project-1",
