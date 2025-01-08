@@ -80,6 +80,28 @@ ninja.data = [{
           window.open("https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2", "_blank");
         
       },
+    },{id: "post-a-distill-style-blog-post",
+      
+        title: "a distill-style blog post",
+      
+      description: "an example of a distill-style blog post and main elements",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2021/distill/";
+        
+      },
+    },{id: "post-a-post-with-code",
+      
+        title: "a post with code",
+      
+      description: "an example of a blog post with some code",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2015/code/";
+        
+      },
     },{id: "news-fedora-linux-41-released",
           title: 'Fedora Linux 41 released',
           description: "",
