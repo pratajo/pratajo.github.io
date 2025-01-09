@@ -58,26 +58,15 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "post-a-distill-style-blog-post",
+            },{id: "post-installing-fedora-41-kde-plasma",
       
-        title: "a distill-style blog post",
+        title: "Installing Fedora 41 KDE Plasma",
       
-      description: "an example of a distill-style blog post and main elements",
+      description: "Fedora 41 KDE Plasma",
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/blog/2021/distill/";
-        
-      },
-    },{id: "post-a-post-with-code",
-      
-        title: "a post with code",
-      
-      description: "an example of a blog post with some code",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2015/code/";
+          window.location.href = "/blog/2025/Fedora-41-KDE/";
         
       },
     },{id: "news-fedora-linux-41-released",
