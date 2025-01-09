@@ -58,15 +58,15 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "post-installing-fedora-41-kde-plasma",
+            },{id: "post-",
       
-        title: "Installing Fedora 41 KDE Plasma",
+        title: "",
       
-      description: "Fedora 41 KDE Plasma",
+      description: "",
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/blog/2025/Fedora-41-KDE/";
+          window.location.href = "/blog/2025/2025-01-08-Fedora-41-KDE/";
         
       },
     },{id: "news-fedora-linux-41-released",
