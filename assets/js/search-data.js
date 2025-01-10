@@ -80,6 +80,17 @@ ninja.data = [{
           window.location.href = "/blog/2025/fedora-41-xfce/";
         
       },
+    },{id: "post-photo-restoration-with-gimp",
+      
+        title: "Photo Restoration with GIMP",
+      
+      description: "Photo Restoration",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2024/photo-restoration/";
+        
+      },
     },{id: "post-installing-openindiana-hipster-2022-10",
       
         title: "Installing OpenIndiana Hipster 2022.10",
