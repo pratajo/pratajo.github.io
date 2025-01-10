@@ -43,7 +43,10 @@ This information is provided in the hope that it will be useful, but WITHOUT ANY
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/itrack_noisy/itrack3.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
-        <div class="col-sm mt-3 mt-md-0">
+</div>
+
+<div class="row mt-4">
+    <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/itrack_noisy/itrack4.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
@@ -52,7 +55,7 @@ This information is provided in the hope that it will be useful, but WITHOUT ANY
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/itrack_noisy/itrack6.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
-        <div class="col-sm mt-3 mt-md-0">
+    <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/itrack_noisy/itrack7.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
