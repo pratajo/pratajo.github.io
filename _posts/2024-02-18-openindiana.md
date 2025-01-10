@@ -26,7 +26,7 @@ Get the image from the [official website](https://www.openindiana.org/downloads/
 [root@amd64 ~]$ dd if=image.usb of=/dev/sdb
 ```
 
-Attention: to confirm the USB drive letter, use the command *lsblk*
+Attention: to confirm the USB drive letter, use the command _lsblk_
 
 ```bash
 [root@amd64 ~]$ lsblk
