@@ -5,6 +5,7 @@ date: 2021-04-07 21:01:00
 description: Roland A-49 parameters
 tags: keyboard music
 categories: music
+thumbnail: assets/img/roland-a49.jpg
 ---
 
 <div class="row mt-3">

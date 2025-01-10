@@ -5,6 +5,7 @@ date: 2024-12-18 21:01:00
 description: Photo Restoration
 tags: restoration images
 categories: applications
+thumbnail: assets/img/restaurar.jpg
 ---
 
 <div class="row mt-3">
