@@ -113,6 +113,17 @@ ninja.data = [{
           window.location.href = "/blog/2021/focusrite/";
         
       },
+    },{id: "post-focusrite-itrack-dock-noisy-when-ipad-is-charged",
+      
+        title: "Focusrite iTrack Dock noisy when iPad is charged",
+      
+      description: "Focusrite iTrack Dock noisy",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2020/focusrite-noisy/";
+        
+      },
     },{id: "news-fedora-linux-41-released",
           title: 'Fedora Linux 41 released',
           description: "",
