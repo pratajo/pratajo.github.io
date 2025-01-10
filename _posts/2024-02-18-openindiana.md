@@ -16,6 +16,7 @@ toc:
 </div>
 
 &nbsp;
+
 ###### **Get the OpenIndiana Hipster**
 
 Get the image from the [official website](https://www.openindiana.org/downloads/) and save the Pen Drive with the command (in linux):
@@ -33,6 +34,7 @@ Attention: to confirm the USB drive letter, use the command _lsblk_
 ```
 
 &nbsp;
+
 ###### **Install**
 
 I recommend reading the Hipster Handbook before installation. You will find instructions that may have application on your specific hardware.
@@ -50,6 +52,7 @@ Finally restart the computer, remove the USB stick, enter your personal user and
 ```
 
 &nbsp;
+
 ###### **Add repositories**
 
 ```bash
@@ -57,6 +60,7 @@ root@amd64:~$ pkg set-publisher -O https://pkg.openindiana.org/hipster-encumbere
 ```
 
 &nbsp;
+
 ###### **Install applications**
 
 ```bash
