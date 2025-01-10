@@ -5,7 +5,7 @@ date: 2020-04-15 21:01:00
 description: Focusrite iTrack Dock noisy
 tags: keyboard music
 categories: music
-thumbnail: assets/img/itrack_noisy/itrack1.jpg
+thumbnail: assets/img/itrack_noisy/itrack7.jpg
 ---
 
 &nbsp;
@@ -28,7 +28,7 @@ After testing, since the DC/DC converter does not fit inside the Dock box, I dri
 
 ---
 
-##### **DISCLAIMER OF LIABILITY**
+##### **⚠️ DISCLAIMER OF LIABILITY ⚠️**
 
 The author is not responsible for damages made on the Dock and / or iPad.
 This information is provided in the hope that it will be useful, but WITHOUT ANY WARRANTY. There is no implied support when referring to this article. Any assistance provided will be voluntary. Use this information at your own risk.
@@ -42,5 +42,17 @@ This information is provided in the hope that it will be useful, but WITHOUT ANY
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/itrack_noisy/itrack3.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+        <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/itrack_noisy/itrack4.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/itrack_noisy/itrack5.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/itrack_noisy/itrack6.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+        <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/itrack_noisy/itrack7.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
