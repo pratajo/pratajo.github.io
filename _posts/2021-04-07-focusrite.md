@@ -30,18 +30,19 @@ The User Manual has an instruction for changing the driver but it is useless wit
 
 &nbsp;
 
-*****Change the operating mode to "Stand-alone mode"*****
+###### **Change the operating mode to "Stand-alone mode"**
 
 Press and hold the Function, Assign and Pitch buttons, and connect the USB cable to a power source. The POWER indicator lights up whenever the keyboard is connected to a powered USB port.
 
 &nbsp;
 
-*****Change from "Dedicated Driver" to "Generic Driver"*****
+###### **Change from "Dedicated Driver" to "Generic Driver"**
 
 With the keyboard on, press the keys in the following sequence:
 
 1. Function -> ADV -> [-]
 2. Disconnect the USB cable and reconnect it.
+
 The keyboard now works on an iPad and iTrack Dock.
 
 If you want to reconnect the A-49 to a computer where you have already installed the driver for Windows or Mac OS X, reset the keyboard with the "Dedicated Driver". To do this, repeat the previous sequence replacing [-] with [+].
