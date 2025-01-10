@@ -53,12 +53,12 @@ Finally restart the computer, remove the USB stick, enter your personal user and
 ###### **Add repositories**
 
 ```bash
-root@hp:~$ pkg set-publisher -O https://pkg.openindiana.org/hipster-encumbered hipster-encumbered
+root@amd64:~$ pkg set-publisher -O https://pkg.openindiana.org/hipster-encumbered hipster-encumbered
 ```
 
 &nbsp;
 ###### **Install applications**
 
 ```bash
-root@hp:~$ pkg install vlc
+root@amd64:~$ pkg install vlc
 ```
