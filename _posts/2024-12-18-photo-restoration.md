@@ -3,7 +3,7 @@ layout: post
 title: Photo Restoration with GIMP
 date: 2024-12-18 21:01:00
 description: Photo Restoration
-tags: eestoration images
+tags: restoration images
 categories: applications
 ---
 
@@ -14,7 +14,8 @@ categories: applications
 </div>
 
 &nbsp;
-For photo restoration, it is essential to install the *Resynthesizer* plug-in in GIMP.
+
+For photo restoration, it is essential to install the _Resynthesizer_ plug-in in GIMP.
 
 On Fedora, the best way to get Resynthesizer is to install the flatpack version through Discover.
 
