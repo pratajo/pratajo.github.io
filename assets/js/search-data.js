@@ -16,8 +16,8 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "nav-author-publications",
-          title: "author publications",
+        },{id: "nav-publications",
+          title: "publications",
           description: "",
           section: "Navigation",
           handler: () => {
@@ -78,6 +78,17 @@ ninja.data = [{
       handler: () => {
         
           window.location.href = "/blog/2025/fedora-41-xfce/";
+        
+      },
+    },{id: "post-installing-openindiana-hipster-2022-10",
+      
+        title: "Installing OpenIndiana Hipster 2022.10",
+      
+      description: "OpenIndiana Hipster 2022.10",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2024/openindiana/";
         
       },
     },{id: "news-fedora-linux-41-released",
