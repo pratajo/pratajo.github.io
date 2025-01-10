@@ -102,6 +102,17 @@ ninja.data = [{
           window.location.href = "/blog/2024/openindiana/";
         
       },
+    },{id: "post-focusrite-itrack-dock-and-roland-a-49",
+      
+        title: "Focusrite iTrack Dock and Roland A-49",
+      
+      description: "Roland A-49 parameters",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2021/focusrite/";
+        
+      },
     },{id: "news-fedora-linux-41-released",
           title: 'Fedora Linux 41 released',
           description: "",
