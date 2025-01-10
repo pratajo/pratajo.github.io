@@ -58,18 +58,7 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "post-installing-fedora-41-xfce",
-      
-        title: "Installing Fedora 41 Xfce",
-      
-      description: "Fedora 41 Xfce",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2025/fedora-41-xfce/";
-        
-      },
-    },{id: "post-installing-fedora-41-kde-plasma",
+            },{id: "post-installing-fedora-41-kde-plasma",
       
         title: "Installing Fedora 41 KDE Plasma",
       
@@ -78,6 +67,17 @@ ninja.data = [{
       handler: () => {
         
           window.location.href = "/blog/2025/fedora-41-kde/";
+        
+      },
+    },{id: "post-installing-fedora-41-xfce",
+      
+        title: "Installing Fedora 41 Xfce",
+      
+      description: "Fedora 41 Xfce",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/fedora-41-xfce/";
         
       },
     },{id: "news-fedora-linux-41-released",
