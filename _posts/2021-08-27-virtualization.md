@@ -13,6 +13,7 @@ Check that the KVM kernel modules are properly loaded.
 ```bash
 lsmod | grep kvm
 ```
+
 If this command lists kvm_amd or kvm_intel, KVM is configured correctly.
 
 &nbsp;
