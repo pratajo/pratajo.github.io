@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd"> <html><body> <p>To create a single “copy to clipboard” button on a website page, we can use simple code like this:</p> <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+    
+<span class="nt">&lt;script&gt;</span>
+
+<span class="kd">function</span> <span class="nf">copy_to_clipboard</span><span class="p">(</span> <span class="nx">elm_id</span> <span class="p">)</span> <span class="p">{</span>
+
+    <span class="kd">var</span> <span class="nx">text</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span> <span class="nx">elm_id</span> <span class="p">).</span><span class="nx">innerHTML</span><span class="p">;</span>
+
+    <span class="nb">navigator</span><span class="p">.</span><span class="nx">clipboard</span><span class="p">.</span><span class="nf">writeText</span><span class="p">(</span> <span class="nx">text</span> <span class="p">);</span>
+
+  <span class="p">}</span>
+
+<span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+
+   <span class="nt">&lt;p</span> <span class="na">id=</span><span class="s">"1"</span><span class="nt">&gt;</span>text to copy<span class="nt">&lt;/p&gt;</span>
+   
+   <span class="nt">&lt;button</span> <span class="na">onclick=</span><span class="s">"copy_to_clipboard('1')"</span><span class="nt">&gt;</span>Copy<span class="nt">&lt;/button&gt;</span>
+
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div> <p>If we need to have, on the same web page, several buttons in different text boxes, we repeat this code for each button, only being required to change the id attribute for each button. I usually use id=”1” for the first button on the page, id=”2” for the second button, and so on.</p> <p>If you want to have two or more buttons on the same frame, here is an example:</p> <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;script&gt;</span>
+
+<span class="kd">function</span> <span class="nf">copy_to_clipboard</span><span class="p">(</span> <span class="nx">elm_id</span> <span class="p">)</span> <span class="p">{</span>
+
+    <span class="kd">var</span> <span class="nx">text</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span> <span class="nx">elm_id</span> <span class="p">).</span><span class="nx">innerHTML</span><span class="p">;</span>
+
+    <span class="nb">navigator</span><span class="p">.</span><span class="nx">clipboard</span><span class="p">.</span><span class="nf">writeText</span><span class="p">(</span> <span class="nx">text</span> <span class="p">);</span>
+
+  <span class="p">}</span>
+
+<span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+
+   <span class="nt">&lt;p</span> <span class="na">id=</span><span class="s">"8"</span><span class="nt">&gt;</span>text to copy-1<span class="nt">&lt;/p&gt;</span>
+   
+   <span class="nt">&lt;button</span> <span class="na">onclick=</span><span class="s">"copy_to_clipboard('8')"</span><span class="nt">&gt;</span>Copy<span class="nt">&lt;/button&gt;</span>
+   
+    <span class="nt">&lt;p</span> <span class="na">id=</span><span class="s">"9"</span><span class="nt">&gt;</span>text to copy-2<span class="nt">&lt;/p&gt;</span>
+   
+   <span class="nt">&lt;button</span> <span class="na">onclick=</span><span class="s">"copy_to_clipboard('9')"</span><span class="nt">&gt;</span>Copy<span class="nt">&lt;/button&gt;</span>
+   
+    <span class="nt">&lt;p</span> <span class="na">id=</span><span class="s">"10"</span><span class="nt">&gt;</span>text to copy-3<span class="nt">&lt;/p&gt;</span>
+   
+   <span class="nt">&lt;button</span> <span class="na">onclick=</span><span class="s">"copy_to_clipboard('10')"</span><span class="nt">&gt;</span>Copy<span class="nt">&lt;/button&gt;</span>
+
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div> <p> </p> <script src="https://giscus.app/client.js" data-repo="pratajo/pratajo.github.io" data-repo-id="R_kgDONl93Sw" data-category="Comments" data-category-id="DIC_kwDONl93S84Cl7yv" data-mapping="title" data-strict="1" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async=""> </script> </body></html>
