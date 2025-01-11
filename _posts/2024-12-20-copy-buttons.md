@@ -5,7 +5,7 @@ date: 2024-12-20 15:09:00
 description: HTML and JavaScript
 tags: development linux
 categories: applications
-thumbnail: assets/img/copy.png
+thumbnail: assets/img/copy.jpg
 ---
 
 To create a single "copy to clipboard" button on a website page, we can use simple code like this:
