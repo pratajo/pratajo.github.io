@@ -102,6 +102,28 @@ ninja.data = [{
           window.location.href = "/blog/2024/openindiana/";
         
       },
+    },{id: "post-fedora-virtualization",
+      
+        title: "Fedora Virtualization",
+      
+      description: "KVM",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2021/virtualization/";
+        
+      },
+    },{id: "post-change-the-partition-owner",
+      
+        title: "Change the partition owner",
+      
+      description: "Partition owner",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2021/code/";
+        
+      },
     },{id: "post-focusrite-itrack-dock-and-roland-a-49",
       
         title: "Focusrite iTrack Dock and Roland A-49",
