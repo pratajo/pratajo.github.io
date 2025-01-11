@@ -102,6 +102,17 @@ ninja.data = [{
           window.location.href = "/blog/2024/openindiana/";
         
       },
+    },{id: "post-how-to-change-the-hostname-on-linux",
+      
+        title: "How to change the hostname on Linux",
+      
+      description: "Changing the hostname",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2022/hostname/";
+        
+      },
     },{id: "post-asus-prime-x370-pro-and-fedora",
       
         title: "Asus Prime X370-PRO and Fedora",
@@ -110,7 +121,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/blog/2021/asus-x370/";
+          window.location.href = "/blog/2022/asus-x370/";
         
       },
     },{id: "post-nmap-practical-use",
