@@ -102,6 +102,17 @@ ninja.data = [{
           window.location.href = "/blog/2024/openindiana/";
         
       },
+    },{id: "post-asus-prime-x370-pro-and-fedora",
+      
+        title: "Asus Prime X370-PRO and Fedora",
+      
+      description: "Changing BIOS parameters for Fedora",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2021/asus-x370/";
+        
+      },
     },{id: "post-nmap-practical-use",
       
         title: "Nmap - practical use",
