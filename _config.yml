@@ -103,7 +103,7 @@ related_blog_posts:
 # Follow instructions on https://giscus.app/ to setup for your repo to fill out the information below.
 giscus:
   repo: pratajo/pratajo.github.io # <your-github-user-name>/<your-github-repo-name>
-  repo_id: 912226123 # leave empty or specify your repo_id (see https://giscus.app/)
+  repo_id: R_kgDONl93Sw # leave empty or specify your repo_id (see https://giscus.app/)
   category: Comments # name of the category under which discussions will be created
   category_id: # leave empty or specify your category_id (see https://giscus.app/)
   mapping: title # identify discussions by post title
