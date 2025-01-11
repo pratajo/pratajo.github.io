@@ -80,9 +80,9 @@ ninja.data = [{
           window.location.href = "/blog/2025/fedora-41-xfce/";
         
       },
-    },{id: "post-creating-one-or-multiple-buttons-to-copy-text-to-the-clipboard",
+    },{id: "post-creating-one-or-multiple-buttons-to-copy-text",
       
-        title: "Creating one or multiple buttons to copy text to the clipboard",
+        title: "Creating one or multiple buttons to copy text",
       
       description: "HTML and JavaScript",
       section: "Posts",
