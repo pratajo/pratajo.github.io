@@ -58,18 +58,7 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "post-",
-      
-        title: "",
-      
-      description: "",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2025/2024-12-20-copy-buttons/";
-        
-      },
-    },{id: "post-installing-fedora-41-kde-plasma",
+            },{id: "post-installing-fedora-41-kde-plasma",
       
         title: "Installing Fedora 41 KDE Plasma",
       
@@ -89,6 +78,17 @@ ninja.data = [{
       handler: () => {
         
           window.location.href = "/blog/2025/fedora-41-xfce/";
+        
+      },
+    },{id: "post-creating-one-or-multiple-buttons-to-copy-text-to-the-clipboard",
+      
+        title: "Creating one or multiple buttons to copy text to the clipboard",
+      
+      description: "HTML and JavaScript",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2024/copy-buttons/";
         
       },
     },{id: "post-photo-restoration-with-gimp",
