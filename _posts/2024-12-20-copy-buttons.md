@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Creating one or multiple buttons to copy text to the clipboard
+title: Creating one or multiple buttons to copy text
 date: 2024-12-20 15:09:00
 description: HTML and JavaScript
 tags: development linux
@@ -19,12 +19,10 @@ To create a single "copy to clipboard" button on a website page, we can use simp
 
         navigator.clipboard.writeText(text);
       }
-
     </script>
   </head>
   <body>
     <p id="1">text to copy</p>
-
     <button onclick="copy_to_clipboard('1')">Copy</button>
   </body>
 </html>
@@ -46,9 +44,7 @@ If you want to have two or more buttons on the same frame, here is an example:
     </script>
   </head>
   <body>
-
     <p id="8">text to copy-1</p>
-
     <button onclick="copy_to_clipboard('8')">Copy</button>
     <p id="9">text to copy-2</p>
     <button onclick="copy_to_clipboard('9')">Copy</button>
