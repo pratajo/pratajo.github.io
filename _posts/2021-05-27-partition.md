@@ -29,6 +29,8 @@ sudo chown pratajo:pratajo -R Movies
 
 The -R option of the chown command extends the owner change to subfolders, recursively.
 
+&nbsp;
+
 <script src="https://giscus.app/client.js"
         data-repo="pratajo/pratajo.github.io"
         data-repo-id="R_kgDONl93Sw"

@@ -60,6 +60,8 @@ This information is provided in the hope that it will be useful, but WITHOUT ANY
     </div>
 </div>
 
+&nbsp;
+
 <script src="https://giscus.app/client.js"
         data-repo="pratajo/pratajo.github.io"
         data-repo-id="R_kgDONl93Sw"

@@ -29,6 +29,8 @@ I recommend scanning each photo in two formats, tiff and jpeg, both without comp
 
 Regarding the export of the photos in GIMP, I recommend reading the chapter "6. Getting Images out of GIMP" of the User Manual.
 
+&nbsp;
+
 <script src="https://giscus.app/client.js"
         data-repo="pratajo/pratajo.github.io"
         data-repo-id="R_kgDONl93Sw"

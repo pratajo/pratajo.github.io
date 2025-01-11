@@ -67,6 +67,8 @@ root@amd64:~$ pkg set-publisher -O https://pkg.openindiana.org/hipster-encumbere
 root@amd64:~$ pkg install vlc
 ```
 
+&nbsp;
+
 <script src="https://giscus.app/client.js"
         data-repo="pratajo/pratajo.github.io"
         data-repo-id="R_kgDONl93Sw"

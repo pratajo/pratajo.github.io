@@ -42,6 +42,8 @@ Launch Virtual Machine Manager in Applications > System
   - Sound: ac97
   - Video Virtio + 3D acceleration
 
+&nbsp;
+
 <script src="https://giscus.app/client.js"
         data-repo="pratajo/pratajo.github.io"
         data-repo-id="R_kgDONl93Sw"

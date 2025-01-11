@@ -48,6 +48,8 @@ The keyboard now works on an iPad and iTrack Dock.
 
 If you want to reconnect the A-49 to a computer where you have already installed the driver for Windows or Mac OS X, reset the keyboard with the "Dedicated Driver". To do this, repeat the previous sequence replacing [-] with [+].
 
+&nbsp;
+
 <script src="https://giscus.app/client.js"
         data-repo="pratajo/pratajo.github.io"
         data-repo-id="R_kgDONl93Sw"
