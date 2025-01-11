@@ -35,7 +35,7 @@ Launch Virtual Machine Manager in Applications > System
 Launch Virtual Machine Manager in Applications > System
 
 - Memory: 4048
-- CPUs: 4
+- CPUs: 2
 - Select or create custom storage: /home/pratajo/KVM (20GB)
 - Customize the installation before starting:
   * Firmware: UEFI x86_64
