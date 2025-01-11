@@ -28,3 +28,19 @@ I recommend scanning each photo in two formats, tiff and jpeg, both without comp
 - slides and negatives - 2,000 dpi or more
 
 Regarding the export of the photos in GIMP, I recommend reading the chapter "6. Getting Images out of GIMP" of the User Manual.
+
+<script src="https://giscus.app/client.js"
+        data-repo="pratajo/pratajo.github.io"
+        data-repo-id="R_kgDONl93Sw"
+        data-category="Comments"
+        data-category-id="DIC_kwDONl93S84Cl7yv"
+        data-mapping="title"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>

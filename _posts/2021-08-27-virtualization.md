@@ -41,3 +41,19 @@ Launch Virtual Machine Manager in Applications > System
   - Firmware: UEFI x86_64
   - Sound: ac97
   - Video Virtio + 3D acceleration
+
+<script src="https://giscus.app/client.js"
+        data-repo="pratajo/pratajo.github.io"
+        data-repo-id="R_kgDONl93Sw"
+        data-category="Comments"
+        data-category-id="DIC_kwDONl93S84Cl7yv"
+        data-mapping="title"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>

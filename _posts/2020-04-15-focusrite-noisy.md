@@ -59,3 +59,19 @@ This information is provided in the hope that it will be useful, but WITHOUT ANY
         {% include figure.liquid path="assets/img/itrack_noisy/itrack7.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
+
+<script src="https://giscus.app/client.js"
+        data-repo="pratajo/pratajo.github.io"
+        data-repo-id="R_kgDONl93Sw"
+        data-category="Comments"
+        data-category-id="DIC_kwDONl93S84Cl7yv"
+        data-mapping="title"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
