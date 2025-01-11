@@ -12,27 +12,21 @@ To create a single "copy to clipboard" button on a website page, we can use simp
 
 ```html
 <html>
-<head>
-    
-<script>
+  <head>
+    <script>
+      function copy_to_clipboard( elm_id ) {
+        var text = document.getElementById( elm_id ).innerHTML;
 
-function copy_to_clipboard( elm_id ) {
+        navigator.clipboard.writeText( text );
+      }
 
-    var text = document.getElementById( elm_id ).innerHTML;
-
-    navigator.clipboard.writeText( text );
-
-  }
-
-</script>
-</head>
-<body>
-
-   <p id="1">text to copy</p>
+    </script>
+  </head>
+  <body>
+    <p id="1">text to copy</p>
    
-   <button onclick="copy_to_clipboard('1')">Copy</button>
-
-</body>
+    <button onclick="copy_to_clipboard('1')">Copy</button>
+  </body>
 </html>
 ```
 
@@ -42,34 +36,26 @@ If you want to have two or more buttons on the same frame, here is an example:
 
 ```html
 <html>
-<head>
-<script>
+  <head>
+    <script>
+      function copy_to_clipboard( elm_id ) {
+        var text = document.getElementById( elm_id ).innerHTML;
+        
+        navigator.clipboard.writeText( text );
+      }
+    </script>
+  </head>
+  <body>
 
-function copy_to_clipboard( elm_id ) {
-
-    var text = document.getElementById( elm_id ).innerHTML;
-
-    navigator.clipboard.writeText( text );
-
-  }
-
-</script>
-</head>
-<body>
-
-   <p id="8">text to copy-1</p>
+    <p id="8">text to copy-1</p>
    
-   <button onclick="copy_to_clipboard('8')">Copy</button>
-   
+    <button onclick="copy_to_clipboard('8')">Copy</button>
     <p id="9">text to copy-2</p>
-   
-   <button onclick="copy_to_clipboard('9')">Copy</button>
-   
+    <button onclick="copy_to_clipboard('9')">Copy</button>
     <p id="10">text to copy-3</p>
-   
-   <button onclick="copy_to_clipboard('10')">Copy</button>
+    <button onclick="copy_to_clipboard('10')">Copy</button>
 
-</body>
+  </body>
 </html>
 ```
 
