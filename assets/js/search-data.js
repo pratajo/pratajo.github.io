@@ -102,6 +102,17 @@ ninja.data = [{
           window.location.href = "/blog/2024/openindiana/";
         
       },
+    },{id: "post-nmap-practical-use",
+      
+        title: "Nmap - practical use",
+      
+      description: "Install a network scanner",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2021/nmap/";
+        
+      },
     },{id: "post-fedora-virtualization",
       
         title: "Fedora Virtualization",
@@ -121,7 +132,7 @@ ninja.data = [{
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/blog/2021/code/";
+          window.location.href = "/blog/2021/partition/";
         
       },
     },{id: "post-focusrite-itrack-dock-and-roland-a-49",
