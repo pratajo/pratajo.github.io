@@ -80,6 +80,17 @@ ninja.data = [{
           window.location.href = "/blog/2025/fedora-41-xfce/";
         
       },
+    },{id: "post-jekyll-on-fedora-installation-and-use",
+      
+        title: "Jekyll on Fedora - Installation and use",
+      
+      description: "Generator of static sites with blog recognition",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/jekyll/";
+        
+      },
     },{id: "post-lamp-on-fedora",
       
         title: "LAMP on Fedora",
