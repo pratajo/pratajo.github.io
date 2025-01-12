@@ -80,6 +80,17 @@ ninja.data = [{
           window.location.href = "/blog/2025/fedora-41-xfce/";
         
       },
+    },{id: "post-lamp-on-fedora",
+      
+        title: "LAMP on Fedora",
+      
+      description: "LAMP stack to manage a web server",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2024/lamp/";
+        
+      },
     },{id: "post-creating-one-or-multiple-buttons-to-copy-text-to-the-clipboard",
       
         title: "Creating one or multiple buttons to copy text to the clipboard",
