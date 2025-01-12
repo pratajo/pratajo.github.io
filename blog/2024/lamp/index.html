@@ -22,20 +22,23 @@
 </code></pre></div></div> <p>Exit the SQL shell and return to the terminal prompt.</p> <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">quit</span>
 </code></pre></div></div> <p> </p> <h6 id="check-lamp-stack-installation"><strong>Check LAMP stack installation</strong></h6> <p>To check the components of the LAMP stack, embed a block of PHP code containing a database connection, within an HTML page. PHP code can be integrated into an HTML file using the tag &lt;?php. The PHP code block can then connect to an SQL-based database using the command mysqli_connect. Provide the correct database credentials for the connection.</p> <p>To test all components of the LAMP stack, follow these steps:</p> <ol> <li>In Terminal, change to the directory var/www/html and create a new file, now the phptest.php</li> </ol> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> /var/www/html
 <span class="nb">sudo </span>nano phptest.php
-</code></pre></div></div> <ol> <li>Add the following content to the file. Confirm that the servername variable is set to localhost. Replace USERNAME and PASSWORD with the credentials for the WEB database user account (not the root password).</li> </ol> <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
+</code></pre></div></div> <ol> <li>Add the following content to the file. Confirm that the servername variable is set to localhost. Replace USERNAME and PASSWORD with the credentials for the WEB database user account (not the root password).</li> </ol> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
   <span class="nt">&lt;head&gt;</span>
     <span class="nt">&lt;title&gt;</span>PHP Test<span class="nt">&lt;/title&gt;</span>
   <span class="nt">&lt;/head&gt;</span>
   <span class="nt">&lt;body&gt;</span>
-    <span class="cp">&lt;?php echo '
-    &lt;p&gt;Welcome to the Site!&lt;/p&gt;
-    '; $servername = "localhost"; $username = "USERNAME"; $password = "PASSWORD"; // Create the MySQL connection
-    $conn = mysqli_connect($servername, $username, $password); // If the conn variable is empty, the connection has failed. The output for the failure case includes the error message
-    if (!$conn) { die('
-    &lt;p&gt;Connection failed:&lt;/p&gt;
-    ' . mysqli_connect_error()); } echo '
-    &lt;p&gt;Connected successfully&lt;/p&gt;
-    '; ?&gt;</span>
+    <span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="s1">'&lt;p&gt;Welcome to the Site!&lt;/p&gt;'</span><span class="p">;</span>
+        <span class="nv">$servername</span> <span class="o">=</span> <span class="s2">"localhost"</span><span class="p">;</span>
+        <span class="nv">$username</span> <span class="o">=</span> <span class="s2">"USERNAME"</span><span class="p">;</span>
+        <span class="nv">$password</span> <span class="o">=</span> <span class="s2">"PASSWORD"</span><span class="p">;</span>
+        <span class="c1">// Create the MySQL connection</span>
+        <span class="nv">$conn</span> <span class="o">=</span> <span class="nb">mysqli_connect</span><span class="p">(</span><span class="nv">$servername</span><span class="p">,</span> <span class="nv">$username</span><span class="p">,</span> <span class="nv">$password</span><span class="p">);</span>
+        <span class="c1">// If the conn variable is empty, the connection has failed. The output for the failure case includes the error message</span>
+        <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nv">$conn</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">die</span><span class="p">(</span><span class="s1">'&lt;p&gt;Connection failed: &lt;/p&gt;'</span> <span class="mf">.</span> <span class="nf">mysqli_connect_error</span><span class="p">());</span>
+        <span class="p">}</span>
+        <span class="k">echo</span> <span class="s1">'&lt;p&gt;Connected successfully&lt;/p&gt;'</span><span class="p">;</span>
+        <span class="cp">?&gt;</span>
   <span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
 </code></pre></div></div> <ol> <li> <p>Run the LAMP stack script test by opening the link http://localhost/phptest.php</p> </li> <li> <p>If the test is successful, the browser displays the message:</p> </li> </ol> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>       Welcome to the site!
