@@ -5,8 +5,14 @@ date: 2021-08-27 15:09:00
 description: KVM
 tags: linux
 categories: applications
-thumbnail: assets/img/kvm.jpg
+thumbnail: assets/img/virtualization.png
 ---
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/kvm.jpg" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 
 Check that the KVM kernel modules are properly loaded.
 
