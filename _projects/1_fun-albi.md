@@ -34,7 +34,7 @@ The beginning of Rua dos Ferreiros
     </div>
 </div>
 
-Rua dos Ferreiros 6, 8 and 10 (6 - entrance to the building; 8 - entrance to the store)
+Rua dos Ferreiros 6, 8 and 10 (6 - entrance to the building where I was born; 8 - entrance to the store A. R. Gomes Prata - Eletricidade e Cromagem 😔)
 
 &nbsp;
 
