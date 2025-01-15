@@ -234,7 +234,12 @@ ninja.data = [{
             },},{id: "news-my-website-is-being-converted-to-github-sparkles-smile",
           title: 'My website  is being converted to Github! :sparkles: :smile:',
           description: "",
-          section: "News",},{
+          section: "News",},{id: "projects-my-birthplace",
+          title: 'My birthplace',
+          description: "Castelo Branco - Portugal",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/1_fun-albi/";
+            },},{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
