@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-My <a href="https://www.pratajo.com/en/">website </a> is being converted to Github! :sparkles: :smile:
+My website is being converted to Github!
