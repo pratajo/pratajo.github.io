@@ -231,8 +231,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_2/";
-            },},{id: "news-my-website-is-being-converted-to-github-sparkles-smile",
-          title: 'My website  is being converted to Github! :sparkles: :smile:',
+            },},{id: "news-my-website-is-being-converted-to-github",
+          title: 'My website is being converted to Github!',
+          description: "",
+          section: "News",},{id: "news-my-website-was-converted-to-github-sparkles-smile",
+          title: 'My website was converted to Github! :sparkles: :smile:',
           description: "",
           section: "News",},{id: "projects-my-birthplace",
           title: 'My birthplace',
