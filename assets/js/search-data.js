@@ -261,7 +261,7 @@ ninja.data = [{
         title: 'Custom_social',
         section: 'Socials',
         handler: () => {
-          window.open("https://www.pratajo.com/en/", "_blank");
+          window.open("https://www.pratajo.com/", "_blank");
         },
       },{
       id: 'light-theme',
