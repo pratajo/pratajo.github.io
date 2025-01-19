@@ -47,5 +47,5 @@ rss_icon: true # set to true to show the RSS icon
 # zotero_username: # your zotero username
 custom_social: # can be any name here other than the ones already defined above
   logo: assets/img/eu.png # can be png, svg, jpg
-  title: Personal page
-  url: https://www.pratajo.com/en/
+  title: My personal page
+  url: https://www.pratajo.com/
