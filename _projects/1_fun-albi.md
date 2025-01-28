@@ -5,7 +5,7 @@ description: Castelo Branco - Portugal
 img: assets/img/albi11.jpg
 importance: 1
 category: fun
-related_publications: true
+giscus_comments: true
 ---
 
 <div class="row mt-3">
