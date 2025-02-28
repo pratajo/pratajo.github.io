@@ -37,19 +37,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/repositories/";
           },
-        },{id: "dropdown-publications",
-              title: "publications",
+        },{id: "dropdown-bookshelf",
+              title: "bookshelf",
               description: "",
               section: "Dropdown",
               handler: () => {
-                window.location.href = "";
-              },
-            },{id: "dropdown-projects",
-              title: "projects",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "";
+                window.location.href = "/books/";
               },
             },{id: "dropdown-blog",
               title: "blog",
@@ -223,7 +216,12 @@ ninja.data = [{
           window.location.href = "/blog/2020/focusrite-noisy/";
         
       },
-    },{id: "news-fedora-linux-41-released",
+    },{id: "books-the-godfather",
+          title: 'The Godfather',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/the_godfather/";
+            },},{id: "news-fedora-linux-41-released",
           title: 'Fedora Linux 41 released',
           description: "",
           section: "News",},{id: "news-tratado-de-estenografia-sistema-martiniano-1ª-edição-exclusive-to-the-portuguese-language",
