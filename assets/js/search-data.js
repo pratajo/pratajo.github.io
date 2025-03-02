@@ -220,7 +220,7 @@ ninja.data = [{
           title: 'Estenografia - Sua orgânica e função',
           description: "",
           section: "Books",handler: () => {
-              window.location.href = "/books/2024_esteno1/";
+              window.location.href = "/books/2024/2024_esteno1/";
             },},{id: "news-fedora-linux-41-released",
           title: 'Fedora Linux 41 released',
           description: "",
