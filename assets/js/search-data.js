@@ -216,11 +216,11 @@ ninja.data = [{
           window.location.href = "/blog/2020/focusrite-noisy/";
         
       },
-    },{id: "books-the-godfather",
-          title: 'The Godfather',
+    },{id: "books-estenografia-sua-orgânica-e-função",
+          title: 'Estenografia - Sua orgânica e função',
           description: "",
           section: "Books",handler: () => {
-              window.location.href = "/books/the_godfather/";
+              window.location.href = "/books/2024_esteno1/";
             },},{id: "news-fedora-linux-41-released",
           title: 'Fedora Linux 41 released',
           description: "",
