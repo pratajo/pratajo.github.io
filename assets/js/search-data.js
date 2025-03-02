@@ -221,6 +221,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/2024_esteno1/";
+            },},{id: "books-programa-de-um-curso-complementar-teórico-de-estenografia-do-congresso-da-república",
+          title: 'Programa de um Curso Complementar Teórico de Estenografia do Congresso da República',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/2024_esteno2/";
             },},{id: "news-fedora-linux-41-released",
           title: 'Fedora Linux 41 released',
           description: "",
