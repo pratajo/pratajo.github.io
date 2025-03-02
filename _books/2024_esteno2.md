@@ -16,8 +16,8 @@ goodreads_review:
 status: Finished
 ---
 
-Manuel Reis de Sanches Ferreira, from Comité International de Sténographie, taquígrafo do Congresso da República, antigo taquígrafo do Conselho Superior das Colónias, mestre efetivo de esteno-dactilografia da Escola Preparatória de Rodrigues Sampaio e antigo mestre efectivo de esteno-dactilo-caligrafia da Escola Comercial de Veiga Beirão.
+Manuel Reis de Sanches Ferreira, do Comité International de Sténographie, taquígrafo do Congresso da República, antigo taquígrafo do Conselho Superior das Colónias, mestre efetivo de esteno-dactilografia da Escola Preparatória de Rodrigues Sampaio e antigo mestre efectivo de esteno-dactilo-caligrafia da Escola Comercial de Veiga Beirão.
 
-Lisboa, Tipografia da Cooperativa Militar, Rua Alves Correia 20-42, 1930, 14 page folio.
+Lisboa, Tipografia da Cooperativa Militar, Rua Alves Correia 20-42, 1930, fólio de 14 páginas.
 
-Program of a theoretical complementary course, divided into two parts: Theory of Stenography and General History of Stenography.
+Programa de um curso complementar teórico, dividido em duas partes: Teoria da Estenografia e História Geral da Estenografia.
