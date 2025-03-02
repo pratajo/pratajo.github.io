@@ -16,8 +16,10 @@ goodreads_review:
 status: Finished
 ---
 
-Manuel Reis de Sanches Ferreira, antigo dirigente dos serviços estenográficos da Assembleia Nacional, e antigo mestre efetivo das escolas comerciais.
+Manuel Reis de Sanches Ferreira, former leader of the stenographic services of the Assembleia Nacional, and former effective master of commercial schools.
 
-Lisboa, Irmãos Bertrand, 1961, folio de 14 páginas.
+Lisbon, Irmãos Bertrand, 1961, 14 page folio.
 
-Exemplar autografado por S. Ferreira.
+Copy autographed by S. Ferreira.
+
+A booklet that discusses the complexity of stenographic systems, such as the individual influence on the stenographic function and the maximum limits of systems and individuals.
