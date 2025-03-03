@@ -18,7 +18,7 @@ status: Finished
 
 Manuel Reis de Sanches Ferreira, antigo dirigente dos serviços estenográficos da Assembleia Nacional, e antigo mestre efetivo das escolas comerciais.
 
-Lisboa, Irmãos Bertrand, 1961, fólio de 14 páginas.
+Lisboa, Irmãos Bertrand, 1961, 4to de 14 páginas.
 
 Exemplar autografado por S. Ferreira.
 

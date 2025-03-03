@@ -1,7 +1,7 @@
 ---
 layout: book-review
 title: Programa de um Curso Complementar Teórico de Estenografia do Congresso da República
-author: Sanches Ferreira
+author: Manuel Reis de Sanches Ferreira
 cover: assets/img/book_covers/2024_esteno2.jpg
 olid: # use Open Library ID to fetch cover (if no `cover` is provided)
 isbn: # use ISBN to fetch cover (if no `olid` is provided, dashes are optional)
