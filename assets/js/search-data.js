@@ -216,7 +216,12 @@ ninja.data = [{
           window.location.href = "/blog/2020/focusrite-noisy/";
         
       },
-    },{id: "books-angelo-marti-no-soberano-congresso-nacional",
+    },{id: "books-aços-características-e-tratamentos-6ª-ed",
+          title: 'Aços - Características e tratamentos (6ª Ed)',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/2022_metais/";
+            },},{id: "books-angelo-marti-no-soberano-congresso-nacional",
           title: 'Angelo Marti no Soberano Congresso Nacional',
           description: "",
           section: "Books",handler: () => {
