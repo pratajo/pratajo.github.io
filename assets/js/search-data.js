@@ -226,6 +226,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/2023_esteno1/";
+            },},{id: "books-la-fractura-en-los-materiales-metálicos",
+          title: 'La Fractura en los Materiales Metálicos',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/2023_metais/";
             },},{id: "books-estenografia-sua-orgânica-e-função",
           title: 'Estenografia - Sua orgânica e função',
           description: "",
