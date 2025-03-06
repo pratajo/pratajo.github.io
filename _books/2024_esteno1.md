@@ -14,6 +14,7 @@ released: 1961
 stars: 4
 goodreads_review:
 status: Finished
+ate: 2024-04-15 21:01:00
 ---
 
 Manuel Reis de Sanches Ferreira, antigo dirigente dos serviços estenográficos da Assembleia Nacional, e antigo mestre efetivo das escolas comerciais.
