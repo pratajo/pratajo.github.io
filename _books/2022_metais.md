@@ -14,6 +14,7 @@ released: 2009
 stars: 4
 goodreads_review:
 status: Finished
+ate: 2022-04-15 21:01:00
 ---
 
 Um livro orientado para alunos e técnicos de empresas que têm necessidade de adquirir conhecimento sobre o comportamento dos aços e seus tratamentos.
