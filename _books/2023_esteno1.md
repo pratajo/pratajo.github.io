@@ -14,7 +14,7 @@ released: 1923
 stars: 4
 goodreads_review:
 status: Finished
-ate: 2023-04-15 21:01:00
+date: 2023-04-15 21:01:00
 ---
 
 Manuel Reis de Sanches Ferreira, taquígrafo do Congresso da República.
