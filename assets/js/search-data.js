@@ -216,11 +216,21 @@ ninja.data = [{
           window.location.href = "/blog/2020/focusrite-noisy/";
         
       },
-    },{id: "books-angelo-marti-no-soberano-congresso-nacional",
+    },{id: "books-aços-características-e-tratamentos-6ª-ed",
+          title: 'Aços - Características e tratamentos (6ª Ed)',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/2022_metais/";
+            },},{id: "books-angelo-marti-no-soberano-congresso-nacional",
           title: 'Angelo Marti no Soberano Congresso Nacional',
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/2023_esteno1/";
+            },},{id: "books-la-fractura-en-los-materiales-metálicos",
+          title: 'La Fractura en los Materiales Metálicos',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/2023_metais/";
             },},{id: "books-estenografia-sua-orgânica-e-função",
           title: 'Estenografia - Sua orgânica e função',
           description: "",
@@ -236,11 +246,6 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/2024_esteno3/";
-            },},{id: "books-aços-características-e-tratamentos-6ª-ed",
-          title: 'Aços - Características e tratamentos (6ª Ed)',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/2024_metais/";
             },},{id: "news-fedora-linux-41-released",
           title: 'Fedora Linux 41 released',
           description: "",
