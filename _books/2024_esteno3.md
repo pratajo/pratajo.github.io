@@ -14,6 +14,7 @@ released: 1906
 stars: 4
 goodreads_review:
 status: Finished
+date: 2024-04-15 21:01:00
 ---
 
 J. Fraga Pery de Linde, 1º oficial redator da Câmara dos Dignos Pares do Reino e antigo tachygrapho na mesma Câmara.
