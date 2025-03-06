@@ -14,6 +14,7 @@ released: 1930
 stars: 3
 goodreads_review:
 status: Finished
+date: 2024-04-15 21:01:00
 ---
 
 Manuel Reis de Sanches Ferreira, do Comité International de Sténographie, taquígrafo do Congresso da República, antigo taquígrafo do Conselho Superior das Colónias, mestre efetivo de esteno-dactilografia da Escola Preparatória de Rodrigues Sampaio e antigo mestre efectivo de esteno-dactilo-caligrafia da Escola Comercial de Veiga Beirão.
