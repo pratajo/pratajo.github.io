@@ -14,7 +14,7 @@ released: 2014
 stars: 5
 goodreads_review:
 status: Finished
-ate: 2023-04-15 21:01:00
+date: 2023-04-15 21:01:00
 ---
 
 A fratura é a primeira causa de rejeição da ferramenta. Existem outras causas, mas estão sempre ligadas ao processo de fissuras e roturas.
