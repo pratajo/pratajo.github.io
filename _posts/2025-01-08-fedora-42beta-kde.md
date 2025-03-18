@@ -1,24 +1,26 @@
 ---
 layout: post
-title: Installing Fedora 42 Beta Xfce
-date: 2025-03-18 21:30:00
-description: Fedora 42 Beta Xfce
-tags: fedora xfce
+title: Installing Fedora 42 Beta KDE Plasma
+date: 2025-03-18 22:30:00
+description: Fedora 42 Beta KDE Plasma
+tags: fedora kde
 categories: operating-systems
 featured: false
 toc:
   sidebar: right
+images:
+  compare: true
+  slider: true
 ---
 
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/fedora42bxfce.jpg" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
+<img-comparison-slider>
+  {% include figure.liquid path="assets/img/fedora42bkde_light.jpg" class="img-fluid rounded z-depth-1" slot="first" %}
+  {% include figure.liquid path="assets/img/fedora42bkde_dark.jpg" class="img-fluid rounded z-depth-1" slot="second" %}
+</img-comparison-slider>
 
 &nbsp;
 
-###### **Get Fedora 42 Beta Xfce**
+###### **Get Fedora 42 Beta KDE Plasma**
 
 Use Fedora Media Writer application to create a 'Live USB' or download the ISO image from the [torrent](https://torrent.fedoraproject.org/) list.
 
@@ -71,7 +73,7 @@ sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-rele
 ###### **Install current applications**
 
 ```bash
-sudo dnf install thunderbird p7zip unrar gsmartcontrol libreoffice-draw libreoffice-impress libreoffice-langpack-pt-PT vlc eog
+sudo dnf install thunderbird ktorrent gimp p7zip kde-l10n-Portuguese unrar gsmartcontrol libreoffice-langpack-pt-PT gimp-help gimp-help-pt_BR vlc librecad inkscape scribus
 ```
 
 &nbsp;
@@ -95,25 +97,23 @@ sudo dnf install hplip-gui
 <ins>Scanners</ins>
 
 ```bash
-sudo dnf install xsane simple-scan
+sudo dnf install xsane skanlite
 ```
 
 &nbsp;
 
-###### **Remove redundant applications**
+###### **Installing [KDevelop IDE](https://kdevelop.org/) (for developers)**
 
 ```bash
-sudo dnf remove claws-mail geany
+sudo dnf group install development-tools
 ```
 
-&nbsp;
-
-###### **Automatic login (optional)**
-
-Edit /etc/lightdm/lightdm.conf –> autologin-user = _username_
+```bash
+sudo dnf group install c-development
+```
 
 ```bash
-sudo nano /etc/lightdm/lightdm.conf
+sudo dnf install kdevelop kdevelop-pg-qt kdevelop-php
 ```
 
 &nbsp;
