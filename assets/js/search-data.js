@@ -52,193 +52,193 @@ ninja.data = [{
                 window.location.href = "/blog/";
               },
             },{id: "post-installing-fedora-42-beta-kde-plasma",
-      
-        title: "Installing Fedora 42 Beta KDE Plasma",
-      
-      description: "Fedora 42 Beta KDE Plasma",
-      section: "Posts",
-      handler: () => {
         
-          window.location.href = "/blog/2025/fedora-42beta-kde/";
+          title: "Installing Fedora 42 Beta KDE Plasma",
         
-      },
-    },{id: "post-installing-fedora-42-beta-xfce",
-      
-        title: "Installing Fedora 42 Beta Xfce",
-      
-      description: "Fedora 42 Beta Xfce",
-      section: "Posts",
-      handler: () => {
+        description: "Fedora 42 Beta KDE Plasma",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/fedora-42beta-kde/";
+          
+        },
+      },{id: "post-installing-fedora-42-beta-xfce",
         
-          window.location.href = "/blog/2025/fedora-42beta-xfce/";
+          title: "Installing Fedora 42 Beta Xfce",
         
-      },
-    },{id: "post-installing-fedora-41-kde-plasma",
-      
-        title: "Installing Fedora 41 KDE Plasma",
-      
-      description: "Fedora 41 KDE Plasma",
-      section: "Posts",
-      handler: () => {
+        description: "Fedora 42 Beta Xfce",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/fedora-42beta-xfce/";
+          
+        },
+      },{id: "post-installing-fedora-41-kde-plasma",
         
-          window.location.href = "/blog/2025/fedora-41-kde/";
+          title: "Installing Fedora 41 KDE Plasma",
         
-      },
-    },{id: "post-installing-fedora-41-xfce",
-      
-        title: "Installing Fedora 41 Xfce",
-      
-      description: "Fedora 41 Xfce",
-      section: "Posts",
-      handler: () => {
+        description: "Fedora 41 KDE Plasma",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/fedora-41-kde/";
+          
+        },
+      },{id: "post-installing-fedora-41-xfce",
         
-          window.location.href = "/blog/2025/fedora-41-xfce/";
+          title: "Installing Fedora 41 Xfce",
         
-      },
-    },{id: "post-jekyll-on-fedora-installation-and-use",
-      
-        title: "Jekyll on Fedora - Installation and use",
-      
-      description: "Generator of static sites with blog recognition",
-      section: "Posts",
-      handler: () => {
+        description: "Fedora 41 Xfce",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/fedora-41-xfce/";
+          
+        },
+      },{id: "post-jekyll-on-fedora-installation-and-use",
         
-          window.location.href = "/blog/2025/jekyll/";
+          title: "Jekyll on Fedora - Installation and use",
         
-      },
-    },{id: "post-lamp-on-fedora",
-      
-        title: "LAMP on Fedora",
-      
-      description: "LAMP stack to manage a web server",
-      section: "Posts",
-      handler: () => {
+        description: "Generator of static sites with blog recognition",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/jekyll/";
+          
+        },
+      },{id: "post-lamp-on-fedora",
         
-          window.location.href = "/blog/2024/lamp/";
+          title: "LAMP on Fedora",
         
-      },
-    },{id: "post-creating-one-or-multiple-buttons-to-copy-text-to-the-clipboard",
-      
-        title: "Creating one or multiple buttons to copy text to the clipboard",
-      
-      description: "HTML and JavaScript",
-      section: "Posts",
-      handler: () => {
+        description: "LAMP stack to manage a web server",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/lamp/";
+          
+        },
+      },{id: "post-creating-one-or-multiple-buttons-to-copy-text-to-the-clipboard",
         
-          window.location.href = "/blog/2024/copy-buttons/";
+          title: "Creating one or multiple buttons to copy text to the clipboard",
         
-      },
-    },{id: "post-photo-restoration-with-gimp",
-      
-        title: "Photo Restoration with GIMP",
-      
-      description: "Photo Restoration",
-      section: "Posts",
-      handler: () => {
+        description: "HTML and JavaScript",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/copy-buttons/";
+          
+        },
+      },{id: "post-photo-restoration-with-gimp",
         
-          window.location.href = "/blog/2024/photo-restoration/";
+          title: "Photo Restoration with GIMP",
         
-      },
-    },{id: "post-installing-openindiana-hipster-2022-10",
-      
-        title: "Installing OpenIndiana Hipster 2022.10",
-      
-      description: "OpenIndiana Hipster 2022.10",
-      section: "Posts",
-      handler: () => {
+        description: "Photo Restoration",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/photo-restoration/";
+          
+        },
+      },{id: "post-installing-openindiana-hipster-2022-10",
         
-          window.location.href = "/blog/2024/openindiana/";
+          title: "Installing OpenIndiana Hipster 2022.10",
         
-      },
-    },{id: "post-installing-development-tools-and-kdevelop-on-fedora",
-      
-        title: "Installing Development Tools and KDevelop on Fedora",
-      
-      description: "Development Tools and KDevelop",
-      section: "Posts",
-      handler: () => {
+        description: "OpenIndiana Hipster 2022.10",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/openindiana/";
+          
+        },
+      },{id: "post-installing-development-tools-and-kdevelop-on-fedora",
         
-          window.location.href = "/blog/2023/kdevelop/";
+          title: "Installing Development Tools and KDevelop on Fedora",
         
-      },
-    },{id: "post-how-to-change-the-hostname-on-linux",
-      
-        title: "How to change the hostname on Linux",
-      
-      description: "Changing the hostname",
-      section: "Posts",
-      handler: () => {
+        description: "Development Tools and KDevelop",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2023/kdevelop/";
+          
+        },
+      },{id: "post-how-to-change-the-hostname-on-linux",
         
-          window.location.href = "/blog/2022/hostname/";
+          title: "How to change the hostname on Linux",
         
-      },
-    },{id: "post-asus-prime-x370-pro-and-fedora",
-      
-        title: "Asus Prime X370-PRO and Fedora",
-      
-      description: "Changing BIOS parameters for Fedora",
-      section: "Posts",
-      handler: () => {
+        description: "Changing the hostname",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2022/hostname/";
+          
+        },
+      },{id: "post-asus-prime-x370-pro-and-fedora",
         
-          window.location.href = "/blog/2022/asus-x370/";
+          title: "Asus Prime X370-PRO and Fedora",
         
-      },
-    },{id: "post-nmap-practical-use",
-      
-        title: "Nmap - practical use",
-      
-      description: "Install a network scanner",
-      section: "Posts",
-      handler: () => {
+        description: "Changing BIOS parameters for Fedora",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2022/asus-x370/";
+          
+        },
+      },{id: "post-nmap-practical-use",
         
-          window.location.href = "/blog/2021/nmap/";
+          title: "Nmap - practical use",
         
-      },
-    },{id: "post-fedora-virtualization",
-      
-        title: "Fedora Virtualization",
-      
-      description: "KVM",
-      section: "Posts",
-      handler: () => {
+        description: "Install a network scanner",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/nmap/";
+          
+        },
+      },{id: "post-fedora-virtualization",
         
-          window.location.href = "/blog/2021/virtualization/";
+          title: "Fedora Virtualization",
         
-      },
-    },{id: "post-change-the-partition-owner",
-      
-        title: "Change the partition owner",
-      
-      description: "Partition owner",
-      section: "Posts",
-      handler: () => {
+        description: "KVM",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/virtualization/";
+          
+        },
+      },{id: "post-change-the-partition-owner",
         
-          window.location.href = "/blog/2021/partition/";
+          title: "Change the partition owner",
         
-      },
-    },{id: "post-focusrite-itrack-dock-and-roland-a-49",
-      
-        title: "Focusrite iTrack Dock and Roland A-49",
-      
-      description: "Roland A-49 parameters",
-      section: "Posts",
-      handler: () => {
+        description: "Partition owner",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/partition/";
+          
+        },
+      },{id: "post-focusrite-itrack-dock-and-roland-a-49",
         
-          window.location.href = "/blog/2021/focusrite/";
+          title: "Focusrite iTrack Dock and Roland A-49",
         
-      },
-    },{id: "post-focusrite-itrack-dock-noisy-when-ipad-is-charged",
-      
-        title: "Focusrite iTrack Dock noisy when iPad is charged",
-      
-      description: "Focusrite iTrack Dock noisy",
-      section: "Posts",
-      handler: () => {
+        description: "Roland A-49 parameters",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/focusrite/";
+          
+        },
+      },{id: "post-focusrite-itrack-dock-noisy-when-ipad-is-charged",
         
-          window.location.href = "/blog/2020/focusrite-noisy/";
+          title: "Focusrite iTrack Dock noisy when iPad is charged",
         
-      },
-    },{id: "books-aços-características-e-tratamentos-6ª-ed",
+        description: "Focusrite iTrack Dock noisy",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2020/focusrite-noisy/";
+          
+        },
+      },{id: "books-aços-características-e-tratamentos-6ª-ed",
           title: 'Aços - Características e tratamentos (6ª Ed)',
           description: "",
           section: "Books",handler: () => {
