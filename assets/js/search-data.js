@@ -51,7 +51,29 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "post-installing-fedora-42-beta-kde-plasma",
+            },{id: "post-installing-fedora-42-xfce",
+        
+          title: "Installing Fedora 42 Xfce",
+        
+        description: "Fedora 42 Xfce",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/fedora-42-xfce/";
+          
+        },
+      },{id: "post-installing-fedora-42-kde-plasma",
+        
+          title: "Installing Fedora 42 KDE Plasma",
+        
+        description: "Fedora 42 KDE Plasma",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/fedora-42-kde/";
+          
+        },
+      },{id: "post-installing-fedora-42-beta-kde-plasma",
         
           title: "Installing Fedora 42 Beta KDE Plasma",
         
