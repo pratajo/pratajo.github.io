@@ -5,6 +5,7 @@ date: 2025-03-18 21:30:00
 description: Fedora 42 Beta Xfce
 tags: fedora xfce
 categories: operating-systems
+thumbnail: assets/img/fedora42bxfce.jpg
 featured: false
 toc:
   sidebar: right

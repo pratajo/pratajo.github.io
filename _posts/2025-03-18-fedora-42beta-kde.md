@@ -5,6 +5,7 @@ date: 2025-03-18 22:30:00
 description: Fedora 42 Beta KDE Plasma
 tags: fedora kde
 categories: operating-systems
+thumbnail: assets/img/fedora42bkde_light.jpg
 featured: false
 toc:
   sidebar: right
