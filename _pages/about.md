@@ -28,6 +28,6 @@ This site provides accessible information about the installation process of the 
 
 It is intended to be a “guide” as it includes personal settings for the operating system.
 
-Use this information at your own risk. Remember to make a backup of all critical information before trying to do anything.
+Use this information at your own risk! Remember to make a backup of all critical information before trying to do anything.
 
 My production system consists of a desktop set up by me, an HP Laptop 15s-eq0011np and a Victus by HP Laptop 16, all with AMD Ryzen 5 processors and Radeon graphics.
