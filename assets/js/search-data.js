@@ -51,7 +51,18 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "post-installing-fedora-42-kde-plasma",
+            },{id: "post-step-by-step-instructions-to-get-al-folio-up-and-running-on-your-local-machine-using-docker-and-visual-studio-code-vs-code",
+        
+          title: "Step by step instructions to get al-folio up and running on your local...",
+        
+        description: "Local Setup with Development Containers",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/vscode/";
+          
+        },
+      },{id: "post-installing-fedora-42-kde-plasma",
         
           title: "Installing Fedora 42 KDE Plasma",
         
