@@ -326,9 +326,9 @@ ninja.data = [{
           description: "Castelo Branco - Portugal",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_fun-albi/";
-            },},{id: "projects-serendipitous-friendships",
-          title: 'Serendipitous friendships',
-          description: "",
+            },},{id: "projects-photo-gallery",
+          title: 'Photo gallery',
+          description: "Serendipitous friendships",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2024-12-04-photo-gallery/";
             },},{
