@@ -7,10 +7,14 @@ importance: 2
 category: fun
 giscus_comments: true
 images:
-  lightbox2: true
+  spotlight: true
 ---
 
-The images in this post are all zoomable, arranged into different mini-galleries using different libraries.
-
-<a href="/assets/img/gallery/pnobrega1.jpg" data-lightbox="roadtrip"><img src="/assets/img/gallery/pnobrega1_prev.jpg" /></a>
-<a href="/assets/img/gallery/raheem1.jpg" data-lightbox="roadtrip"><img src="/assets/img/gallery/raheem1_prev.jpg" /></a>
+<div class="spotlight-group">
+    <a class="spotlight" href="/assets/img/gallery/pnobrega1.jpg" data-title="The author and Paulo Nóbrega, in Funchal (Madeira Island)">
+        <img src="/assets/img/gallery/pnobrega1_prev.jpg" />
+    </a>
+    <a class="spotlight" href="/assets/img/gallery/raheem1.jpg" data-title="Raheem and the author at Humberto Delgado Airport (Lisbon)">
+        <img src="/assets/img/gallery/raheem1_prev.jpg" />
+    </a>
+</div>
