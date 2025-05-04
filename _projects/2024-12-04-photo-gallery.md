@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Serendipitous friendships
-description:
-img: assets/img/albi11.jpg
+title: Photo gallery
+description: Serendipitous friendships
+img: assets/img/gallery/gallery.jpg
 importance: 2
 category: fun
 giscus_comments: true
