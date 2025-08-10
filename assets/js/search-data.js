@@ -301,6 +301,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/2024_esteno3/";
+            },},{id: "books-há-engenharia-nos-elevadores",
+          title: 'Há Engenharia nos Elevadores',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/2025_elevadores/";
             },},{id: "news-fedora-linux-41-released",
           title: 'Fedora Linux 41 released',
           description: "",
