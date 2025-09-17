@@ -51,7 +51,18 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "post-step-by-step-instructions-to-get-al-folio-up-and-running-on-your-local-machine-using-docker-and-visual-studio-code-vs-code",
+            },{id: "post-installing-fedora-43-beta-xfce",
+        
+          title: "Installing Fedora 43 Beta Xfce",
+        
+        description: "Fedora 43 Beta Xfce",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/fedora-43beta-xfce/";
+          
+        },
+      },{id: "post-step-by-step-instructions-to-get-al-folio-up-and-running-on-your-local-machine-using-docker-and-visual-studio-code-vs-code",
         
           title: "Step by step instructions to get al-folio up and running on your local...",
         
@@ -81,7 +92,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2025/fedora-42-xfce/";
+            window.location.href = "/blog/2025/fedora-42-xfce-copy/";
           
         },
       },{id: "post-installing-fedora-42-beta-kde-plasma",
