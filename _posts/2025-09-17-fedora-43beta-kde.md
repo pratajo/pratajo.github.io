@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Installing Fedora 43 Beta KDE Plasma
-date: 2025-04-16 20::00
-description: Fedora 42 KDE Beta Plasma
+date: 2025-09-17 17:00:00
+description: Fedora 43 Beta KDE Plasma
 tags: fedora kde
 categories: operating-systems
-thumbnail: assets/img/fedora42kde_light.jpg
+thumbnail: assets/img/fedora43bkde.jpg
 featured: true
 toc:
   sidebar: right
@@ -14,10 +14,11 @@ images:
   slider: true
 ---
 
-<img-comparison-slider>
-  {% include figure.liquid path="assets/img/fedora42kde_light.jpg" class="img-fluid rounded z-depth-1" slot="first" %}
-  {% include figure.liquid path="assets/img/fedora42kde_dark.jpg" class="img-fluid rounded z-depth-1" slot="second" %}
-</img-comparison-slider>
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/fedora43bkde.jpg" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 
 &nbsp;
 
