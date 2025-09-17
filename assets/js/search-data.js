@@ -51,7 +51,18 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "post-installing-fedora-43-beta-xfce",
+            },{id: "post-installing-fedora-43-beta-kde-plasma",
+        
+          title: "Installing Fedora 43 Beta KDE Plasma",
+        
+        description: "Fedora 43 Beta KDE Plasma",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/fedora-43beta-kde/";
+          
+        },
+      },{id: "post-installing-fedora-43-beta-xfce",
         
           title: "Installing Fedora 43 Beta Xfce",
         
@@ -71,17 +82,6 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2025/vscode/";
-          
-        },
-      },{id: "post-installing-fedora-43-beta-kde-plasma",
-        
-          title: "Installing Fedora 43 Beta KDE Plasma",
-        
-        description: "Fedora 42 KDE Beta Plasma",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2025/fedora-43beta-kde/";
           
         },
       },{id: "post-installing-fedora-42-kde-plasma",
