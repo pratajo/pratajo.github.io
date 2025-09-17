@@ -78,21 +78,25 @@ sudo dnf install thunderbird p7zip unrar gsmartcontrol libreoffice-draw libreoff
 &nbsp;
 
 ###### **Install codecs**
+
 Switch to full ffmpeg
 
 ```bash
 sudo dnf swap ffmpeg-free ffmpeg --allowerasing
 ```
+
 Install additional codecs
 
 ```bash
 sudo dnf update @multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
 ```
+
 Install the hardware accelerated codec for an Intel recent CPU...
 
 ```bash
 sudo dnf install intel-media-driver
 ```
+
 ... or for an AMD CPU (best choice)
 
 ```bash
@@ -102,6 +106,7 @@ sudo dnf swap mesa-va-drivers mesa-va-drivers-freeworld
 ```bash
 sudo dnf swap mesa-vdpau-drivers mesa-vdpau-drivers-freeworld
 ```
+
 To play a DVD you need to install the libdvdcss package
 
 ```bash
