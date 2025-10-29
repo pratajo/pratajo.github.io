@@ -6,7 +6,7 @@ description: Fedora 43 Beta Xfce
 tags: fedora xfce
 categories: operating-systems
 thumbnail: assets/img/fedora43bxfce.jpg
-featured: true
+featured: false
 toc:
   sidebar: right
 ---
