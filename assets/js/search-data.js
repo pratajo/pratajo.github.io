@@ -62,6 +62,17 @@ ninja.data = [{
             window.location.href = "/blog/2025/fedora-43-kde/";
           
         },
+      },{id: "post-installing-fedora-43-xfce",
+        
+          title: "Installing Fedora 43 Xfce",
+        
+        description: "Fedora 43 Xfce",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/fedora-43-xfce/";
+          
+        },
       },{id: "post-installing-fedora-43-beta-kde-plasma",
         
           title: "Installing Fedora 43 Beta KDE Plasma",
