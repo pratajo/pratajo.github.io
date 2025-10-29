@@ -51,7 +51,18 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "post-installing-fedora-43-beta-kde-plasma",
+            },{id: "post-installing-fedora-43-kde-plasma",
+        
+          title: "Installing Fedora 43 KDE Plasma",
+        
+        description: "Fedora 43 KDE Plasma",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/fedora-43-kde/";
+          
+        },
+      },{id: "post-installing-fedora-43-beta-kde-plasma",
         
           title: "Installing Fedora 43 Beta KDE Plasma",
         
