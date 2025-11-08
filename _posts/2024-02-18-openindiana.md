@@ -22,15 +22,15 @@ toc:
 Get the image from the [official website](https://www.openindiana.org/downloads/) and save the Pen Drive with the command (in linux):
 
 ```bash
-[pratajo@amd64 ~]$ su -
-   (enter root password)
-[root@amd64 ~]$ dd if=image.usb of=/dev/sdb
+su -
+  (enter root password)
+dd if=image.usb of=/dev/sdb
 ```
 
 Attention: to confirm the USB drive letter, use the command _lsblk_
 
 ```bash
-[root@amd64 ~]$ lsblk
+lsblk
 ```
 
 &nbsp;
@@ -46,9 +46,9 @@ During installation, create a secure password for Root (administrator) and a use
 Finally restart the computer, remove the USB stick, enter your personal user and update the entire system.
 
 ```bash
-[pratajo@amd64 ~]$ su -
-   (enter root password)
-[root@amd64 ~]$ dd if=image.usb of=/dev/sdb
+su -
+  (enter root password)
+pkg refresh && pkg update
 ```
 
 &nbsp;
@@ -56,7 +56,7 @@ Finally restart the computer, remove the USB stick, enter your personal user and
 ###### **Add repositories**
 
 ```bash
-root@amd64:~$ pkg set-publisher -O https://pkg.openindiana.org/hipster-encumbered hipster-encumbered
+pkg set-publisher -O https://pkg.openindiana.org/hipster-encumbered hipster-encumbered
 ```
 
 &nbsp;
@@ -64,7 +64,7 @@ root@amd64:~$ pkg set-publisher -O https://pkg.openindiana.org/hipster-encumbere
 ###### **Install applications**
 
 ```bash
-root@amd64:~$ pkg install vlc
+pkg install vlc
 ```
 
 &nbsp;
