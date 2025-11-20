@@ -385,7 +385,12 @@ ninja.data = [{
           title: 'Photo gallery',
           description: "Serendipitous friendships",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/2024-12-04-photo-gallery/";
+              window.location.href = "/projects/2_photo-gallery/";
+            },},{id: "projects-headroom-studio",
+          title: 'Headroom Studio',
+          description: "The Vibe Vault",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/3_music/";
             },},{
         id: 'social-email',
         title: 'email',
