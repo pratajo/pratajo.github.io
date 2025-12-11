@@ -350,6 +350,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/2025_elevadores/";
+            },},{id: "books-gravidade-zero",
+          title: 'Gravidade Zero',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/2025_wa_gravidade0/";
             },},{id: "news-fedora-linux-41-released",
           title: 'Fedora Linux 41 released',
           description: "",
