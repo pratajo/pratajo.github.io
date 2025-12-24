@@ -13,8 +13,8 @@ finished:
 released: 2022
 stars: 5
 goodreads_review:
-status: Reading
-date: 2025-12-11 21:01:00
+status: Finished
+date: 2025-12-23 21:01:00
 ---
 
 Gravidade Zero é o quinto livro de textos humorísticos de Woody Allen.
