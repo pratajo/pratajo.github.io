@@ -8,6 +8,7 @@ isbn: 9789724425979
 categories: Woody_Allen Humor
 tags: Woody_Allen
 buy_link: https://www.bertrand.pt/livro/gravidade-zero-woody-allen/27395406
+date: 2025-12-10
 started: 2025-12-10
 finished:
 released: 2022

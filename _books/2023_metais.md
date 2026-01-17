@@ -8,6 +8,7 @@ isbn: 9788493486600 # use ISBN to fetch cover (if no `olid` is provided, dashes 
 categories: metais fadiga
 tags: materiais-metálicos
 buy_link: https://tienda.horsori.net/formacion-profesional/348-la-fractura-en-los-materiales-metalicos-9788493486600.html
+date: 2022-08-06
 started: 2023-10-04
 finished: 2023-10-15
 released: 2014

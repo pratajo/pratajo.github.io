@@ -8,6 +8,7 @@ isbn: 9789897882074
 categories: ascensores elevadores
 tags: elevadores
 buy_link: http://livraria.vidaeconomica.pt/ebooks-novidades/2602-ebook-ha-engenharia-nos-elevadores-9789897882074.html
+date: 2025-08-08
 started: 2025-08-08
 finished: 2025-08-10
 released: 2024

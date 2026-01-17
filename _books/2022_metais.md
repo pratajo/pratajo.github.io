@@ -8,6 +8,7 @@ isbn: 9789892017976 # use ISBN to fetch cover (if no `olid` is provided, dashes 
 categories: metais tratamentos
 tags: materiais-metálicos
 buy_link: https://www.wook.pt/livro/acos-pinto-soares/3501441
+date: 2022-08-06
 started: 2022-08-06
 finished: 2022-09-13
 released: 2009

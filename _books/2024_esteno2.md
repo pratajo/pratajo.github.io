@@ -8,6 +8,7 @@ isbn: # use ISBN to fetch cover (if no `olid` is provided, dashes are optional)
 categories: estenografia taquigrafia
 tags:
 buy_link:
+date: 2024-08-10
 started: 2024-08-10
 finished: 2024-08-10
 released: 1930
