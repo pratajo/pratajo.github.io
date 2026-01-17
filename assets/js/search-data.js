@@ -396,6 +396,11 @@ ninja.data = [{
           description: "The Vibe Vault",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_music/";
+            },},{id: "teachings-data-science-fundamentals",
+          title: 'Data Science Fundamentals',
+          description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
+          section: "Teachings",handler: () => {
+              window.location.href = "/teachings/data-science-fundamentals/";
             },},{
         id: 'social-email',
         title: 'email',
