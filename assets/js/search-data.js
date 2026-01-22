@@ -51,7 +51,18 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "post-installing-fedora-43-kde-plasma",
+            },{id: "post-xppen-driver-install-on-fedora-42",
+        
+          title: "XPPen driver install on Fedora 42+",
+        
+        description: "XPPen driver installation",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/xppen-driver-install/";
+          
+        },
+      },{id: "post-installing-fedora-43-kde-plasma",
         
           title: "Installing Fedora 43 KDE Plasma",
         
