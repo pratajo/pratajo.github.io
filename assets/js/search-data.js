@@ -53,7 +53,7 @@ ninja.data = [{
               },
             },{id: "post-xppen-driver-install-on-fedora-42",
         
-          title: "XPPen driver install on Fedora 42+",
+          title: "XPPen Driver Install on Fedora 42+",
         
         description: "XPPen driver installation",
         section: "Posts",
