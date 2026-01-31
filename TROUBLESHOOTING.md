@@ -31,6 +31,8 @@ This guide covers common issues and their solutions. For more information, see [
     - [Code formatting issues](#code-formatting-issues)
   - [Getting Help](#getting-help)
 
+<!--te-->
+
 ## Deployment Issues
 
 ### Site fails to deploy on GitHub Pages
