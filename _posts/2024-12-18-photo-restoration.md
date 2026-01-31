@@ -2,6 +2,7 @@
 layout: post
 title: Photo Restoration with GIMP
 date: 2024-12-18 21:01:00
+last_modified_at: 2024-12-18 21:01:00
 description: Photo Restoration
 tags: restoration images
 categories: applications

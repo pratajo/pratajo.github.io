@@ -2,6 +2,7 @@
 layout: post
 title: Installing Fedora 43 Beta Xfce
 date: 2025-09-16 19:00:00
+last_modified_at: 2025-09-16 19:00:00
 description: Fedora 43 Beta Xfce
 tags: fedora xfce
 categories: operating-systems

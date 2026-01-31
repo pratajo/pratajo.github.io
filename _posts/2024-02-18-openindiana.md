@@ -2,6 +2,7 @@
 layout: post
 title: Installing OpenIndiana Hipster 2022.10
 date: 2024-02-18 00:32:13
+last_modified_at: 2024-02-18 00:32:13
 description: OpenIndiana Hipster 2022.10
 tags: openindiana hipster unix
 categories: operating-systems

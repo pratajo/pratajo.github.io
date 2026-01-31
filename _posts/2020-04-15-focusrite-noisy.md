@@ -2,6 +2,7 @@
 layout: post
 title: Focusrite iTrack Dock noisy when iPad is charged
 date: 2020-04-15 21:01:00
+last_modified_at: 2020-04-15 21:01:00
 description: Focusrite iTrack Dock noisy
 tags: keyboard music
 categories: music

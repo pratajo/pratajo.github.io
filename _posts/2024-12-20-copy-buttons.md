@@ -2,6 +2,7 @@
 layout: post
 title: Creating one or multiple buttons to copy text to the clipboard
 date: 2024-12-20 15:09:00
+last_modified_at: 2024-12-20 15:09:00
 description: HTML and JavaScript
 tags: development linux
 categories: applications

@@ -2,6 +2,7 @@
 layout: post
 title: XPPen Driver Install on Fedora 42+
 date: 2026-01-21 21:01:00
+last_modified_at: 2026-01-21 21:01:00
 description: XPPen driver installation
 tags: restoration images xppen driver
 categories: applications

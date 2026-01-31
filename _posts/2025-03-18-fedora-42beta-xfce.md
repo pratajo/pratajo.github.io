@@ -2,6 +2,7 @@
 layout: post
 title: Installing Fedora 42 Beta Xfce
 date: 2025-03-18 21:30:00
+last_modified_at: 2025-03-18 21:30:00
 description: Fedora 42 Beta Xfce
 tags: fedora xfce
 categories: operating-systems
