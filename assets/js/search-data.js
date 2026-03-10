@@ -51,7 +51,18 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "post-xppen-driver-install-on-fedora-42",
+            },{id: "post-installing-fedora-44-beta-xfce",
+        
+          title: "Installing Fedora 44 Beta Xfce",
+        
+        description: "Fedora 44 Beta Xfce",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/fedora-44beta-xfce/";
+          
+        },
+      },{id: "post-xppen-driver-install-on-fedora-42",
         
           title: "XPPen Driver Install on Fedora 42+",
         
@@ -391,6 +402,9 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "news-fedora-linux-43-released",
           title: 'Fedora Linux 43 released',
+          description: "",
+          section: "News",},{id: "news-fedora-linux-44-beta-released",
+          title: 'Fedora Linux 44 Beta released',
           description: "",
           section: "News",},{id: "projects-my-birthplace",
           title: 'My birthplace',
