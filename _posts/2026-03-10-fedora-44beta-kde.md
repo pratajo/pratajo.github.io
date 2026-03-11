@@ -1,26 +1,29 @@
 ---
 layout: post
-title: Installing Fedora 44 Beta Xfce
-date: 2026-03-10 22:00:00
-last_modified_at: 2026-03-10 22:00:00
-description: Fedora 44 Beta Xfce
-tags: fedora xfce
+title: Installing Fedora 44 Beta KDE Plasma
+date: 2026-03-10 21:00:00
+last_modified_at: 2026-03-10 21:00:00
+description: Fedora 44 Beta KDE Plasma
+tags: fedora kde
 categories: operating-systems
-thumbnail: assets/img/fedora44bxfce.jpg
+thumbnail: assets/img/fedora44bkde.jpg
 featured: false
 toc:
   sidebar: right
+images:
+  compare: true
+  slider: true
 ---
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/fedora44bxfce.jpg" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/fedora44bkde.jpg" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
 &nbsp;
 
-###### **Get Fedora 44 Beta Xfce**
+###### **Get Fedora 44 Beta KDE Plasma**
 
 Use Fedora Media Writer application to create a 'Live USB'.
 
@@ -32,9 +35,9 @@ Fedora Media Writer is available for Linux, Microsoft Windows and Mac.
 
 Fedora images are hybrid ISO images, so they can be used for DVD burning or flash drive creation. They also work on BIOS and UEFI systems.
 
-As this is a "live" distribution, the new OS (operating system) will run from the pen drive without making any changes to the hard disk. You can test the OS and only then install it on the hard drive.
+As this is a "live" distribution, the new OS (operating system) will run from the DVD or pen drive without making any changes to the hard disk. You can test the OS and only then install it on the hard drive.
 
-During installation, create a user, set the password and leave the "root" account disabled.
+During installation, create a user and set the password.
 
 After installation, restart the computer and remove the DVD or flash drive. Log in, open _Terminal_ and update the entire system with the following command:
 
@@ -71,7 +74,7 @@ sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-rele
 ###### **Install current applications**
 
 ```bash
-sudo dnf install thunderbird p7zip unrar gsmartcontrol libreoffice-draw libreoffice-impress libreoffice-langpack-pt-PT vlc eog
+sudo dnf install thunderbird ktorrent gimp xsane p7zip kde-l10n-Portuguese unrar gsmartcontrol libreoffice-langpack-pt-PT gimp-help gimp-help-pt_BR vlc librecad inkscape scribus
 ```
 
 &nbsp;
@@ -126,56 +129,18 @@ sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware"
 
 &nbsp;
 
-###### **Install HP printers and scanners**
-
-<ins>HP printers</ins>
+###### **Installing [KDevelop IDE](https://kdevelop.org/) (for developers)**
 
 ```bash
-sudo dnf install hplip-gui
+sudo dnf group install development-tools
 ```
 
-<ins>Scanners</ins>
-
 ```bash
-sudo dnf install xsane simple-scan
+sudo dnf group install c-development
 ```
 
-&nbsp;
-
-###### **Remove redundant applications**
-
 ```bash
-sudo dnf remove claws-mail geany
-```
-
-&nbsp;
-
-###### **Automatic login (optional)**
-
-Edit /etc/lightdm/lightdm.conf –> autologin-user = _username_
-
-```bash
-sudo nano /etc/lightdm/lightdm.conf
-```
-
-&nbsp;
-
-###### **How to change the hostname**
-
-If you want to customize the machine name, the easiest method is using the command line.
-
-This instruction is valid for a computer used at home, which is not part of a enterprise network. We use the _hostnamectl_ command:
-
-```bash
-hostnamectl set-hostname new-name
-```
-
-This name is stored in the /etc/hostname file.
-
-We can simultaneously check the machine name, operating system, kernel version and architecture with this command:
-
-```bash
-hostnamectl status
+sudo dnf install kdevelop kdevelop-pg-qt kdevelop-php
 ```
 
 &nbsp;
