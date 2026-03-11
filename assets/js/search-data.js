@@ -62,6 +62,17 @@ ninja.data = [{
             window.location.href = "/blog/2026/fedora-44beta-xfce/";
           
         },
+      },{id: "post-installing-fedora-44-beta-kde-plasma",
+        
+          title: "Installing Fedora 44 Beta KDE Plasma",
+        
+        description: "Fedora 44 Beta KDE Plasma",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/fedora-44beta-kde/";
+          
+        },
       },{id: "post-xppen-driver-install-on-fedora-42",
         
           title: "XPPen Driver Install on Fedora 42+",
