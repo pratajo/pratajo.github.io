@@ -51,7 +51,18 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "post-installing-fedora-44-beta-xfce",
+            },{id: "post-installing-fedora-44-xfce",
+        
+          title: "Installing Fedora 44 Xfce",
+        
+        description: "Fedora 44 Xfce",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/fedora-44-xfce/";
+          
+        },
+      },{id: "post-installing-fedora-44-beta-xfce",
         
           title: "Installing Fedora 44 Beta Xfce",
         
