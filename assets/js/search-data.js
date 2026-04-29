@@ -51,7 +51,18 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "post-installing-fedora-44-xfce",
+            },{id: "post-installing-fedora-44-kde-plasma",
+        
+          title: "Installing Fedora 44 KDE Plasma",
+        
+        description: "Fedora 44 KDE Plasma",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/fedora-44-kde/";
+          
+        },
+      },{id: "post-installing-fedora-44-xfce",
         
           title: "Installing Fedora 44 Xfce",
         
