@@ -24,10 +24,9 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-This site provides accessible information about the installation process of the Fedora Linux Operating System on your computer… and not only!
+This website provides clear and accessible information about installing the Fedora Linux operating system — and much more.
 
-It is intended to be a “guide” as it includes personal settings for the operating system.
+It serves as a practical guide, including my personal settings and customizations for the system.
+**Use this information at your own risk.** Always back up all important data before making any changes.
 
-Use this information at your own risk. Remember to make a backup of all critical information before trying to do anything.
-
-My production system consists of a desktop set up by me, an HP Laptop 15s-eq0011np and a Victus by HP Laptop 16, all with AMD Ryzen 5 processors and Radeon graphics.
+My production environment consists of a custom-built desktop with an AMD Ryzen 5 5600G and a Victus by HP 16 laptop with an AMD Ryzen 5 5600H processor, both equipped with Radeon Graphics. Additionally, I use a Lenovo laptop with an AMD Ryzen 7 7735HS processor dedicated to music production with Cubase.
