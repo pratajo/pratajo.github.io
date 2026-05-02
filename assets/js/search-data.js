@@ -51,7 +51,18 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "post-installing-fedora-44-kde-plasma",
+            },{id: "post-how-to-backup-and-restore-thunderbird-remote-images-whitelist-clean-install",
+        
+          title: "How to Backup and Restore Thunderbird Remote Images Whitelist (Clean Install)",
+        
+        description: "Thunderbird Remote Images Whitelist",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/thunderbird/";
+          
+        },
+      },{id: "post-installing-fedora-44-kde-plasma",
         
           title: "Installing Fedora 44 KDE Plasma",
         
