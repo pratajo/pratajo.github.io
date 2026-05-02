@@ -6,7 +6,7 @@ last_modified_at: 2026-05-02 15:00:00
 description: Thunderbird Remote Images Whitelist
 tags: fedora linux
 categories: applications
-thumbnail: assets/img/hostname.jpg
+thumbnail: assets/img/thunderbird-logo.jpg
 featured: false
 ---
 
