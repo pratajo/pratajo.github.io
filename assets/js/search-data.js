@@ -161,9 +161,9 @@ ninja.data = [{
             window.location.href = "/blog/2025/fedora-43beta-xfce/";
           
         },
-      },{id: "post-step-by-step-instructions-to-get-al-folio-up-and-running-on-your-local-machine-using-docker-and-visual-studio-code-vs-code",
+      },{id: "post-how-to-run-al-folio-locally-with-docker-and-vs-code",
         
-          title: "Step by step instructions to get al-folio up and running on your local...",
+          title: "How to Run al-folio Locally with Docker and VS Code",
         
         description: "Local Setup with Development Containers",
         section: "Posts",
