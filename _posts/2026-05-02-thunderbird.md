@@ -16,15 +16,15 @@ Note: This method is specific to Fedora Linux (and other Linux distributions usi
 
 ###### **Backup (on your current Thunderbird)**
 
-1. Close Thunderbird completely.
+1.  Close Thunderbird completely.
 
-2. Open a terminal and run:
+2.  Open a terminal and run:
 
     ```bash
 cp ~/.thunderbird/*.default-esr/permissions.sqlite ~/permissions.sqlite
-    ```
+```
 
-3. The file permissions.sqlite will be saved in your Home folder. Copy it to a safe place (USB drive, external disk, etc.).
+3.  The file permissions.sqlite will be saved in your Home folder. Copy it to a safe place (USB drive, external disk, etc.).
 
 ###### **Restore (on a new Thunderbird installation)**
 
