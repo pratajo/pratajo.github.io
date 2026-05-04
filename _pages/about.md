@@ -29,4 +29,4 @@ This website provides clear and accessible information about installing the Fedo
 It serves as a practical guide, including my personal settings and customizations for the system.
 **Use this information at your own risk.** Always back up all important data before making any changes.
 
-My production environment consists of a custom-built desktop with an AMD Ryzen 5 5600G and a Victus by HP 16 laptop with an AMD Ryzen 5 5600H processor, both equipped with Radeon Graphics. Additionally, I use a Lenovo laptop with an AMD Ryzen 7 7735HS processor dedicated to music production with Cubase.
+My production environment consists of a custom-built desktop with an AMD Ryzen 5 5600G and a Victus by HP 16 laptop with an AMD Ryzen 5 5600H processor, both equipped with Radeon Graphics. Additionally, I use a ASUS Vivobook S16 laptop with an AMD Ryzen™ AI 7 445 processor dedicated to music production with Cubase.
