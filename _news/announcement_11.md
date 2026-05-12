@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Good news for <a href="https://www.scribus.net/downloads/">Scribus</a> users: the 1.7.3 development Flatpak has just been released!
+Good news for <a href="https://sourceforge.net/projects/scribus/files/scribus-devel/1.7.3/">Scribus</a> users: the 1.7.3 development Flatpak has just been released!
