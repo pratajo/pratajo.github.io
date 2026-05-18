@@ -51,7 +51,18 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "post-how-to-backup-and-restore-thunderbird-remote-images-whitelist-clean-install",
+            },{id: "post-logitech-mx-master-4-on-fedora-linux-my-final-solaar-configuration",
+        
+          title: "Logitech MX Master 4 on Fedora Linux – My Final Solaar Configuration",
+        
+        description: "Solaar Configuration",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/mx-master-4/";
+          
+        },
+      },{id: "post-how-to-backup-and-restore-thunderbird-remote-images-whitelist-clean-install",
         
           title: "How to Backup and Restore Thunderbird Remote Images Whitelist (Clean Install)",
         
