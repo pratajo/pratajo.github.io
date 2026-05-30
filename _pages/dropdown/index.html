@@ -1,5 +1,541 @@
-<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta name="google-site-verification" content="google-site-verification=_s2EJ5uvtpKUmtSPUkUdYqBF_QUT2ngBhzEWRaf38YY"> <meta http-equiv="Permissions-Policy" content="interest-cohort=()"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> submenus | Jorge A. Prata </title> <meta name="author" content="Jorge A. Prata"> <meta name="description" content="My personal website. "> <meta name="keywords" content="jekyll, fedora, kde"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <link rel="stylesheet" href="/assets/css/bootstrap.min.css?v=a4b3f509e79c54a512b890d73235ef04"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="/assets/css/academicons.min.css?v=f0b7046b84e425c55f3463ac249818f5"> <link defer rel="stylesheet" href="/assets/css/scholar-icons.css?v=62b2ac103a88034e6882a5be5f3e2772"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="/assets/img/eu.png?v=a23fcb652f8305d9dc014c57b8b091be"> <link rel="stylesheet" href="/assets/css/main.css?v=d41d8cd98f00b204e9800998ecf8427e"> <link rel="canonical" href="https://pratajo.github.io/_pages/dropdown/"> <script src="/assets/js/theme.js?v=5fea5159b787642c1bbc1f334d60f883"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta name="google-site-verification" content="google-site-verification=_s2EJ5uvtpKUmtSPUkUdYqBF_QUT2ngBhzEWRaf38YY"> <meta http-equiv="Permissions-Policy" content="interest-cohort=()"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> submenus | Jorge A. Prata </title> <meta name="author" content="Jorge A. Prata"> <meta name="description" content="My personal website. "> <meta name="keywords" content="jekyll, fedora, kde"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>:root{--max-content-width:930px}</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="/assets/img/eu.png?v=a23fcb652f8305d9dc014c57b8b091be"> <link rel="stylesheet" href="/assets/css/main.css?v=d41d8cd98f00b204e9800998ecf8427e"> <link rel="canonical" href="https://pratajo.github.io/_pages/dropdown/"> <script src="/assets/js/theme.js?v=7af685e2ba20b37fef545c97b8064050"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
     initTheme();
-  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">Jorge</span> A. Prata </a> <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse text-right" id="navbarNav"> <ul class="navbar-nav ml-auto flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">Home </a> </li> <li class="nav-item "> <a class="nav-link" href="/blog/">blog </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/projects/">projects </a> </li> <li class="nav-item "> <a class="nav-link" href="/books/">bookshelf </a> </li> <li class="nav-item dropdown active"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">submenus <span class="sr-only">(current)</span> </a> <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> <a class="dropdown-item " href="/repositories/">repositories</a> <div class="dropdown-divider"></div> <a class="dropdown-item " href="/blog/">blog</a> </div> </li> <li class="nav-item"> <button id="search-toggle" title="Search" onclick="openSearchModal()"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" title="Change theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">submenus</h1> <p class="post-description"></p> </header> <article> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Jorge A. Prata. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Last updated: May 30, 2026. </div> </footer> <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> <script src="/assets/js/bootstrap.bundle.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=a0db7e5d5c70cc3252b3138b0c91dcaf" type="text/javascript"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/js/zoom.js?v=85ddb88934d28b74e78031fd54cf8308"></script> <script src="/assets/js/no_defer.js?v=2781658a0a2b13ed609542042a859126"></script> <script defer src="/assets/js/common.js?v=c15de51d4bb57887caa2c21988d97279"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=d9f17b6adc2311cbabd747f4538bb15f"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/js/mathjax-setup.js?v=a5bb4e6a542c546dd929b24b8b236dfd"></script> <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script> <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZD991HY7MX"></script> <script defer src="/assets/js/google-analytics-setup.js"></script> <script defer src="/assets/js/progress-bar.js?v=2f30e0e6801ea8f5036fa66e1ab0a71a" type="text/javascript"></script> <script src="/assets/js/vanilla-back-to-top.min.js?v=f40d453793ff4f64e238e420181a1d17"></script> <script>
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">Jorge</span> A. Prata </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">Home </a> </li> <li class="nav-item "> <a class="nav-link" href="/blog/">blog </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/projects/">projects </a> </li> <li class="nav-item "> <a class="nav-link" href="/books/">bookshelf </a> </li> <li class="nav-item dropdown active"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-nav-dropdown-toggle="true" aria-haspopup="true" aria-expanded="false">submenus <span class="sr-only">(current)</span> </a> <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> <a class="dropdown-item " href="/repositories/">repositories</a> <div class="dropdown-divider"></div> <a class="dropdown-item " href="/blog/">blog</a> </div> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">submenus</h1> <p class="post-description"></p> </header> <article> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Jorge A. Prata. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Last updated: May 30, 2026. </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/al_math/js/mathjax-setup.js"></script> <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/al_img_tools/js/zoom.js"></script> <script defer src="/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
     addBackToTop();
-  </script> <script type="module" src="/assets/js/search/ninja-keys.min.js?v=a3446f084dcaecc5f75aa1757d087dcf"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/js/search-setup.js?v=6c304f7b1992d4b60f7a07956e52f04a"></script> <script src="/assets/js/search-data.js"></script> <script src="/assets/js/shortcut-key.js?v=ccc841c459bfc0e64c1c2b5acd10df02"></script> </body> </html>
+  </script> <script type="module" src="/assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/al_search/js/search-setup.js"></script> <script>
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-home",
+    title: "Home",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/";
+    },
+  },{id: "nav-blog",
+          title: "blog",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/blog/";
+          },
+        },{id: "nav-publications",
+          title: "publications",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/publications/";
+          },
+        },{id: "nav-projects",
+          title: "projects",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/projects/";
+          },
+        },{id: "nav-bookshelf",
+          title: "bookshelf",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/books/";
+          },
+        },{id: "dropdown-repositories",
+              title: "repositories",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/repositories/";
+              },
+            },{id: "dropdown-blog",
+              title: "blog",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/blog/";
+              },
+            },{id: "post-logitech-mx-master-4-on-fedora-linux-my-final-solaar-configuration",
+        
+          title: "Logitech MX Master 4 on Fedora Linux – My Final Solaar Configuration",
+        
+        description: "Solaar Configuration",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/mx-master-4/";
+          
+        },
+      },{id: "post-how-to-backup-and-restore-thunderbird-remote-images-whitelist-clean-install",
+        
+          title: "How to Backup and Restore Thunderbird Remote Images Whitelist (Clean Install)",
+        
+        description: "Thunderbird Remote Images Whitelist",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/thunderbird/";
+          
+        },
+      },{id: "post-installing-fedora-44-kde-plasma",
+        
+          title: "Installing Fedora 44 KDE Plasma",
+        
+        description: "Fedora 44 KDE Plasma",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/fedora-44-kde/";
+          
+        },
+      },{id: "post-installing-fedora-44-xfce",
+        
+          title: "Installing Fedora 44 Xfce",
+        
+        description: "Fedora 44 Xfce",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/fedora-44-xfce/";
+          
+        },
+      },{id: "post-installing-fedora-44-beta-xfce",
+        
+          title: "Installing Fedora 44 Beta Xfce",
+        
+        description: "Fedora 44 Beta Xfce",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/fedora-44beta-xfce/";
+          
+        },
+      },{id: "post-installing-fedora-44-beta-kde-plasma",
+        
+          title: "Installing Fedora 44 Beta KDE Plasma",
+        
+        description: "Fedora 44 Beta KDE Plasma",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/fedora-44beta-kde/";
+          
+        },
+      },{id: "post-xppen-driver-install-on-fedora-42",
+        
+          title: "XPPen Driver Install on Fedora 42+",
+        
+        description: "XPPen driver installation",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/xppen-driver-install/";
+          
+        },
+      },{id: "post-installing-fedora-43-kde-plasma",
+        
+          title: "Installing Fedora 43 KDE Plasma",
+        
+        description: "Fedora 43 KDE Plasma",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/fedora-43-kde/";
+          
+        },
+      },{id: "post-installing-fedora-43-xfce",
+        
+          title: "Installing Fedora 43 Xfce",
+        
+        description: "Fedora 43 Xfce",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/fedora-43-xfce/";
+          
+        },
+      },{id: "post-installing-fedora-43-beta-kde-plasma",
+        
+          title: "Installing Fedora 43 Beta KDE Plasma",
+        
+        description: "Fedora 43 Beta KDE Plasma",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/fedora-43beta-kde/";
+          
+        },
+      },{id: "post-installing-fedora-43-beta-xfce",
+        
+          title: "Installing Fedora 43 Beta Xfce",
+        
+        description: "Fedora 43 Beta Xfce",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/fedora-43beta-xfce/";
+          
+        },
+      },{id: "post-how-to-run-al-folio-locally-with-docker-and-vs-code",
+        
+          title: "How to Run al-folio Locally with Docker and VS Code",
+        
+        description: "Local Setup with Development Containers",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/vscode/";
+          
+        },
+      },{id: "post-installing-fedora-42-kde-plasma",
+        
+          title: "Installing Fedora 42 KDE Plasma",
+        
+        description: "Fedora 42 KDE Plasma",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/fedora-42-kde/";
+          
+        },
+      },{id: "post-installing-fedora-42-xfce",
+        
+          title: "Installing Fedora 42 Xfce",
+        
+        description: "Fedora 42 Xfce",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/fedora-42-xfce/";
+          
+        },
+      },{id: "post-installing-fedora-42-beta-kde-plasma",
+        
+          title: "Installing Fedora 42 Beta KDE Plasma",
+        
+        description: "Fedora 42 Beta KDE Plasma",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/fedora-42beta-kde/";
+          
+        },
+      },{id: "post-installing-fedora-42-beta-xfce",
+        
+          title: "Installing Fedora 42 Beta Xfce",
+        
+        description: "Fedora 42 Beta Xfce",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/fedora-42beta-xfce/";
+          
+        },
+      },{id: "post-installing-fedora-41-kde-plasma",
+        
+          title: "Installing Fedora 41 KDE Plasma",
+        
+        description: "Fedora 41 KDE Plasma",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/fedora-41-kde/";
+          
+        },
+      },{id: "post-installing-fedora-41-xfce",
+        
+          title: "Installing Fedora 41 Xfce",
+        
+        description: "Fedora 41 Xfce",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/fedora-41-xfce/";
+          
+        },
+      },{id: "post-jekyll-on-fedora-installation-and-use",
+        
+          title: "Jekyll on Fedora - Installation and use",
+        
+        description: "Generator of static sites with blog recognition",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/jekyll/";
+          
+        },
+      },{id: "post-lamp-on-fedora",
+        
+          title: "LAMP on Fedora",
+        
+        description: "LAMP stack to manage a web server",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/lamp/";
+          
+        },
+      },{id: "post-creating-one-or-multiple-buttons-to-copy-text-to-the-clipboard",
+        
+          title: "Creating one or multiple buttons to copy text to the clipboard",
+        
+        description: "HTML and JavaScript",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/copy-buttons/";
+          
+        },
+      },{id: "post-photo-restoration-with-gimp",
+        
+          title: "Photo Restoration with GIMP",
+        
+        description: "Photo Restoration",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/photo-restoration/";
+          
+        },
+      },{id: "post-installing-openindiana-hipster-2022-10",
+        
+          title: "Installing OpenIndiana Hipster 2022.10",
+        
+        description: "OpenIndiana Hipster 2022.10",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/openindiana/";
+          
+        },
+      },{id: "post-installing-development-tools-and-kdevelop-on-fedora",
+        
+          title: "Installing Development Tools and KDevelop on Fedora",
+        
+        description: "Development Tools and KDevelop",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2023/kdevelop/";
+          
+        },
+      },{id: "post-how-to-change-the-hostname-on-linux",
+        
+          title: "How to change the hostname on Linux",
+        
+        description: "Changing the hostname",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2022/hostname/";
+          
+        },
+      },{id: "post-asus-prime-x370-pro-and-fedora",
+        
+          title: "Asus Prime X370-PRO and Fedora",
+        
+        description: "Changing BIOS parameters for Fedora",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2022/asus-x370/";
+          
+        },
+      },{id: "post-nmap-practical-use",
+        
+          title: "Nmap - practical use",
+        
+        description: "Install a network scanner",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/nmap/";
+          
+        },
+      },{id: "post-fedora-virtualization",
+        
+          title: "Fedora Virtualization",
+        
+        description: "KVM",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/virtualization/";
+          
+        },
+      },{id: "post-change-the-partition-owner",
+        
+          title: "Change the partition owner",
+        
+        description: "Partition owner",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/partition/";
+          
+        },
+      },{id: "post-focusrite-itrack-dock-and-roland-a-49",
+        
+          title: "Focusrite iTrack Dock and Roland A-49",
+        
+        description: "Roland A-49 parameters",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/focusrite/";
+          
+        },
+      },{id: "post-focusrite-itrack-dock-noisy-when-ipad-is-charged",
+        
+          title: "Focusrite iTrack Dock noisy when iPad is charged",
+        
+        description: "Focusrite iTrack Dock noisy",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2020/focusrite-noisy/";
+          
+        },
+      },{id: "books-aços-características-e-tratamentos-6ª-ed",
+          title: 'Aços - Características e tratamentos (6ª Ed)',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/2022_metais/";
+            },},{id: "books-angelo-marti-no-soberano-congresso-nacional",
+          title: 'Angelo Marti no Soberano Congresso Nacional',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/2023_esteno1/";
+            },},{id: "books-la-fractura-en-los-materiales-metálicos",
+          title: 'La Fractura en los Materiales Metálicos',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/2023_metais/";
+            },},{id: "books-estenografia-sua-orgânica-e-função",
+          title: 'Estenografia - Sua orgânica e função',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/2024_esteno1/";
+            },},{id: "books-programa-de-um-curso-complementar-teórico-de-estenografia-do-congresso-da-república",
+          title: 'Programa de um Curso Complementar Teórico de Estenografia do Congresso da República',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/2024_esteno2/";
+            },},{id: "books-tachygraphia",
+          title: 'Tachygraphia',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/2024_esteno3/";
+            },},{id: "books-há-engenharia-nos-elevadores",
+          title: 'Há Engenharia nos Elevadores',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/2025_elevadores/";
+            },},{id: "books-gravidade-zero",
+          title: 'Gravidade Zero',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/2025_wa_gravidade0/";
+            },},{id: "news-fedora-linux-41-released",
+          title: 'Fedora Linux 41 released',
+          description: "",
+          section: "News",},{id: "news-tratado-de-estenografia-sistema-martiniano-1ª-edição-exclusive-to-the-portuguese-language",
+          title: 'Tratado de Estenografia - Sistema Martiniano, 1ª edição (Exclusive to the Portuguese language)...',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_2/";
+            },},{id: "news-my-website-is-being-converted-to-github",
+          title: 'My website is being converted to Github!',
+          description: "",
+          section: "News",},{id: "news-my-website-was-converted-to-github-sparkles-smile",
+          title: 'My website was converted to Github! <img class="emoji" title=":sparkles:" alt=":sparkles:" src="https://github.githubassets.com/images/icons/emoji/unicode/2728.png" height="20" width="20"> <img class="emoji" title=":smile:" alt=":smile:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png" height="20" width="20">',
+          description: "",
+          section: "News",},{id: "news-fedora-linux-42-beta-released",
+          title: 'Fedora Linux 42 Beta released',
+          description: "",
+          section: "News",},{id: "news-fedora-linux-42-released",
+          title: 'Fedora Linux 42 released',
+          description: "",
+          section: "News",},{id: "news-fedora-linux-43-beta-released",
+          title: 'Fedora Linux 43 Beta released',
+          description: "",
+          section: "News",},{id: "news-fedora-linux-43-released",
+          title: 'Fedora Linux 43 released',
+          description: "",
+          section: "News",},{id: "news-fedora-linux-44-beta-released",
+          title: 'Fedora Linux 44 Beta released',
+          description: "",
+          section: "News",},{id: "news-fedora-linux-44-released",
+          title: 'Fedora Linux 44 released',
+          description: "",
+          section: "News",},{id: "news-good-news-for-scribus-users-the-1-7-3-development-flatpak-has-just-been-released",
+          title: 'Good news for Scribus users: the 1.7.3 development Flatpak has just been released!...',
+          description: "",
+          section: "News",},{id: "projects-my-birthplace",
+          title: 'My birthplace',
+          description: "Castelo Branco - Portugal",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/1_fun-albi/";
+            },},{id: "projects-photo-gallery",
+          title: 'Photo gallery',
+          description: "Serendipitous friendships",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/2_photo-gallery/";
+            },},{id: "projects-headroom-studio",
+          title: 'Headroom Studio',
+          description: "The Vibe Vault",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/3_music/";
+            },},{id: "teachings-data-science-fundamentals",
+          title: 'Data Science Fundamentals',
+          description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
+          section: "Teachings",handler: () => {
+              window.location.href = "/teachings/data-science-fundamentals/";
+            },},{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%69%6E%66%6F@%70%72%61%74%61%6A%6F.%63%6F%6D", "_blank");
+        },
+      },{
+        id: 'social-x',
+        title: 'X',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://twitter.com/pratajo128", "_blank");
+        },
+      },{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
+
+</script> <script src="/assets/al_search/js/shortcut-key.js"></script> </body> </html>
