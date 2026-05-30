@@ -69,7 +69,7 @@ al_folio:
       removed_in: v2.0
   upgrade:
     channel: stable
-    auto_apply_safe_fixes: false
+    auto_apply_safe_fixes: true
 
 # -----------------------------------------------------------------------------
 # RSS Feed
