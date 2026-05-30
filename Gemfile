@@ -39,7 +39,6 @@ group :other_plugins do
 end
 
 # Gems for al-folio plugins
-gem "al-folio", "~> 1.0"
 group :al_folio_plugins do
     gem 'al_folio_core', '= 1.0.9'
     gem 'al_icons', '= 1.0.0'
