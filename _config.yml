@@ -112,6 +112,7 @@ al_analytics:
   google:
     enabled: true
     id: G-ZD991HY7MX
+    send_page_view: true
 cronitor: # cronitor RUM analytics site ID (format: XXXXXXXXX)
 pirsch: # your Pirsch analytics site ID (length 32 characters)
 openpanel: # your Openpanel analytics client ID (format: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX)
