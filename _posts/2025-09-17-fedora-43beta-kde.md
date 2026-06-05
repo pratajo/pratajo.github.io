@@ -8,8 +8,6 @@ tags: fedora kde
 categories: operating-systems
 thumbnail: assets/img/fedora43bkde.jpg
 featured: false
-toc:
-  sidebar: right
 images:
   compare: true
   slider: true

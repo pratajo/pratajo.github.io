@@ -8,8 +8,6 @@ tags: fedora xfce
 categories: operating-systems
 thumbnail: assets/img/fedora44bxfce.jpg
 featured: false
-toc:
-  sidebar: right
 ---
 
 <div class="row mt-3">

@@ -6,8 +6,6 @@ last_modified_at: 2024-02-18 00:32:13
 description: OpenIndiana Hipster 2022.10
 tags: openindiana hipster unix
 categories: operating-systems
-toc:
-  sidebar: right
 ---
 
 <div class="row mt-3">
