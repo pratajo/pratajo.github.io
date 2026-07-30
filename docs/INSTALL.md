@@ -1,401 +1,150 @@
-# Installing and Deploying
+# Frequently Asked Questions
+
+Here are some frequently asked questions. If you have a different question, please check if it was not already answered in the Q&A section of the [GitHub Discussions](https://github.com/alshedivat/al-folio/discussions/categories/q-a). If not, feel free to ask a new question there.
 
 <!--ts-->
 
-- [Installing and Deploying](#installing-and-deploying)
-  - [Recommended Approach](#recommended-approach)
-    - [Template vs. Fork: Which Should I Use?](#template-vs-fork-which-should-i-use)
-    - [Important Notes for GitHub Pages Sites](#important-notes-for-github-pages-sites)
-    - [Automatic Deployment](#automatic-deployment)
-    - [Local Development](#local-development)
-  - [Local setup on Windows](#local-setup-on-windows)
-  - [Local setup using Docker (Recommended)](#local-setup-using-docker-recommended)
-    - [Build your own docker image](#build-your-own-docker-image)
-    - [Have Bugs on Docker Image?](#have-bugs-on-docker-image)
-  - [Local Setup with Development Containers](#local-setup-with-development-containers)
-  - [Local Setup (Legacy, no longer supported)](#local-setup-legacy-no-longer-supported)
-  - [Deployment](#deployment)
-    - [For personal and organization webpages](#for-personal-and-organization-webpages)
-    - [For project pages](#for-project-pages)
-    - [Enabling automatic deployment](#enabling-automatic-deployment)
-    - [Manual deployment to GitHub Pages](#manual-deployment-to-github-pages)
-    - [Deploy on Netlify](#deploy-on-netlify)
-    - [Deployment to another hosting server (non GitHub Pages)](#deployment-to-another-hosting-server-non-github-pages)
-    - [Deployment to a separate repository (advanced users only)](#deployment-to-a-separate-repository-advanced-users-only)
-  - [Maintaining Dependencies](#maintaining-dependencies)
-  - [Upgrading from a previous version](#upgrading-from-a-previous-version)
-    - [Recommended workflow (v1.x)](#recommended-workflow-v1x)
-    - [Legacy Bootstrap content](#legacy-bootstrap-content)
-    - [Older pre-v1 installs](#older-pre-v1-installs)
-      - [Migrating heavily customized pre-v1 sites](#migrating-heavily-customized-pre-v1-sites)
-      - [Tracking local override drift](#tracking-local-override-drift)
+- [Frequently Asked Questions](#frequently-asked-questions)
+  - [After I create a new repository from this template and setup the repo, I get a deployment error. Isn't the website supposed to correctly deploy automatically?](#after-i-create-a-new-repository-from-this-template-and-setup-the-repo-i-get-a-deployment-error-isnt-the-website-supposed-to-correctly-deploy-automatically)
+  - [I am using a custom domain (e.g., `foo.com`). My custom domain becomes blank in the repository settings after each deployment. How do I fix that?](#i-am-using-a-custom-domain-eg-foocom-my-custom-domain-becomes-blank-in-the-repository-settings-after-each-deployment-how-do-i-fix-that)
+  - [My webpage works locally. But after deploying, it fails to build and throws `Unknown tag 'toc'`. How do I fix that?](#my-webpage-works-locally-but-after-deploying-it-fails-to-build-and-throws-unknown-tag-toc-how-do-i-fix-that)
+  - [My webpage works locally. But after deploying, it is not displayed correctly (CSS and JS are not loaded properly). How do I fix that?](#my-webpage-works-locally-but-after-deploying-it-is-not-displayed-correctly-css-and-js-are-not-loaded-properly-how-do-i-fix-that)
+  - [Atom feed doesn't work. Why?](#atom-feed-doesnt-work-why)
+  - [My site doesn't work when I enable `related_blog_posts`. Why?](#my-site-doesnt-work-when-i-enable-related_blog_posts-why)
+  - [When trying to deploy, it's asking for github login credentials, which github disabled password authentication and it exits with an error. How to fix?](#when-trying-to-deploy-its-asking-for-github-login-credentials-which-github-disabled-password-authentication-and-it-exits-with-an-error-how-to-fix)
+  - [When I manually run the Lighthouse Badger workflow, it fails with `Error: Input required and not supplied: token`. How do I fix that?](#when-i-manually-run-the-lighthouse-badger-workflow-it-fails-with-error-input-required-and-not-supplied-token-how-do-i-fix-that)
+  - [My code runs fine locally, but when I create a commit and submit it, it fails with `prettier code formatter workflow run failed for main branch`. How do I fix that?](#my-code-runs-fine-locally-but-when-i-create-a-commit-and-submit-it-it-fails-with-prettier-code-formatter-workflow-run-failed-for-main-branch-how-do-i-fix-that)
+  - [After I update my site with some new content, even a small change, the GitHub action throws an error or displays a warning. What happened?](#after-i-update-my-site-with-some-new-content-even-a-small-change-the-github-action-throws-an-error-or-displays-a-warning-what-happened)
+  - [How do I upgrade from al-folio `v1.0` to `v1.1+` with minimal friction?](#how-do-i-upgrade-from-al-folio-v10-to-v11-with-minimal-friction)
+  - [Do I need to fork every v1 gem to customize layouts and Liquid files?](#do-i-need-to-fork-every-v1-gem-to-customize-layouts-and-liquid-files)
+  - [How do I know when a local override is stale after a plugin update?](#how-do-i-know-when-a-local-override-is-stale-after-a-plugin-update)
+  - [Why does `v1.x` starter not have `npm run build:css` anymore?](#why-does-v1x-starter-not-have-npm-run-buildcss-anymore)
+  - [Jupyter posts are enabled, but my build says `jupyter-nbconvert` is missing. What are my options?](#jupyter-posts-are-enabled-but-my-build-says-jupyter-nbconvert-is-missing-what-are-my-options)
+  - [How do I handle legacy Bootstrap-marked pages on Tailwind-first `v1.x`?](#how-do-i-handle-legacy-bootstrap-marked-pages-on-tailwind-first-v1x)
+  - [How does sidebar table of contents work in `v1.x`?](#how-does-sidebar-table-of-contents-work-in-v1x)
+  - [Why does `pretty_table: true` still work when Bootstrap compatibility is disabled?](#why-does-pretty_table-true-still-work-when-bootstrap-compatibility-is-disabled)
+  - [Why does Lightbox2 work without jQuery in `v1.x`?](#why-does-lightbox2-work-without-jquery-in-v1x)
+  - [I am trying to deploy my site, but it fails with `Could not find gem 'jekyll-diagrams' in locally installed gems`. How do I fix that?](#i-am-trying-to-deploy-my-site-but-it-fails-with-could-not-find-gem-jekyll-diagrams-in-locally-installed-gems-how-do-i-fix-that)
+  - [How can I update icon library versions on the template](#how-can-i-update-icon-library-versions-on-the-template)
+  - [How should I name plugins in `v1.x`?](#how-should-i-name-plugins-in-v1x)
+  - [How can I propose featuring my plugin in `al-folio`?](#how-can-i-propose-featuring-my-plugin-in-al-folio)
+  - [Why does plugin integration use `Gemfile` + `_config.yml` instead of a gemspec?](#why-does-plugin-integration-use-gemfile--_configyml-instead-of-a-gemspec)
+  - [What do all these GitHub actions/workflows mean?](#what-do-all-these-github-actionsworkflows-mean)
+  - [How can I use Google Search Console ID on the template?](#how-can-i-use-google-search-console-id-on-the-template)
+  - [What are Code Wiki and DeepWiki?](#what-are-code-wiki-and-deepwiki)
+    - [When to use these tools](#when-to-use-these-tools)
+    - [What they do](#what-they-do)
+    - [Limitations](#limitations)
+    - [Access these tools](#access-these-tools)
 
 <!--te-->
 
-## Recommended Approach
+## After I create a new repository from this template and setup the repo, I get a deployment error. Isn't the website supposed to correctly deploy automatically?
 
-The recommended approach for using **al-folio** is to first create your own site using the template with as few changes as possible, and only when it is up and running customize it however you like. This way it is easier to pinpoint what causes a potential issue in case of a bug.
+Yes, if you are using release `v0.3.5` or later, the website will automatically and correctly re-deploy right after your first commit. Please make some changes (e.g., change your website info in `_config.yml`), commit, and push. Make sure to follow [deployment instructions](INSTALL.md#deployment). (Relevant issue: [209](https://github.com/alshedivat/al-folio/issues/209#issuecomment-798849211).)
 
-**For the quickest setup**, follow the [Quick Start Guide](QUICKSTART.md), which will have you up and running in 5 minutes.
+## I am using a custom domain (e.g., `foo.com`). My custom domain becomes blank in the repository settings after each deployment. How do I fix that?
 
-### Template vs. Fork: Which Should I Use?
+You need to add `CNAME` file to the `main` or `source` branch of your repository. The file should contain your custom domain name. (Relevant issue: [130](https://github.com/alshedivat/al-folio/issues/130).)
 
-**Use the "Use this template" button** (recommended) when creating your own al-folio site. This creates a clean, independent copy that is not linked to the main al-folio repository.
+## My webpage works locally. But after deploying, it fails to build and throws `Unknown tag 'toc'`. How do I fix that?
 
-**If you already forked the repository**, your fork will work fine, but you should be aware of a common pitfall:
+Make sure you followed through the [deployment instructions](INSTALL.md#deployment) in `INSTALL.md`. You should have set the deployment branch to `gh-pages`. (Related issue: [1438](https://github.com/alshedivat/al-folio/issues/1438).)
 
-- Forks maintain a connection to the original repository, which can make it easy to accidentally submit pull requests to al-folio with your personal site changes
-- **Solution:** When making changes to your fork, always create a new branch (e.g., `git checkout -b my-site-updates`) and verify that you're pushing to **your own fork** before submitting pull requests
-- Only submit pull requests to `alshedivat/al-folio` if you're intentionally contributing improvements that benefit the entire al-folio community
+## My webpage works locally. But after deploying, it is not displayed correctly (CSS and JS are not loaded properly). How do I fix that?
 
-### Important Notes for GitHub Pages Sites
+If the website does not load the theme, the layout looks weird, and all links are broken, being the main page displayed this way:
 
-If you plan to upload your site to `<your-github-username>.github.io`, the repository name :warning: **MUST BE** :warning: `<your-github-username>.github.io` or `<your-github-orgname>.github.io`, as stated in the [GitHub pages docs](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#types-of-github-pages-sites).
+<img src="../assets/img/template_error.png" width="500">
 
-When configuring `_config.yml`, set `url` to `https://<your-github-username>.github.io` and leave `baseurl` **empty** (do NOT delete it), setting it as `baseurl:`.
+make sure to correctly specify the `url` and `baseurl` paths in `_config.yml`. Set `url` to `https://<your-github-username>.github.io` or to `https://<your.custom.domain>` if you are using a custom domain. If you are deploying a <ins>personal</ins> or <ins>organization</ins> website, leave `baseurl` **empty** (do **NOT** delete it). If you are deploying a project page, set `baseurl: /<your-project-name>/`. If all previous steps were done correctly, all is missing is for your browser to fetch again the site stylesheet. For this, you can:
 
-### Automatic Deployment
+- press [Shift + F5 on Chromium-based](https://support.google.com/chrome/answer/157179#zippy=%2Cwebpage-shortcuts) or [Ctrl + F5 on Firefox-based](https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly) browsers to reload the page ignoring cached content
+- clean your browser history
+- simply try it in a private session, here's how to do it in [Chrome](https://support.google.com/chrome/answer/95464) and [Firefox](https://support.mozilla.org/en-US/kb/private-browsing-use-firefox-without-history)
 
-Starting version [v0.3.5](https://github.com/alshedivat/al-folio/releases/tag/v0.3.5), **al-folio** will automatically re-deploy your webpage each time you push new changes to your repository! :sparkles:
+## Atom feed doesn't work. Why?
 
-### Local Development
+Make sure to correctly specify the `url` and `baseurl` paths in `_config.yml`. RSS Feed plugin works with these correctly set up fields: `title`, `url`, `description` and `author`. Make sure to fill them in an appropriate way and try again.
 
-Once everything is deployed, you can download the repository to your machine and start customizing it locally:
+## My site doesn't work when I enable `related_blog_posts`. Why?
 
-```bash
-git clone git@github.com:<your-username>/<your-repo-name>.git
-```
+This is probably due to the [classifier reborn](https://github.com/jekyll/classifier-reborn) plugin, which is used to calculate related posts. If the error states `Liquid Exception: Zero vectors can not be normalized...` or `sqrt': Numerical argument is out of domain - "sqrt"`, it means that it could not calculate related posts for a specific post. This is usually caused by [empty or minimal blog posts](https://github.com/jekyll/classifier-reborn/issues/64) without meaningful words (i.e. only [stop words](https://en.wikipedia.org/wiki/Stop_words)) or even [specific characters](https://github.com/jekyll/classifier-reborn/issues/194) you used in your posts. Also, the calculus for similar posts are made for every `post`, which means every page that uses `layout: post`, including the announcements. To change this behavior, simply add `related_posts: false` to the front matter of the page you don't want to display related posts on. Another solution is to disable the lsi (latent semantic indexing) entirely by setting the `lsi` flag to `false` in `_config.yml`. Related issue: [#1828](https://github.com/alshedivat/al-folio/issues/1828).
 
-See [Local setup using Docker](#local-setup-using-docker-recommended) or other sections below for local development options.
+## When trying to deploy, it's asking for github login credentials, which github disabled password authentication and it exits with an error. How to fix?
 
-## Local setup on Windows
+Open .git/config file using your preferred editor. Change the `https` portion of the `url` variable to `ssh`. Try deploying again.
 
-If you are using Windows, it is **highly recommended** to use [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install), which is a compatibility layer for running Linux on top of Windows. You can follow [these instructions](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-11-with-gui-support) to install WSL and Ubuntu on your machine. You only need to go up to the step 4 of the tutorial (you don't have to enable the optional `systemd` nor the graphical applications), and then you can follow the instructions below to install docker. You can install docker natively on Windows as well, but it has been having some issues as can be seen in [#1540](https://github.com/alshedivat/al-folio/issues/1540), [#2007](https://github.com/alshedivat/al-folio/issues/2007).
+## When I manually run the Lighthouse Badger workflow, it fails with `Error: Input required and not supplied: token`. How do I fix that?
 
-## Local setup using Docker (Recommended)
+You need to [create a personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token) and [add it as a secret](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions#creating-encrypted-secrets-for-a-repository) named `LIGHTHOUSE_BADGER_TOKEN` to your repository. For more information, check [lighthouse-badger documentation](https://github.com/MyActionWay/lighthouse-badger-workflows#lighthouse-badger-easyyml) on how to do this.
 
-Using Docker to install Jekyll and Ruby dependencies is the easiest way.
+## My code runs fine locally, but when I create a commit and submit it, it fails with `prettier code formatter workflow run failed for main branch`. How do I fix that?
 
-You need to take the following steps to get `al-folio` up and running on your local machine:
+We implemented support for [Prettier code formatting](https://prettier.io/) in [#2048](https://github.com/alshedivat/al-folio/pull/2048). It basically ensures that your code is [well formatted](https://prettier.io/docs/en/). If you want to ensure your code is compliant with `Prettier`, you have a few options:
 
-- First, install [docker](https://docs.docker.com/get-docker/) and [docker-compose](https://docs.docker.com/compose/install/).
-- Finally, run the following command that will pull the latest pre-built image from DockerHub and will run your website.
+- if you are running locally with `Docker` and using [development containers](INSTALL.md#local-setup-with-development-containers), `Prettier` is already included
+- if you don't use `Docker`, it is simple to integrate it with your preferred IDE using an [extension](https://prettier.io/docs/en/editors)
+- if you want to run it manually, you can follow the first 2 steps in [this tutorial](https://george-gca.github.io/blog/2023/slidev_for_non_web_devs/) (`Installing node version manager (nvm)` and `Installing Node (latest version)`), then, install it using `npm install prettier` inside the project directory, or install it globally on your computer using `npm install -g prettier`. To run `Prettier` on your current directory use `npx prettier . --write`.
 
-```bash
-docker compose pull
-docker compose up
-```
+You can also disable it for your repo. For this, just delete the file [.github/workflows/prettier.yml](https://github.com/alshedivat/al-folio/blob/main/.github/workflows/prettier.yml).
 
-Note that when you run it for the first time, it will download a docker image of size 400MB or so. To see the template running, open your browser and go to `http://localhost:8080`. You should see a copy of the theme's demo website.
+## After I update my site with some new content, even a small change, the GitHub action throws an error or displays a warning. What happened?
 
-Now, feel free to customize the theme however you like (don't forget to change the name!). Also, your changes should be automatically rendered in real-time (or maybe after a few seconds).
-
-For v1.x, Docker serves from a container-local destination (`/tmp/_site`) to avoid host bind-mount write deadlocks during notebook and asset generation.
-
-> Beta: You can also try the slimmed docker image with `docker compose -f docker-compose-slim.yml up`, but it may lag behind the full image on some host architectures.
-
-### Build your own docker image
-
-> Note: this approach is only necessary if you would like to build an older or very custom version of al-folio.
-
-Build and run a new docker image using:
+Probably your GitHub workflow is throwing an error like this:
 
 ```bash
-docker compose up --build
+/opt/hostedtoolcache/Ruby/3.0.2/x64/lib/ruby/gems/3.0.0/gems/bundler-2.5.5/lib/bundler/runtime.rb:304:in `check_for_activated_spec!': You have already activated uri 0.10.1, but your Gemfile requires uri 0.13.0. Since uri is a default gem, you can either remove your dependency on it or try updating to a newer version of bundler that supports uri as a default gem. (Gem::LoadError)
 ```
 
-> If you want to update jekyll, install new ruby packages, etc., all you have to do is build the image again using `--force-recreate` argument at the end of the previous command! It will download Ruby and Jekyll and install all Ruby packages again from scratch.
-
-If you want to use a specific docker version, you can do so by changing the version tag to `your_version` in `docker-compose.yml` (for example, `image: amirpourmand/al-folio:v1.0.0`). Plugin patch releases do not require a new starter Docker image unless the starter wiring, lockfile, Dockerfile, or image build inputs change.
-
-### Have Bugs on Docker Image?
-
-Sometimes, there might be some bugs in the current docker image. It might be version mismatch or anything. If you want to debug and easily solve the problem for yourself you can do the following steps:
+or maybe displaying a warning like one of these:
 
 ```
-docker compose up -d
-docker compose logs
+Node.js 16 actions are deprecated. Please update the following actions to use Node.js 20: actions/checkout@v3. For more information see: https://github.blog/changelog/2023-09-22-github-actions-transitioning-from-node-16-to-node-20/.
+Node.js 16 actions are deprecated. Please update the following actions to use Node.js 20: actions/checkout@v2, actions/cache@v2. For more information see: https://github.blog/changelog/2023-09-22-github-actions-transitioning-from-node-16-to-node-20/.
+The following actions uses node12 which is deprecated and will be forced to run on node16: actions/checkout@v2, actions/cache@v2. For more info: https://github.blog/changelog/2023-06-13-github-actions-all-actions-will-run-on-node16-instead-of-node12-by-default/
+The `set-output` command is deprecated and will be disabled soon. Please upgrade to using Environment Files. For more information see: https://github.blog/changelog/2022-10-11-github-actions-deprecating-save-state-and-set-output-commands/
 ```
 
-Then you can see the bug! You can enter the container via this command:
-
-```
-docker compose exec -it jekyll /bin/bash
-```
-
-Then you can run the script:
-
-```
-./bin/entry_point.sh
-```
-
-You might see problems for package dependecy or something which is not available. You can fix it now by using
-
-```
-bundle install
-./bin/entry_point.sh
-```
-
-Most likely, this will solve the problem but it shouldn't really happen. So, please open a bug report for us.
-
-## Local Setup with Development Containers
-
-`al-folio` supports [Development Containers](https://containers.dev/supporting).
-For example, when you open the repository with Visual Studio Code (VSCode), it prompts you to install the necessary extension and automatically install everything necessary.
-
-## Local Setup (Legacy, no longer supported)
-
-For a hands-on walkthrough of running al-folio locally without using Docker, check out [this cool blog post](https://george-gca.github.io/blog/2022/running-local-al-folio/) by one of the community members!
-
-Assuming you have [Ruby](https://www.ruby-lang.org/en/downloads/) and [Bundler](https://bundler.io/) installed on your system (_hint: for ease of managing ruby gems, consider using [rbenv](https://github.com/rbenv/rbenv)_), and also [Python](https://www.python.org/) and [pip](https://pypi.org/project/pip/) (_hint: for ease of managing python packages, consider using a virtual environment, like [venv](https://docs.python.org/pt-br/3/library/venv.html) or `conda`_).
+If that's the case, you are using deprecated libraries/commands. This happens because you are using an old version of al-folio. Follow the [upgrade guide](INSTALL.md#upgrading-from-a-previous-version) and run the upgrade CLI:
 
 ```bash
-bundle install
-# optional but recommended if you use jupyter posts:
-# installs jupyter + nbconvert for jekyll-jupyter-notebook
-./bin/setup-python-deps
-# or manually:
-# python3 -m pip install --user --break-system-packages jupyter nbconvert
-bundle exec jekyll serve
-```
-
-In `v1.x`, `al-folio` is a thin starter. Do not run starter-local npm build commands for theme/runtime assets; those are owned by `al-*` gems and loaded through plugin contracts.
-Interactive TOC (`toc.sidebar`) and TikZ (`tikzjax: true`) use pinned CDN runtime assets from `_config.yml` (`third_party_libraries.tocbot` and `third_party_libraries.tikzjax`), not install-time downloads.
-
-Starter plugin wiring lives in:
-
-- [Gemfile](../Gemfile) for dependency declarations
-- [\_config.yml](../_config.yml) for Jekyll plugin activation/config
-
-`al-folio` starter does not currently use a gemspec; contributor/plugin integration docs should reference the two files above.
-
-If `jekyll-jupyter-notebook` is enabled and `jupyter-nbconvert` is missing, builds continue but notebook rendering is skipped with a warning.
-
-To see the template running, open your browser and go to `http://localhost:4000`. You should see a copy of the theme's [demo website](https://alshedivat.github.io/al-folio/). Now, feel free to customize the theme however you like. After you are done, remember to **commit** your final changes.
-
-## Deployment
-
-Deploying your website to [GitHub Pages](https://pages.github.com/) is the most popular option.
-Starting version [v0.3.5](https://github.com/alshedivat/al-folio/releases/tag/v0.3.5), **al-folio** will automatically re-deploy your webpage each time you push new changes to your repository **main branch**! :sparkles:
-
-### For personal and organization webpages
-
-1. The name of your repository **MUST BE** `<your-github-username>.github.io` or `<your-github-orgname>.github.io`.
-2. In `_config.yml`, set `url` to `https://<your-github-username>.github.io` and leave `baseurl` empty.
-3. Set up automatic deployment of your webpage (see instructions below).
-4. Make changes to your main branch, commit, and push!
-5. After deployment, the webpage will become available at `<your-github-username>.github.io`.
-
-### For project pages
-
-1. In `_config.yml`, set `url` to `https://<your-github-username>.github.io` and `baseurl` to `/<your-repository-name>/`.
-2. Set up automatic deployment of your webpage (see instructions below).
-3. Make changes to your main branch, commit, and push!
-4. After deployment, the webpage will become available at `<your-github-username>.github.io/<your-repository-name>/`.
-
-### Enabling automatic deployment
-
-1. Click on **Actions** tab and **Enable GitHub Actions**; do not worry about creating any workflows as everything has already been set for you.
-2. Go to `Settings -> Actions -> General -> Workflow permissions`, and give `Read and write permissions` to GitHub Actions
-3. Make any other changes to your webpage, commit, and push to your main branch. This will automatically trigger the **Deploy** action.
-4. Wait for a few minutes and let the action complete. You can see the progress in the **Actions** tab. If completed successfully, in addition to the `main` branch, your repository should now have a newly built `gh-pages` branch. **Do NOT touch this branch!**
-5. Finally, in the **Settings** of your repository, in the Pages section, set the branch to `gh-pages` (**NOT** to `main`). For more details, see [Configuring a publishing source for your GitHub Pages site](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#choosing-a-publishing-source).
-
-If you keep your site on another branch, open `.github/workflows/deploy.yml` **on the branch you keep your website on** and change `on->push->branches` and `on->pull\_request->branches` to the branch you keep your website on. This will trigger the action on pulls/pushes on that branch. The action will then deploy the website on the branch it was triggered from.
-
-### Manual deployment to GitHub Pages
-
-If you need to manually re-deploy your website to GitHub pages, go to Actions, click "Deploy" in the left sidebar, then "Run workflow."
-
-### Deploy on [Netlify](https://www.netlify.com/)
-
-1. [Use this template -> Create a new repository](https://github.com/new?template_name=al-folio&template_owner=alshedivat).
-2. Netlify: **Add new site** -> **Import an existing project** -> **GitHub** and give Netlify access to the repository you just created.
-3. Netlify: In the deploy settings
-   - Set **Branch to deploy** to `main`
-   - **Base directory** is empty
-   - Set **Build command** to `sed -i "s/^\(baseurl: \).*$/baseurl:/" _config.yml && bundle exec jekyll build`
-   - Set **Publish directory** to `_site`
-
-4. Netlify: Add the following two **environment variables**
-   - | Key            | Value                                                                                  |
-     | -------------- | -------------------------------------------------------------------------------------- |
-     | `JEKYLL_ENV`   | `production`                                                                           |
-     | `RUBY_VERSION` | set to the Ruby version found in `.github/workflows/deploy.yml` (for example, `3.3.5`) |
-
-5. Netlify: Click **Deploy** and wait for the site to be published. If you want to use your own domain name, follow the steps in [this documentation](https://docs.netlify.com/domains-https/custom-domains/).
-
-### Deployment to another hosting server (non GitHub Pages)
-
-If you decide to not use GitHub Pages and host your page elsewhere, simply run:
-
-```bash
-bundle exec jekyll build
-```
-
-which will (re-)generate the static webpage in the `_site/` folder.
-Then simply copy the contents of the `_site/` directory to your hosting server.
-
-If you also want to remove unused css classes from your file, run:
-
-```bash
-purgecss -c purgecss.config.js
-```
-
-which will replace the css files in the `_site/assets/css/` folder with the purged css files.
-
-**Note:** Make sure to correctly set the `url` and `baseurl` fields in `_config.yml` before building the webpage. If you are deploying your webpage to `your-domain.com/your-project/`, you must set `url: your-domain.com` and `baseurl: /your-project/`. If you are deploying directly to `your-domain.com`, leave `baseurl` blank, **do not delete it**.
-
-### Deployment to a separate repository (advanced users only)
-
-**Note:** Do not try using this method unless you know what you are doing (make sure you are familiar with [publishing sources](https://help.github.com/en/github/working-with-github-pages/about-github-pages#publishing-sources-for-github-pages-sites)). This approach allows to have the website's source code in one repository and the deployment version in a different repository.
-
-Let's assume that your website's publishing source is a `publishing-source` subdirectory of a git-versioned repository cloned under `$HOME/repo/`.
-For a user site this could well be something like `$HOME/<user>.github.io`.
-
-Firstly, from the deployment repo dir, checkout the git branch hosting your publishing source.
-
-Then from the website sources dir (commonly your al-folio fork's clone):
-
-```bash
-bundle exec jekyll build --destination $HOME/repo/publishing-source
-```
-
-This will instruct jekyll to deploy the website under `$HOME/repo/publishing-source`.
-
-**Note:** Jekyll will clean `$HOME/repo/publishing-source` before building!
-
-The quote below is taken directly from the [jekyll configuration docs](https://jekyllrb.com/docs/configuration/options/):
-
-> Destination folders are cleaned on site builds
->
-> The contents of `<destination>` are automatically cleaned, by default, when the site is built. Files or folders that are not created by your site will be removed. Some files could be retained by specifying them within the `<keep_files>` configuration directive.
->
-> Do not use an important location for `<destination>`; instead, use it as a staging area and copy files from there to your web server.
-
-If `$HOME/repo/publishing-source` contains files that you want jekyll to leave untouched, specify them under `keep_files` in `_config.yml`.
-In its default configuration, al-folio will copy the top-level `README.md` to the publishing source. If you want to change this behavior, add `README.md` under `exclude` in `_config.yml`.
-
-**Note:** Do _not_ run `jekyll clean` on your publishing source repo as this will result in the entire directory getting deleted, irrespective of the content of `keep_files` in `_config.yml`.
-
-## Maintaining Dependencies
-
-**al-folio** uses **Bundler** (a Ruby dependency manager) to keep track of Ruby packages (called "gems") needed to run Jekyll and its plugins.
-
-**To update all dependencies:**
-
-```bash
-bundle update --all
-```
-
-**After updating:**
-
-1. Rebuild the Docker image to apply changes: `docker compose up --build`
-2. Test locally to ensure everything still works: `docker compose up`
-3. Visit `http://localhost:8080` and verify the site renders correctly
-4. If your site fails after updating, check the [FAQ](FAQ.md) for troubleshooting
-
-**For Ruby/Python environment issues:**
-
-- Always use Docker for consistency with CI/CD (see [Local setup using Docker](#local-setup-using-docker-recommended))
-- Avoid manual Ruby/Python installation when possible
-
-## Upgrading from a previous version
-
-Starting with `v1.0`, **al-folio** ships an upgrade CLI (`al_folio_upgrade`) and versioned migration manifests from `al_folio_core` to make minor upgrades (`v1.0 -> v1.1 -> v1.2`) predictable.
-
-### Recommended workflow (v1.x)
-
-```bash
-# 1) Update dependencies
-bundle update
-
-# 2) Audit your site for breaking/deprecated patterns
 bundle exec al-folio upgrade audit
-
-# 3) Apply deterministic codemods (optional)
 bundle exec al-folio upgrade apply --safe
-
-# 4) Generate a report for manual follow-up
 bundle exec al-folio upgrade report
 ```
 
-`al-folio` starter is intentionally thin in `v1.x`: layouts/includes/core assets are provided by `al_folio_core`, so regular upgrades do not require rebuilding Tailwind in the starter repo.
+Note that libraries tend to be deprecated and support for them dropped as they are no longer maintained, and keep using them involves security breaches. Also, some of these deprecations are enforced, for example, by GitHub itself, so there's so much we can do. We have also added tons of new functionality, as well as tidying things up and improving the overall speed and structure, so you could also benefit from these improvements.
 
-The report is written to `al-folio-upgrade-report.md` and classifies findings as:
+## How do I upgrade from al-folio `v1.0` to `v1.1+` with minimal friction?
 
-- **Blocking**: must be resolved before the target upgrade is considered complete
-- **Non-blocking**: deprecated patterns that should be migrated over time
+Use the SemVer migration flow:
 
-### Legacy Bootstrap content
+1. `bundle update`
+2. `bundle exec al-folio upgrade audit`
+3. `bundle exec al-folio upgrade overrides audit`
+4. `bundle exec al-folio upgrade apply --safe` (optional)
+5. `bundle exec al-folio upgrade report`
 
-`v1.0` is Tailwind-first. If your content still relies on Bootstrap-marked classes/behaviors:
+Then resolve all **Blocking** findings in `al-folio-upgrade-report.md`. Non-blocking findings are deprecated patterns you can migrate incrementally.
 
-1. Enable `al_folio.compat.bootstrap.enabled: true` in `_config.yml`
-2. Ensure `al_folio_bootstrap_compat` is in your plugins/dependencies
-3. Complete migration gradually
-4. Disable compatibility mode before `v1.3` (compat is supported through `v1.2`, deprecated in `v1.3`, removed in `v2.0`)
+For starter-based sites, keep `theme: al_folio_core` and avoid copying theme internals into your repo unless you intentionally need overrides.
 
-### Older pre-v1 installs
+## Do I need to fork every v1 gem to customize layouts and Liquid files?
 
-For heavily customized pre-v1 repositories, you can still use rebase/cherry-pick workflows if needed, but the recommended path is:
+No. In `v1.x`, gem-owned layouts/includes/assets provide the default runtime, but your site can still override a file locally by adding the same path in your starter repo, for example `_layouts/bib.liquid` or `_includes/repository/repo.liquid`.
 
-1. Start from the v1 starter/runtime contract and copy your site-owned files over: `_config.yml` values, `_data`, content collections, assets, Sass overrides, and intentional local `_layouts`/`_includes` overrides.
-2. Keep `theme: al_folio_core`, the `al_folio` config namespace, and the bundled `al_*` plugin entries from the v1 starter.
-3. Enable `al_folio.compat.bootstrap.enabled: true` if your custom templates still use Bootstrap classes or `data-toggle` attributes.
-4. Run the upgrade audit/codemods.
-5. Run the local override audit.
-6. Fix all blocking findings from `al-folio-upgrade-report.md`.
-7. Build locally and review key pages before deploying.
+Use this rule of thumb:
 
-For ownership boundaries (starter vs gem runtime/tests), see [`BOUNDARIES.md`](BOUNDARIES.md).
+- Keep site-specific content, data, Sass, and intentional local overrides in your site repo.
+- Remove old copied runtime files when v1 gems own them now, especially `_includes/head.liquid`, `_includes/scripts.liquid`, `assets/js/distillpub/**`, `assets/js/search/**`, and old citation/external-post helper plugins.
+- Fork or pin a plugin only when you want to change plugin-owned behavior for every site using that plugin.
+- Run `bundle exec al-folio upgrade overrides audit` after dependency updates to identify local overrides whose upstream plugin files changed.
+- Commit `.al-folio-overrides.yml` after reviewing intentional overrides so future gem updates can flag stale copies explicitly.
 
-#### Migrating heavily customized pre-v1 sites
+## How do I know when a local override is stale after a plugin update?
 
-The safest migration pattern is to keep custom site code local, but stop carrying old copies of runtime files that v1 gems now own.
-
-Keep these in your site repo:
-
-- content collections such as `_pages`, `_projects`, `_news`, `_bibliography`, `_data`, and site assets
-- intentional local overrides such as `_layouts/bib.liquid`, `_includes/repository/repo.liquid`, or custom Sass files
-- custom plugins that are truly site-specific
-- local path or Git-pinned gems when you intentionally maintain a custom plugin variant
-
-Run these checks early:
-
-```bash
-bundle exec al-folio upgrade audit --no-fail
-bundle exec al-folio upgrade overrides audit
-bundle exec al-folio upgrade report
-```
-
-The report calls out plugin-owned local files that usually should be removed or replaced by v1 plugin wiring. The override audit catches intentional local copies of plugin-owned files and records the upstream version you reviewed.
-
-Remove or review these during migration:
-
-- `_includes/head.liquid` and `_includes/scripts.liquid` if they only copy old al-folio runtime setup
-- old local citation and external-post plugins now owned by `al_citations` and `al_ext_posts`
-- `assets/js/distillpub/**` now owned by `al_folio_distill`
-- `assets/js/search/**` now owned by `al_search`
-- starter sample content that does not exist in your old site, such as sample `_posts`
-
-To pin a plugin while testing a local fix:
-
-```ruby
-gem "al_folio_core", git: "https://github.com/YOUR-USER/al-folio-core.git", branch: "my-fix"
-```
-
-To use a local plugin checkout:
-
-```ruby
-gem "al_folio_core", path: "../al-folio-core"
-```
-
-Only fork a plugin when the behavior you need belongs to that plugin. A local layout/include/Sass override in your site repo is enough for one-off site customization.
-
-#### Tracking local override drift
-
-Local overrides are still supported in v1, but Git will not conflict when a gem updates the upstream file that your local copy shadows. Use `al_folio_upgrade` to restore that review signal:
+Use the override audit workflow:
 
 ```bash
 bundle exec al-folio upgrade overrides audit
@@ -403,4 +152,227 @@ bundle exec al-folio upgrade overrides diff _includes/repository/repo.liquid
 bundle exec al-folio upgrade overrides accept _includes/repository/repo.liquid
 ```
 
-Commit `.al-folio-overrides.yml` in customized sites. It stores the owning gem, gem version, upstream checksum, and local checksum for each reviewed override. After future `bundle update` runs, `bundle exec al-folio upgrade overrides audit` flags overrides whose upstream plugin file changed.
+The audit compares local overrides with files shipped by installed `al-*` gems. The acknowledgement file `.al-folio-overrides.yml` stores the upstream checksum you reviewed. When a future gem update changes that upstream file, the audit marks your local override as stale so you can reconcile it.
+
+## Why does `v1.x` starter not have `npm run build:css` anymore?
+
+`al-folio` is a thin starter in `v1.x`. Tailwind/runtime build ownership moved to gem repos (primarily `al_folio_core` and feature gems), so starter builds do not require local npm CSS build commands.
+
+Use starter tests for:
+
+- visual regression/parity checks
+- cross-gem integration checks
+
+Use gem repos for:
+
+- component correctness/unit tests
+- plugin/runtime asset contract tests
+
+See [`BOUNDARIES.md`](BOUNDARIES.md) for the ownership contract.
+
+## Jupyter posts are enabled, but my build says `jupyter-nbconvert` is missing. What are my options?
+
+`jekyll-jupyter-notebook` depends on Python tooling (`jupyter` + `nbconvert`), and Bundler cannot install Python packages for you.
+
+Recommended options:
+
+1. Install Python deps locally:
+
+```bash
+./bin/setup-python-deps
+```
+
+2. Or install manually in your Python environment:
+
+```bash
+python3 -m pip install --user --break-system-packages jupyter nbconvert
+```
+
+3. If you do not need notebook rendering, disable/remove the plugin from `_config.yml`.
+
+In `v1.x`, missing `jupyter-nbconvert` is treated as warn-and-continue; notebook rendering is skipped until deps are installed.
+
+## How do I handle legacy Bootstrap-marked pages on Tailwind-first `v1.x`?
+
+`v1.x` core is Tailwind-first. If your content still relies on Bootstrap-marked classes or `data-toggle` behavior, enable compatibility mode temporarily:
+
+```yaml
+al_folio:
+  compat:
+    bootstrap:
+      enabled: true
+```
+
+Compatibility timeline:
+
+- Supported through `v1.2`
+- Deprecated in `v1.3`
+- Removed in `v2.0`
+
+The compatibility runtime (`/assets/css/bootstrap-compat.css` and `/assets/js/bootstrap-compat.js`) is provided by the `al_folio_bootstrap_compat` gem when enabled.
+
+## How does sidebar table of contents work in `v1.x`?
+
+`v1.x` uses Tocbot for sidebar TOC rendering when page front matter includes:
+
+```yaml
+toc:
+  sidebar: left # or right
+  collapse: expanded # or auto
+```
+
+Tocbot runtime assets are loaded from pinned CDN entries in `_config.yml` under `third_party_libraries.tocbot`.
+If needed, heading labels can be overridden using `data-toc-text` attributes.
+Use `collapse: auto` to expand nested TOC branches as the active section changes during scrolling.
+
+## Why does `pretty_table: true` still work when Bootstrap compatibility is disabled?
+
+When `al_folio.compat.bootstrap.enabled: false`, `v1.x` uses a built-in vanilla Tailwind table engine for `table[data-toggle="table"]` markup.
+It supports search, pagination, sortable columns, and click-to-select without requiring Bootstrap Table runtime.
+
+When compatibility is enabled, Bootstrap Table remains available for legacy content.
+
+## Why does Lightbox2 work without jQuery in `v1.x`?
+
+In `v1.x`, `al_img_tools` provides a plugin-owned lightbox adapter for `data-lightbox` markup, so lightbox galleries no longer depend on jQuery.
+Author-facing markup stays the same (`images.lightbox2: true` and `data-lightbox` links).
+
+## I am trying to deploy my site, but it fails with `Could not find gem 'jekyll-diagrams' in locally installed gems`. How do I fix that?
+
+`jekyll-diagrams` support was dropped in [#1992](https://github.com/alshedivat/al-folio/pull/1992) in favor of using `mermaid.js` directly. Simply [update your code](INSTALL.md#upgrading-from-a-previous-version) to get the latest changes.
+
+## How can I update icon library versions on the template
+
+In `v1.x`, icon runtime ownership is provided by `al_icons`, and icons are loaded from pinned CDN URLs configured in `_config.yml` under `third_party_libraries`.
+
+Update flow:
+
+1. Confirm `al_icons` is enabled in `plugins`.
+2. Update version values in `_config.yml`:
+   - `third_party_libraries.fontawesome.version`
+   - `third_party_libraries.academicons.version`
+   - `third_party_libraries.scholar-icons.version`
+3. Update corresponding `integrity.css` hashes.
+4. Rebuild your site and verify icon rendering on pages with socials/publications.
+
+Do not copy icon fonts into `assets/fonts/` or `assets/webfonts/` in the starter for `v1.x`; those local runtime assets are no longer starter-owned.
+
+## How should I name plugins in `v1.x`?
+
+Use the hybrid naming model:
+
+- Theme-coupled plugins:
+  - repo: `al-folio-<feature>`
+  - gem/plugin id: `al_folio_<feature>`
+- Reusable plugins:
+  - repo: `al-<feature>` or neutral name
+  - gem/plugin id aligned with plugin namespace
+
+Third-party non-`al-*` plugins are still valid and can be featured.
+
+## How can I propose featuring my plugin in `al-folio`?
+
+Use the **Plugin Feature Proposal** issue template in this repo and include:
+
+1. plugin repo URL
+2. gem name and Jekyll plugin id
+3. compatibility range (`al_folio_min` / `al_folio_max`)
+4. owner/maintainer contact
+5. demo page/post path
+
+If maintainers decide to list it, update [`_data/featured_plugins.yml`](../_data/featured_plugins.yml) through a PR.
+If maintainers decide to bundle it by default, that is a separate decision and requires wiring updates in [Gemfile](../Gemfile) and [\_config.yml](../_config.yml).
+
+## Why does plugin integration use `Gemfile` + `_config.yml` instead of a gemspec?
+
+`al-folio` starter currently does not have a gemspec. Plugin integration is controlled by:
+
+- [Gemfile](../Gemfile) for dependency declarations
+- [\_config.yml](../_config.yml) for Jekyll plugin activation/configuration
+
+Any contribution guidance that references gemspec updates should be interpreted as starter wiring updates to those two files.
+
+## What do all these GitHub actions/workflows mean?
+
+GitHub actions are a way to automate tasks in the repository. They are defined in `.github/workflows/` directory. Each file in this directory is a workflow. Workflows are made up of one or more jobs, and each job runs on a virtual machine hosted by GitHub. You can see the status of the workflows in the `Actions` tab of your repository. For more information, check the [GitHub Actions documentation](https://docs.github.com/en/actions).
+
+Currently we ship the following workflows.
+
+Build and deployment:
+
+- `deploy.yml`: builds the site and deploys it to GitHub Pages (the `gh-pages` branch)
+- `render-cv.yml`: regenerates your CV PDF with [RenderCV](https://github.com/rendercv/rendercv) when `_data/cv.yml` or the files under `assets/rendercv/` change
+- `update-citations.yml`: runs `bin/update_scholar_citations.py` on a schedule to refresh `_data/citations.yml` with Google Scholar citation counts. See [Setting up a Personal Access Token (PAT) for Google Scholar Citation Updates](CUSTOMIZE.md#setting-up-a-personal-access-token-pat-for-google-scholar-citation-updates)
+- `update-tocs.yml`: regenerates the `<!--ts-->…<!--te-->` table of contents blocks in changed Markdown files
+
+Docker images:
+
+- `deploy-image.yml`: builds and pushes a new docker image with the latest changes to Docker Hub
+- `deploy-docker-tag.yml`: adds release metadata to the docker image and pushes a tagged image to Docker Hub
+- `docker-slim.yml`: publishes a smaller version of the docker image with the [docker-slim-action](https://github.com/kitabisa/docker-slim-action)
+
+Tests and quality checks:
+
+- `unit-tests.yml`: runs the starter style contract (`npm run lint:style-contract`) and all six cross-plugin integration tests in `test/`
+- `visual-regression.yml`: runs the [Playwright](https://playwright.dev/) visual parity suite on Chromium and WebKit, diffing the candidate build against a `v0.16.3` baseline build served alongside it
+- `upgrade-check.yml`: runs `bundle exec al-folio upgrade audit` to verify your site still satisfies the v1 config contract
+- `prettier.yml`: runs [prettier](https://prettier.io/) on the code to ensure it is well formatted. For more information, check our [FAQ question about it](#my-code-runs-fine-locally-but-when-i-create-a-commit-and-submit-it-it-fails-with-prettier-code-formatter-workflow-run-failed-for-main-branch-how-do-i-fix-that)
+- `prettier-html.yml`: manual-only (`workflow_dispatch`); formats the generated HTML on the `gh-pages` branch
+- `prettier-comment-on-pr.yml`: not working. For now, this action is disabled. It was supposed to run prettier on the PRs and comment on them with the changes needed. For more information, check [issue 2115](https://github.com/alshedivat/al-folio/issues/2115)
+- `codeql.yml`: runs GitHub's [CodeQL](https://codeql.github.com/) security analysis on pushes, pull requests, and a weekly schedule
+- `broken-links.yml`: checks for broken links in your repository with the [lychee-action](https://github.com/lycheeverse/lychee-action)
+- `broken-links-site.yml`: checks for broken links in your built website with the [lychee-action](https://github.com/lycheeverse/lychee-action), after a deploy completes
+- `axe.yml`: does some accessibility testing in your site. It uses the [axe cli](https://github.com/dequelabs/axe-core-npm/tree/develop/packages/cli) tool with a chrome driver to render the webpage and allow the analysis. Must be run manually, since fixing some of the issues is not straightforward
+- `lighthouse-badger.yml`: runs a [lighthouse](https://github.com/GoogleChrome/lighthouse) test for your site with the [lighthouse-badger-action](https://github.com/MyActionWay/lighthouse-badger-action), saving the results in the repository for easy inspecting, as can be seen [here](https://github.com/alshedivat/al-folio?tab=readme-ov-file#lighthouse-pagespeed-insights). For more information on how to enable this workflow, check our [FAQ question about it](#when-i-manually-run-the-lighthouse-badger-workflow-it-fails-with-error-input-required-and-not-supplied-token-how-do-i-fix-that)
+
+Agent tooling:
+
+- `copilot-setup-steps.yml`: pre-installs the toolchain (Ruby, Python, Node, ImageMagick, nbconvert) that the GitHub Copilot coding agent needs before it runs
+
+`.github/workflows/schedule-posts.txt` is not a workflow — it is a disabled template you can rename to `.yml` if you want scheduled post publishing.
+
+## How can I use Google Search Console ID on the template?
+
+In the configuration file `_config.yml` the tag `google-site-verification` should be updated to use this functionality. Here is how you can proceed,
+
+- Generate your HTML tag by following [https://support.google.com/webmasters/answer/9008080?hl=en#meta_tag_verification&zippy=%2Chtml-tag](https://support.google.com/webmasters/answer/9008080?hl=en#meta_tag_verification&zippy=%2Chtml-tag) with URL prefix option.
+- In the verify ownership option choose HTML tag and copy the tag contents which should look like `<meta name="google-site-verification" content="GoogleSearchConsoleID" />`.
+- The string against `content` is the Google Search Console ID that can be used in the template. e.g. `google-site-verification: GoogleSearchConsoleID`. Now set the property `enable_google_verification: true`.
+
+It looks like the Domain type property in the Google Search Console to verify the ownership of all URLs across all subdomains with GitHub Pages does not work.
+
+## What are Code Wiki and DeepWiki?
+
+**Code Wiki** and **DeepWiki** are AI-powered tools that help you understand GitHub repositories through interactive documentation. They should be treated as supplementary resources when you cannot find the information you need in the official project documentation.
+
+### When to use these tools
+
+**Use Code Wiki and DeepWiki only after**:
+
+- You have reviewed the relevant documentation files in this repository (`README.md`, `INSTALL.md`, `CUSTOMIZE.md`, `FAQ.md`, or `CONTRIBUTING.md`)
+- You have checked the [GitHub Discussions Q&A section](https://github.com/alshedivat/al-folio/discussions/categories/q-a) for similar questions
+- You have searched existing [GitHub Issues](https://github.com/alshedivat/al-folio/issues)
+
+### What they do
+
+**Code Wiki** (powered by Google Gemini) generates interactive documentation from your repository code. It allows you to:
+
+- Browse your repository's structure and architecture
+- Search for specific functions or modules
+- Understand how different parts of the codebase work together
+- Get diagrams and visual representations of your code architecture
+
+**DeepWiki** provides an AI-powered interface to ask questions about a repository, similar to having an engineer available 24/7. It allows you to:
+
+- Ask natural language questions about the codebase
+- Get instant answers about how specific features work
+- Search for code patterns and implementations
+
+### Limitations
+
+These tools are generated automatically from our code and may not always reflect the most current documentation standards or best practices specific to this project. They should not replace official documentation but rather complement it when you need deeper technical insights.
+
+### Access these tools
+
+- **Code Wiki**: [Code Wiki for al-folio](https://codewiki.google/github.com/alshedivat/al-folio)
+- **DeepWiki**: [DeepWiki for al-folio](https://deepwiki.com/alshedivat/al-folio)
