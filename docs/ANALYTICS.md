@@ -14,7 +14,7 @@ This guide helps you add website analytics to track visitor statistics and behav
     - [Openpanel Analytics](#openpanel-analytics)
     - [Cloudflare Web Analytics](#cloudflare-web-analytics)
     - [Simple Analytics](#simple-analytics)
-  - [Monitoring \& Performance](#monitoring--performance)
+  - [Monitoring &amp; Performance](#monitoring--performance)
     - [Cronitor](#cronitor)
   - [GDPR and Privacy Considerations](#gdpr-and-privacy-considerations)
     - [GDPR Checklist](#gdpr-checklist)
