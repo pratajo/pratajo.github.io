@@ -296,7 +296,7 @@ plugins:
   - al_email_protect
   - al_marimo
   - al_rtl
-  
+
 # Sitemap settings
 defaults:
   - scope:
