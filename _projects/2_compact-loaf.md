@@ -30,10 +30,10 @@ Program: **Basic**, about four hours. Rapid saves time and costs volume and flav
 
 This pan loads the opposite way from many other machines. The manual is right:
 
-1. Dry yeast in the bottom  
-2. Flours  
-3. Salt, sugar, fat  
-4. Water last  
+1. Dry yeast in the bottom
+2. Flours
+3. Salt, sugar, fat
+4. Water last
 
 Yeast: **Lesaffre Saf-Instant**. After the 500 g pack is open, keep a few days’ worth in small airtight boxes in the fridge; freeze the rest.
 
@@ -45,14 +45,14 @@ A little **olive oil** keeps the crust from turning into a lid. With no fat, the
 
 This is not a gluten-free loaf. Wheat does the work. A fifth of the bowl is white rice flour because it softens the crumb and keeps the formula on refined, lower-mineral flours.
 
-| | Weight | Role |
-|---|---:|---|
-| Caputo **Manitoba Oro** (Type 0) | 200 g | Structure and spring in a short machine cycle |
-| White **rice flour** | 50 g | Softer crumb; a modestly lower mineral load than an all-wheat loaf |
+|                                  | Weight | Role                                                               |
+| -------------------------------- | -----: | ------------------------------------------------------------------ |
+| Caputo **Manitoba Oro** (Type 0) |  200 g | Structure and spring in a short machine cycle                      |
+| White **rice flour**             |   50 g | Softer crumb; a modestly lower mineral load than an all-wheat loaf |
 
 Cornstarch (maize starch) was a dead end: the loaf rose and then sank. It does not come back.
 
-Portuguese supermarket rice flours, coarsest to finest in this bowl: **Espiga** → **Ceifeira** → **Cem Por Cento**. The bag worth hunting is Caputo **Nuvola di Riso** (or Sarchio *impalpabile*) when it is in stock. Finer rice flour absorbs more cleanly and dries the crust a little.
+Portuguese supermarket rice flours, coarsest to finest in this bowl: **Espiga** → **Ceifeira** → **Cem Por Cento**. The bag worth hunting is Caputo **Nuvola di Riso** (or Sarchio _impalpabile_) when it is in stock. Finer rice flour absorbs more cleanly and dries the crust a little.
 
 ###### **Caputo wheat: three bags, three jobs**
 
@@ -60,11 +60,12 @@ Italian “00” and “0” are ash grades — how thoroughly the bran is mille
 
 **W is a dough-strength index** from the Chopin alveograph: a standard mill test that blows a thin sheet of dough until it bursts. A higher W means the dough can hold gas for longer. It has nothing to do with electrical power.
 
-| Flour | Protein | Strength | Machine loaf? | What you get |
-|---|---:|---|---|---|
-| **Manitoba Oro** (Type 0) | ~14–14.5% | High (W 360–390) | Yes — first choice | Tall loaf, elastic crumb; holds up with 20% rice flour |
-| **Cuoco** (Chef’s, Type 00) | ~13% | Medium-high (W 300–320) | Yes | A little shorter than Manitoba; still a good everyday loaf |
-| **Pizzeria** (Blue bag, Type 00) | ~12.5% | Medium (W 260–280) | Usable, not ideal | Tighter crumb, less height. Milled for pizza, not a four-hour pan |
+
+| Flour                            |   Protein | Strength                | Machine loaf?      | What you get                                                      |
+| -------------------------------- | --------: | ----------------------- | ------------------ | ----------------------------------------------------------------- |
+| **Manitoba Oro** (Type 0)        | ~14–14.5% | High (W 360–390)        | Yes — first choice | Tall loaf, elastic crumb; holds up with 20% rice flour            |
+| **Cuoco** (Chef’s, Type 00)      |      ~13% | Medium-high (W 300–320) | Yes                | A little shorter than Manitoba; still a good everyday loaf        |
+| **Pizzeria** (Blue bag, Type 00) |    ~12.5% | Medium (W 260–280)      | Usable, not ideal  | Tighter crumb, less height. Milled for pizza, not a four-hour pan |
 
 **Saccorosso** sits nearer Cuoco than Manitoba: usable, not the first choice here.
 
