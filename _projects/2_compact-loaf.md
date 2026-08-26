@@ -60,7 +60,6 @@ Italian “00” and “0” are ash grades — how thoroughly the bran is mille
 
 **W is a dough-strength index** from the Chopin alveograph: a standard mill test that blows a thin sheet of dough until it bursts. A higher W means the dough can hold gas for longer. It has nothing to do with electrical power.
 
-
 | Flour                            |   Protein | Strength                | Machine loaf?      | What you get                                                      |
 | -------------------------------- | --------: | ----------------------- | ------------------ | ----------------------------------------------------------------- |
 | **Manitoba Oro** (Type 0)        | ~14–14.5% | High (W 360–390)        | Yes — first choice | Tall loaf, elastic crumb; holds up with 20% rice flour            |
