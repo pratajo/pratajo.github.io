@@ -1,0 +1,162 @@
+---
+layout: post
+title: Installing Fedora 45 Beta KDE Plasma
+date: 2026-09-15 21:30:00
+last_modified_at: 2026-09-15 21:30:00
+description: Fedora 45 Beta KDE Plasma
+tags: fedora kde
+categories: operating-systems
+thumbnail: assets/img/fedora45bkde_dark.jpg
+featured: false
+images:
+  compare: true
+  slider: true
+---
+
+<img-comparison-slider>
+  {% include figure.liquid path="assets/img/fedora45bkde_light.jpg" class="img-fluid rounded z-depth-1" slot="first" %}
+  {% include figure.liquid path="assets/img/fedora45bkde_dark.jpg" class="img-fluid rounded z-depth-1" slot="second" %}
+</img-comparison-slider>
+
+&nbsp;
+
+###### **Get Fedora 45 Beta KDE Plasma**
+
+Use Fedora Media Writer application to create a 'Live USB'.
+
+Fedora Media Writer is available for Linux, Microsoft Windows and Mac.
+
+&nbsp;
+
+###### **Install Fedora**
+
+Fedora images are hybrid ISO images, so they can be used for DVD burning or flash drive creation. They also work on BIOS and UEFI systems.
+
+As this is a "live" distribution, the new OS (operating system) will run from the DVD or pen drive without making any changes to the hard disk. You can test the OS and only then install it on the hard drive.
+
+During installation, create a user and set the password.
+
+After installation, restart the computer and remove the DVD or flash drive. Log in, open _Terminal_ and update the entire system with the following command:
+
+```bash
+sudo dnf update
+```
+
+(enter password)
+
+Restart the computer to load a new kernel and start the updated applications. Restart on the desktop or with the _reboot_ command.
+
+```bash
+reboot
+```
+
+&nbsp;
+
+###### **Parameterize DNF**
+
+Fedora uses DNF to install and update its software over the internet. It also automatically determines application dependencies.
+
+<ins>Repositories Fedora</ins>  
+Fedora includes two repositories by default: fedora, with the same software packages as the DVD and updates, with updated packages. These repositories _sign_ their RPM files to make sure they are valid when they are downloaded.
+
+<ins>Other Repositories</ins>  
+For applications that conflict with Fedora policy (MP3, DVD, MPEG, binary drivers, etc.) the [RPM Fusion](https://rpmfusion.org/) repository is required.
+
+```bash
+sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+```
+
+&nbsp;
+
+###### **Install codecs**
+
+Switch to full ffmpeg
+
+```bash
+sudo dnf swap ffmpeg-free ffmpeg --allowerasing
+```
+
+Install additional codecs
+
+```bash
+sudo dnf update @multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
+```
+
+Install the hardware accelerated codec for an Intel recent CPU...
+
+```bash
+sudo dnf install intel-media-driver
+```
+
+... or for an older Intel CPU.
+
+```bash
+sudo dnf install libva-intel-driver
+```
+
+In case it is AMD hardware (mesa):
+
+```bash
+sudo dnf install mesa-va-drivers-freeworld
+```
+
+To play a DVD you need to install the libdvdcss package
+
+```bash
+sudo dnf install rpmfusion-free-release-tainted
+```
+
+```bash
+sudo dnf install libdvdcss
+```
+
+```bash
+sudo dnf install rpmfusion-nonfree-release-tainted
+```
+
+```bash
+sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware"
+```
+
+&nbsp;
+
+###### **Install current applications**
+
+```bash
+dnf install install thunderbird ktorrent gimp gimp-help gimp-help-pt_BR unrar gsmartcontrol libreoffice-langpack-pt-PT haruna amarok inkscape kde-l10n-pt kate kdenlive krita xsane
+
+```
+
+&nbsp;
+
+###### **Installing [KDevelop IDE](https://kdevelop.org/) (for developers)**
+
+```bash
+sudo dnf group install development-tools
+```
+
+```bash
+sudo dnf group install c-development
+```
+
+```bash
+sudo dnf install kdevelop kdevelop-pg-qt kdevelop-php
+```
+
+&nbsp;
+
+<script src="https://giscus.app/client.js"
+        data-repo="pratajo/pratajo.github.io"
+        data-repo-id="R_kgDONl93Sw"
+        data-category="Comments"
+        data-category-id="DIC_kwDONl93S84Cl7yv"
+        data-mapping="title"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
