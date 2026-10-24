@@ -1,0 +1,616 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta name="google-site-verification" content="google-site-verification=_s2EJ5uvtpKUmtSPUkUdYqBF_QUT2ngBhzEWRaf38YY"> <meta http-equiv="Permissions-Policy" content="interest-cohort=()"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Installing OpenIndiana Hipster 2026.04 | Jorge A. Prata </title> <meta name="author" content="Jorge A. Prata"> <meta name="description" content="OpenIndiana Hipster"> <meta name="keywords" content="jekyll, fedora, kde"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="/assets/img/eu.png?v=a23fcb652f8305d9dc014c57b8b091be"> <link rel="apple-touch-icon" href="/assets/img/eu.png?v=a23fcb652f8305d9dc014c57b8b091be"> <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://pratajo.github.io/blog/2026/openindiana/"> <script src="/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">Jorge</span> A. Prata </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">Home </a> </li> <li class="nav-item active"> <a class="nav-link" href="/blog/">blog </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/projects/">projects </a> </li> <li class="nav-item "> <a class="nav-link" href="/books/">bookshelf </a> </li> <li class="nav-item dropdown "> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-nav-dropdown-toggle="true" aria-haspopup="true" aria-expanded="false">submenus </a> <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> <a class="dropdown-item " href="/repositories/">repositories</a> <div class="dropdown-divider"></div> <a class="dropdown-item " href="/blog/">blog</a> </div> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Installing OpenIndiana Hipster 2026.04</h1> <p class="post-meta"> Created on October 24, 2026 , last updated on October 24, 2026 </p> <p class="post-tags"> <a href="/blog/2026"> <i class="fa-solid fa-calendar fa-sm"></i> 2026 </a>   ·   <a href="/blog/tag/openindiana"> <i class="fa-solid fa-hashtag fa-sm"></i> openindiana</a>   <a href="/blog/tag/hipster"> <i class="fa-solid fa-hashtag fa-sm"></i> hipster</a>   <a href="/blog/tag/unix"> <i class="fa-solid fa-hashtag fa-sm"></i> unix</a>   ·   <a href="/blog/category/operating-systems"> <i class="fa-solid fa-tag fa-sm"></i> operating-systems</a> </p> </header> <article class="post-content"> <div id="markdown-content"> <div class="row mt-3"> <div class="col-sm mt-3 mt-md-0"> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/openindiana2026_04-480.webp 480w,/assets/img/openindiana2026_04-800.webp 800w,/assets/img/openindiana2026_04-1400.webp 1400w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/openindiana2026_04.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </picture> </figure> </div> </div> <p> </p> <h6 id="why-openindiana"><strong>Why OpenIndiana?</strong></h6> <p>OpenIndiana Hipster is a community-driven, rolling-release distribution based on illumos (the open-source continuation of OpenSolaris). It keeps the strengths that made Solaris interesting while receiving regular package updates.People install it for a few practical reasons:</p> <ul> <li>ZFS and boot environments — Snapshots and easy rollback are first-class features. A bad update rarely leaves you stuck.</li> <li>Stable Unix foundation — Solid networking, service management (SMF), zones, and DTrace are still there if you need them.</li> <li>Lightweight desktop — The GUI image ships with the MATE desktop. It is responsive even on modest hardware and includes Firefox and Thunderbird out of the box.</li> <li>Familiar package management — IPS (pkg) works well for both servers and desktops. Once you get used to publishers and boot environments, day-to-day maintenance is straightforward.</li> <li>Free and open — No licensing surprises. The project is maintained by volunteers and continues to ship security fixes and software updates.</li> </ul> <p>It is not the most popular desktop operating system, and hardware support (especially newer GPUs and Wi-Fi) can be more limited than on mainstream Linux distributions. For users who value ZFS, clean Unix behavior, or simply want a modern illumos-based system with a graphical desktop, Hipster remains a workable and interesting option.</p> <p> </p> <h6 id="bios--uefi-settings"><strong>BIOS / UEFI Settings</strong></h6> <p>Before booting the installer media, enter your system’s BIOS/UEFI setup and disable Secure Boot. OpenIndiana currently supports UEFI boot but does not support Secure Boot.</p> <p>On many systems this option is found under the Security, Boot, or Authentication tab. After disabling it, save the changes and reboot from the USB stick (or DVD).</p> <p>Depending on your hardware, you may also need to adjust the boot mode (UEFI vs Legacy/CSM). Prefer UEFI when possible; if the installer creates a non-bootable system, try enabling Legacy/CSM mode as a workaround.</p> <p>The rest of this guide covers installing a recent Hipster GUI image (including test builds) and the basic post-install steps that make the system usable.</p> <p> </p> <h6 id="get-the-openindiana-hipster-image"><strong>Get the OpenIndiana Hipster Image</strong></h6> <p>Download the image from the <a href="https://www.openindiana.org/downloads/" rel="external nofollow noopener" target="_blank">official website</a> or a <a href="https://dlc.openindiana.aurora-opencloud.org/hipster/isos/hipster/" rel="external nofollow noopener" target="_blank">test/daily image</a>.</p> <p><strong>Warning:</strong> The next step will completely overwrite the target device. Make sure you identify the correct USB drive before continuing.</p> <p>On Linux, first identify the USB drive:</p> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lsblk
+</code></pre></div></div> <p>Look for the USB stick (usually something like sdb, sdc, etc.). Do not use the system disk.</p> <p>There should be no mount point listed for the USB device but if any partition of the USB drive is mounted, unmount it first:</p> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>umount /dev/sdX1
+</code></pre></div></div> <p>Then write the image as root (replace /dev/sdX with the correct device and image.usb with the actual filename):</p> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>su -
+</code></pre></div></div> <p>(enter root password)</p> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">dd </span><span class="k">if</span><span class="o">=</span>image.usb <span class="nv">of</span><span class="o">=</span>/dev/sdX <span class="nv">bs</span><span class="o">=</span>4M <span class="nv">status</span><span class="o">=</span>progress <span class="nv">oflag</span><span class="o">=</span><span class="nb">sync</span>
+</code></pre></div></div> <p>After the write finishes, flush the buffers and safely eject the drive:</p> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sync</span>
+</code></pre></div></div> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>eject /dev/sdX
+</code></pre></div></div> <p>Alternatively, you can power off the device with:</p> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>udisksctl power-off <span class="nt">-b</span> /dev/sdX
+</code></pre></div></div> <p>This prevents the “device was removed without unmounting” warning when you physically disconnect the USB stick.</p> <p> </p> <h6 id="install"><strong>Install</strong></h6> <p>I recommend reading the <a href="https://docs.openindiana.org/handbook/getting-started/" rel="external nofollow noopener" target="_blank">Hipster Handbook</a> before installation. It contains hardware-specific notes that may apply to your system.</p> <p>If you boot the live image, the system runs entirely from the USB stick without modifying your hard drive. You can explore Hipster and only install it if you decide to keep it.</p> <p>During the installation:</p> <ul> <li>Create a temporary password for the root account.</li> <li>Create a regular user account for yourself.</li> </ul> <p>On the first boot after installation, you will be asked to set a new root password.</p> <p>After the installation finishes and you reboot into the installed system (USB stick removed), log in with your regular user and update the system:</p> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>su -
+</code></pre></div></div> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pkg refresh <span class="o">&amp;&amp;</span> pkg update
+</code></pre></div></div> <p><strong>Reboot</strong> after a major update if the update changes kernel, boot-related, or driver packages. You can check whether a reboot is needed with beadm list (a new boot environment is usually created) or simply reboot to be safe. The Image Packaging System (IPS) and ZFS boot environments make this low-risk: if something goes wrong you can boot the previous environment.</p> <p> </p> <h6 id="official-repositories"><strong>Official repositories</strong></h6> <p>The main publisher (openindiana.org) is already configured. The most useful additional publisher is the encumbered one (codecs and components that may have patent issues).</p> <p>To add a repository, use the pkg set-publisher command. Specify the URI first, then the publisher name:</p> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pkg set-publisher <span class="nt">-O</span> https://pkg.openindiana.org/hipster-encumbered hipster-encumbered
+</code></pre></div></div> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pkg set-publisher <span class="nt">-O</span> http://sfe.opencsw.org/localhostoih SFE
+</code></pre></div></div> <p>After adding a publisher, refresh the package list:</p> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pkg refresh
+</code></pre></div></div> <p> </p> <table> <thead> <tr> <th>Publisher</th> <th>URI</th> <th>Purpose</th> </tr> </thead> <tbody> <tr> <td>openindiana.org</td> <td>https://pkg.openindiana.org/hipster</td> <td>Primary (already present)</td> </tr> <tr> <td>hipster-encumbered</td> <td>https://pkg.openindiana.org/hipster-encumbered</td> <td>Multimedia codecs and related packages</td> </tr> <tr> <td>SFE (optional)</td> <td>http://sfe.opencsw.org/localhostoih</td> <td>Extra third-party packages (less critical)</td> </tr> </tbody> </table> <p> </p> <h6 id="install-applications"><strong>Install applications</strong></h6> <p>Firefox and Thunderbird are already included in the GUI image, so you normally do not need to install them separately.</p> <p>Useful packages after the update:</p> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pkg <span class="nb">install </span>vlc ffmpeg <span class="c"># Multimedia (requires the encumbered publisher)</span>
+</code></pre></div></div> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pkg <span class="nb">install </span>libreoffice gimp <span class="c"># Office</span>
+</code></pre></div></div> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pkg <span class="nb">install </span>scribus <span class="c"># Desktop publishing (from the SFE repository)</span>
+</code></pre></div></div> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pkg <span class="nb">install </span>build-essential git <span class="c"># Development tools</span>
+</code></pre></div></div> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pkg <span class="nb">install </span>htop tmux <span class="c"># Other common tools</span>
+</code></pre></div></div> <p>You can search for packages with pkg search <name> and see what’s available with pkg list -a.</name></p> <p> </p> <p><strong>Notes</strong></p> <ul> <li>Prefer pkg update over reinstalling from a new ISO. Hipster receives frequent package updates.</li> <li>Boot environments (beadm) are one of the strongest reasons to use IPS/ZFS. Create one before risky changes if you want an easy rollback.</li> <li>The official Handbook and the downloads/mirrors page remain the best references for hardware-specific details and current images.</li> </ul> <p> </p> <script src="https://giscus.app/client.js" data-repo="pratajo/pratajo.github.io" data-repo-id="R_kgDONl93Sw" data-category="Comments" data-category-id="DIC_kwDONl93S84Cl7yv" data-mapping="title" data-strict="1" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async=""> </script> </div> </article> <br> <hr> <br> <h2 class="text-3xl font-semibold mb-4 mt-12">Enjoy Reading This Article?</h2> <p class="mb-2">Here are some more articles you might like to read next:</p> <ul class="list-disc pl-7 my-3 space-y-2 marker:text-[var(--global-theme-color)]"> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2026/ai-studio/">Local AI on Fedora — Obsidian Online (Google AI Studio)</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2026/ollama/">Local AI on Fedora — Ollama and Obsidian Offline</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2026/fedora-45beta-kde/">Installing Fedora 45 Beta KDE Plasma</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2026/mx-master-4/">Logitech MX Master 4 on Fedora Linux – My Final Solaar Configuration</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2026/thunderbird/">How to Backup and Restore Thunderbird Remote Images Whitelist (Clean Install)</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2026/fedora-44-kde/">Installing Fedora 44 KDE Plasma</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2026/fedora-44-xfce/">Installing Fedora 44 Xfce</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2026/fedora-44beta-xfce/">Installing Fedora 44 Beta Xfce</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2026/fedora-44beta-kde/">Installing Fedora 44 Beta KDE Plasma</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2026/xppen-driver-install/">XPPen Driver Install on Fedora 42+</a> </li> </ul> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Jorge A. Prata. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Last updated: October 24, 2026. </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/al_math/js/mathjax-setup.js"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZD991HY7MX"></script> <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    window.dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+  gtag("config", "G-ZD991HY7MX");
+</script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/al_img_tools/js/zoom.js"></script> <script defer src="/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/al_search/js/search-setup.js"></script> <script>
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-home",
+    title: "Home",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/";
+    },
+  },{id: "nav-blog",
+          title: "blog",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/blog/";
+          },
+        },{id: "nav-publications",
+          title: "publications",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/publications/";
+          },
+        },{id: "nav-projects",
+          title: "projects",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/projects/";
+          },
+        },{id: "nav-bookshelf",
+          title: "bookshelf",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/books/";
+          },
+        },{id: "dropdown-repositories",
+              title: "repositories",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/repositories/";
+              },
+            },{id: "dropdown-blog",
+              title: "blog",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/blog/";
+              },
+            },{id: "post-installing-openindiana-hipster-2026-04",
+        
+          title: "Installing OpenIndiana Hipster 2026.04",
+        
+        description: "OpenIndiana Hipster",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/openindiana/";
+          
+        },
+      },{id: "post-local-ai-on-fedora-obsidian-online-google-ai-studio",
+        
+          title: "Local AI on Fedora — Obsidian Online (Google AI Studio)",
+        
+        description: "The online pair of the Ollama post. Same Obsidian vault and Firefox clipper, with a Google AI Studio API key instead of a local model.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/ai-studio/";
+          
+        },
+      },{id: "post-local-ai-on-fedora-ollama-and-obsidian-offline",
+        
+          title: "Local AI on Fedora — Ollama and Obsidian Offline",
+        
+        description: "Run Ollama on Fedora, clip browser chats into an Obsidian vault, and tidy them with a local model. What actually works with Firefox and Flatpak.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/ollama/";
+          
+        },
+      },{id: "post-installing-fedora-45-beta-kde-plasma",
+        
+          title: "Installing Fedora 45 Beta KDE Plasma",
+        
+        description: "Fedora 45 Beta KDE Plasma",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/fedora-45beta-kde/";
+          
+        },
+      },{id: "post-logitech-mx-master-4-on-fedora-linux-my-final-solaar-configuration",
+        
+          title: "Logitech MX Master 4 on Fedora Linux – My Final Solaar Configuration",
+        
+        description: "Solaar Configuration",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/mx-master-4/";
+          
+        },
+      },{id: "post-how-to-backup-and-restore-thunderbird-remote-images-whitelist-clean-install",
+        
+          title: "How to Backup and Restore Thunderbird Remote Images Whitelist (Clean Install)",
+        
+        description: "Thunderbird Remote Images Whitelist",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/thunderbird/";
+          
+        },
+      },{id: "post-installing-fedora-44-kde-plasma",
+        
+          title: "Installing Fedora 44 KDE Plasma",
+        
+        description: "Fedora 44 KDE Plasma",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/fedora-44-kde/";
+          
+        },
+      },{id: "post-installing-fedora-44-xfce",
+        
+          title: "Installing Fedora 44 Xfce",
+        
+        description: "Fedora 44 Xfce",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/fedora-44-xfce/";
+          
+        },
+      },{id: "post-installing-fedora-44-beta-xfce",
+        
+          title: "Installing Fedora 44 Beta Xfce",
+        
+        description: "Fedora 44 Beta Xfce",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/fedora-44beta-xfce/";
+          
+        },
+      },{id: "post-installing-fedora-44-beta-kde-plasma",
+        
+          title: "Installing Fedora 44 Beta KDE Plasma",
+        
+        description: "Fedora 44 Beta KDE Plasma",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/fedora-44beta-kde/";
+          
+        },
+      },{id: "post-xppen-driver-install-on-fedora-42",
+        
+          title: "XPPen Driver Install on Fedora 42+",
+        
+        description: "XPPen driver installation",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/xppen-driver-install/";
+          
+        },
+      },{id: "post-installing-fedora-43-kde-plasma",
+        
+          title: "Installing Fedora 43 KDE Plasma",
+        
+        description: "Fedora 43 KDE Plasma",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/fedora-43-kde/";
+          
+        },
+      },{id: "post-installing-fedora-43-xfce",
+        
+          title: "Installing Fedora 43 Xfce",
+        
+        description: "Fedora 43 Xfce",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/fedora-43-xfce/";
+          
+        },
+      },{id: "post-installing-fedora-43-beta-kde-plasma",
+        
+          title: "Installing Fedora 43 Beta KDE Plasma",
+        
+        description: "Fedora 43 Beta KDE Plasma",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/fedora-43beta-kde/";
+          
+        },
+      },{id: "post-installing-fedora-43-beta-xfce",
+        
+          title: "Installing Fedora 43 Beta Xfce",
+        
+        description: "Fedora 43 Beta Xfce",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/fedora-43beta-xfce/";
+          
+        },
+      },{id: "post-how-to-run-al-folio-locally-with-docker-and-vs-code",
+        
+          title: "How to Run al-folio Locally with Docker and VS Code",
+        
+        description: "Local Setup with Development Containers",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/vscode/";
+          
+        },
+      },{id: "post-installing-fedora-42-kde-plasma",
+        
+          title: "Installing Fedora 42 KDE Plasma",
+        
+        description: "Fedora 42 KDE Plasma",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/fedora-42-kde/";
+          
+        },
+      },{id: "post-installing-fedora-42-xfce",
+        
+          title: "Installing Fedora 42 Xfce",
+        
+        description: "Fedora 42 Xfce",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/fedora-42-xfce/";
+          
+        },
+      },{id: "post-installing-fedora-42-beta-kde-plasma",
+        
+          title: "Installing Fedora 42 Beta KDE Plasma",
+        
+        description: "Fedora 42 Beta KDE Plasma",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/fedora-42beta-kde/";
+          
+        },
+      },{id: "post-installing-fedora-42-beta-xfce",
+        
+          title: "Installing Fedora 42 Beta Xfce",
+        
+        description: "Fedora 42 Beta Xfce",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/fedora-42beta-xfce/";
+          
+        },
+      },{id: "post-installing-fedora-41-kde-plasma",
+        
+          title: "Installing Fedora 41 KDE Plasma",
+        
+        description: "Fedora 41 KDE Plasma",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/fedora-41-kde/";
+          
+        },
+      },{id: "post-installing-fedora-41-xfce",
+        
+          title: "Installing Fedora 41 Xfce",
+        
+        description: "Fedora 41 Xfce",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/fedora-41-xfce/";
+          
+        },
+      },{id: "post-jekyll-on-fedora-installation-and-use",
+        
+          title: "Jekyll on Fedora - Installation and use",
+        
+        description: "Generator of static sites with blog recognition",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/jekyll/";
+          
+        },
+      },{id: "post-lamp-on-fedora",
+        
+          title: "LAMP on Fedora",
+        
+        description: "LAMP stack to manage a web server",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/lamp/";
+          
+        },
+      },{id: "post-creating-one-or-multiple-buttons-to-copy-text-to-the-clipboard",
+        
+          title: "Creating one or multiple buttons to copy text to the clipboard",
+        
+        description: "HTML and JavaScript",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/copy-buttons/";
+          
+        },
+      },{id: "post-photo-restoration-with-gimp",
+        
+          title: "Photo Restoration with GIMP",
+        
+        description: "Photo Restoration",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/photo-restoration/";
+          
+        },
+      },{id: "post-installing-openindiana-hipster-2022-10",
+        
+          title: "Installing OpenIndiana Hipster 2022.10",
+        
+        description: "OpenIndiana Hipster 2022.10",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/openindiana/";
+          
+        },
+      },{id: "post-installing-development-tools-and-kdevelop-on-fedora",
+        
+          title: "Installing Development Tools and KDevelop on Fedora",
+        
+        description: "Development Tools and KDevelop",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2023/kdevelop/";
+          
+        },
+      },{id: "post-how-to-change-the-hostname-on-linux",
+        
+          title: "How to change the hostname on Linux",
+        
+        description: "Changing the hostname",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2022/hostname/";
+          
+        },
+      },{id: "post-asus-prime-x370-pro-and-fedora",
+        
+          title: "Asus Prime X370-PRO and Fedora",
+        
+        description: "Changing BIOS parameters for Fedora",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2022/asus-x370/";
+          
+        },
+      },{id: "post-nmap-practical-use",
+        
+          title: "Nmap - practical use",
+        
+        description: "Install a network scanner",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/nmap/";
+          
+        },
+      },{id: "post-fedora-virtualization",
+        
+          title: "Fedora Virtualization",
+        
+        description: "KVM",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/virtualization/";
+          
+        },
+      },{id: "post-change-the-partition-owner",
+        
+          title: "Change the partition owner",
+        
+        description: "Partition owner",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/partition/";
+          
+        },
+      },{id: "post-focusrite-itrack-dock-and-roland-a-49",
+        
+          title: "Focusrite iTrack Dock and Roland A-49",
+        
+        description: "Roland A-49 parameters",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/focusrite/";
+          
+        },
+      },{id: "post-focusrite-itrack-dock-noisy-when-ipad-is-charged",
+        
+          title: "Focusrite iTrack Dock noisy when iPad is charged",
+        
+        description: "Focusrite iTrack Dock noisy",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2020/focusrite-noisy/";
+          
+        },
+      },{id: "books-aços-características-e-tratamentos-6ª-ed",
+          title: 'Aços - Características e tratamentos (6ª Ed)',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/2022_metais/";
+            },},{id: "books-angelo-marti-no-soberano-congresso-nacional",
+          title: 'Angelo Marti no Soberano Congresso Nacional',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/2023_esteno1/";
+            },},{id: "books-la-fractura-en-los-materiales-metálicos",
+          title: 'La Fractura en los Materiales Metálicos',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/2023_metais/";
+            },},{id: "books-estenografia-sua-orgânica-e-função",
+          title: 'Estenografia - Sua orgânica e função',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/2024_esteno1/";
+            },},{id: "books-programa-de-um-curso-complementar-teórico-de-estenografia-do-congresso-da-república",
+          title: 'Programa de um Curso Complementar Teórico de Estenografia do Congresso da República',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/2024_esteno2/";
+            },},{id: "books-tachygraphia",
+          title: 'Tachygraphia',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/2024_esteno3/";
+            },},{id: "books-há-engenharia-nos-elevadores",
+          title: 'Há Engenharia nos Elevadores',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/2025_elevadores/";
+            },},{id: "books-gravidade-zero",
+          title: 'Gravidade Zero',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/2025_wa_gravidade0/";
+            },},{id: "news-fedora-linux-41-released",
+          title: 'Fedora Linux 41 released',
+          description: "",
+          section: "News",},{id: "news-tratado-de-estenografia-sistema-martiniano-1ª-edição-exclusive-to-the-portuguese-language",
+          title: 'Tratado de Estenografia - Sistema Martiniano, 1ª edição (Exclusive to the Portuguese language)...',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_2/";
+            },},{id: "news-my-website-is-being-converted-to-github",
+          title: 'My website is being converted to Github!',
+          description: "",
+          section: "News",},{id: "news-my-website-was-converted-to-github-sparkles-smile",
+          title: 'My website was converted to Github! <img class="emoji" title=":sparkles:" alt=":sparkles:" src="https://github.githubassets.com/images/icons/emoji/unicode/2728.png" height="20" width="20"> <img class="emoji" title=":smile:" alt=":smile:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png" height="20" width="20">',
+          description: "",
+          section: "News",},{id: "news-fedora-linux-42-beta-released",
+          title: 'Fedora Linux 42 Beta released',
+          description: "",
+          section: "News",},{id: "news-fedora-linux-42-released",
+          title: 'Fedora Linux 42 released',
+          description: "",
+          section: "News",},{id: "news-fedora-linux-43-beta-released",
+          title: 'Fedora Linux 43 Beta released',
+          description: "",
+          section: "News",},{id: "news-fedora-linux-43-released",
+          title: 'Fedora Linux 43 released',
+          description: "",
+          section: "News",},{id: "news-fedora-linux-44-beta-released",
+          title: 'Fedora Linux 44 Beta released',
+          description: "",
+          section: "News",},{id: "news-fedora-linux-44-released",
+          title: 'Fedora Linux 44 released',
+          description: "",
+          section: "News",},{id: "news-good-news-for-scribus-users-the-1-7-3-development-flatpak-has-just-been-released",
+          title: 'Good news for Scribus users: the 1.7.3 development Flatpak has just been released!...',
+          description: "",
+          section: "News",},{id: "news-fedora-linux-45-beta-released",
+          title: 'Fedora Linux 45 Beta released',
+          description: "",
+          section: "News",},{id: "projects-my-birthplace",
+          title: 'My birthplace',
+          description: "Castelo Branco - Portugal",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/1_fun-albi/";
+            },},{id: "projects-the-compact-loaf",
+          title: 'The Compact Loaf',
+          description: "A 400-gram Panasonic bake",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/2_compact-loaf/";
+            },},{id: "projects-headroom-studio",
+          title: 'Headroom Studio',
+          description: "The Vibe Vault",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/3_music/";
+            },},{id: "teachings-data-science-fundamentals",
+          title: 'Data Science Fundamentals',
+          description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
+          section: "Teachings",handler: () => {
+              window.location.href = "/teachings/data-science-fundamentals/";
+            },},{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%69%6E%66%6F@%70%72%61%74%61%6A%6F.%63%6F%6D", "_blank");
+        },
+      },{
+        id: 'social-x',
+        title: 'X',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://twitter.com/pratajo128", "_blank");
+        },
+      },{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
+
+</script> <script src="/assets/al_search/js/shortcut-key.js"></script> </body> </html>
