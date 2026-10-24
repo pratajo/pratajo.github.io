@@ -147,7 +147,7 @@ pkg refresh
 | ------------------ | ---------------------------------------------- | ------------------------------------------ |
 | openindiana.org    | https://pkg.openindiana.org/hipster            | Primary (already present)                  |
 | hipster-encumbered | https://pkg.openindiana.org/hipster-encumbered | Multimedia codecs and related packages     |
-| SFE (optional)     | http://sfe.opencsw.org/localhostoih            | Extra third-party packages (less critical) | 
+| SFE (optional)     | http://sfe.opencsw.org/localhostoih            | Extra third-party packages (less critical) |
 
 &nbsp;
 
