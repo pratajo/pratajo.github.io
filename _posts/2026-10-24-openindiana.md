@@ -19,11 +19,12 @@ categories: operating-systems
 ###### **Why OpenIndiana?**
 
 OpenIndiana Hipster is a community-driven, rolling-release distribution based on illumos (the open-source continuation of OpenSolaris). It keeps the strengths that made Solaris interesting while receiving regular package updates.People install it for a few practical reasons:
-* ZFS and boot environments — Snapshots and easy rollback are first-class features. A bad update rarely leaves you stuck.
-* Stable Unix foundation — Solid networking, service management (SMF), zones, and DTrace are still there if you need them.
-* Lightweight desktop — The GUI image ships with the MATE desktop. It is responsive even on modest hardware and includes Firefox and Thunderbird out of the box.
-* Familiar package management — IPS (pkg) works well for both servers and desktops. Once you get used to publishers and boot environments, day-to-day maintenance is straightforward.
-* Free and open — No licensing surprises. The project is maintained by volunteers and continues to ship security fixes and software updates.
+
+- ZFS and boot environments — Snapshots and easy rollback are first-class features. A bad update rarely leaves you stuck.
+- Stable Unix foundation — Solid networking, service management (SMF), zones, and DTrace are still there if you need them.
+- Lightweight desktop — The GUI image ships with the MATE desktop. It is responsive even on modest hardware and includes Firefox and Thunderbird out of the box.
+- Familiar package management — IPS (pkg) works well for both servers and desktops. Once you get used to publishers and boot environments, day-to-day maintenance is straightforward.
+- Free and open — No licensing surprises. The project is maintained by volunteers and continues to ship security fixes and software updates.
 
 It is not the most popular desktop operating system, and hardware support (especially newer GPUs and Wi-Fi) can be more limited than on mainstream Linux distributions. For users who value ZFS, clean Unix behavior, or simply want a modern illumos-based system with a graphical desktop, Hipster remains a workable and interesting option.
 
@@ -101,8 +102,8 @@ If you boot the live image, the system runs entirely from the USB stick without 
 
 During the installation:
 
-* Create a temporary password for the root account.
-* Create a regular user account for yourself.
+- Create a temporary password for the root account.
+- Create a regular user account for yourself.
 
 On the first boot after installation, you will be asked to set a new root password.
 
@@ -142,11 +143,11 @@ pkg refresh
 
 &nbsp;
 
-| Publisher | URI| Purpose |
-| ------------------ | -------------------- | ------------------ |
-| openindiana.org | https://pkg.openindiana.org/hipster | Primary (already present) |
+| Publisher          | URI                                            | Purpose                                    |
+| ------------------ | ---------------------------------------------- | ------------------------------------------ |
+| openindiana.org    | https://pkg.openindiana.org/hipster            | Primary (already present)                  |
 | hipster-encumbered | https://pkg.openindiana.org/hipster-encumbered | Multimedia codecs and related packages     |
-| SFE (optional) | http://sfe.opencsw.org/localhostoih | Extra third-party packages (less critical) |
+| SFE (optional)     | http://sfe.opencsw.org/localhostoih            | Extra third-party packages (less critical) | 
 
 &nbsp;
 
@@ -182,9 +183,9 @@ You can search for packages with pkg search <name> and see what’s available wi
 
 **Notes**
 
-* Prefer pkg update over reinstalling from a new ISO. Hipster receives frequent package updates.
-* Boot environments (beadm) are one of the strongest reasons to use IPS/ZFS. Create one before risky changes if you want an easy rollback.
-* The official Handbook and the downloads/mirrors page remain the best references for hardware-specific details and current images.
+- Prefer pkg update over reinstalling from a new ISO. Hipster receives frequent package updates.
+- Boot environments (beadm) are one of the strongest reasons to use IPS/ZFS. Create one before risky changes if you want an easy rollback.
+- The official Handbook and the downloads/mirrors page remain the best references for hardware-specific details and current images.
 
 &nbsp;
 
