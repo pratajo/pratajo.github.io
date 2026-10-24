@@ -18,7 +18,9 @@ categories: operating-systems
 
 ###### **Why OpenIndiana?**
 
-OpenIndiana Hipster is a community-driven, rolling-release distribution based on illumos (the open-source continuation of OpenSolaris). It keeps the strengths that made Solaris interesting while receiving regular package updates.People install it for a few practical reasons:
+OpenIndiana Hipster is a community-driven, rolling-release distribution based on illumos (the open-source continuation of OpenSolaris). It keeps the strengths that made Solaris interesting while receiving regular package updates.
+
+People install it for a few practical reasons:
 
 - ZFS and boot environments — Snapshots and easy rollback are first-class features. A bad update rarely leaves you stuck.
 - Stable Unix foundation — Solid networking, service management (SMF), zones, and DTrace are still there if you need them.
