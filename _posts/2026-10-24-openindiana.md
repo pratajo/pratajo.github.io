@@ -2,7 +2,7 @@
 layout: post
 title: Installing OpenIndiana Hipster 2026.04
 date: 2026-10-24 17:00:00
-last_modified_at: 2026-10-25 18:00:00
+last_modified_at: 2026-10-25 21:00:00
 description: OpenIndiana Hipster
 tags: openindiana hipster unix
 categories: operating-systems
@@ -128,7 +128,7 @@ pkg set-publisher -O https://pkg.openindiana.org/hipster-encumbered hipster-encu
 ```
 
 ```bash
-pkg set-publisher -O http://sfe.opencsw.org/localhostoih SFE
+pkg set-publisher -g http://sfe.opencsw.org/localhostoih localhostoih
 ```
 
 After adding a publisher, refresh the package list:
@@ -159,10 +159,6 @@ pkg install vlc ffmpeg # Multimedia (requires the encumbered publisher)
 
 ```bash
 pkg install libreoffice gimp # Office
-```
-
-```bash
-pkg install scribus # Desktop publishing (from the SFE repository)
 ```
 
 ```bash
