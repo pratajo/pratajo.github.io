@@ -166,7 +166,7 @@ pkg install build-essential git # Development tools
 ```
 
 ```bash
-pkg install htop tmux # Other common tools
+pkg install htop terminal/tmux # Other common tools
 ```
 
 You can search for packages with pkg search <name> and see what’s available with pkg list -a.
