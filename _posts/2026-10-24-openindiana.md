@@ -2,7 +2,7 @@
 layout: post
 title: Installing OpenIndiana Hipster 2026.04
 date: 2026-10-24 17:00:00
-last_modified_at: 2026-10-24 17:00:00
+last_modified_at: 2026-10-25 18:00:00
 description: OpenIndiana Hipster
 tags: openindiana hipster unix
 categories: operating-systems
@@ -67,13 +67,7 @@ umount /dev/sdX1
 Then write the image as root (replace /dev/sdX with the correct device and image.usb with the actual filename):
 
 ```bash
-su -
-```
-
-(enter root password)
-
-```bash
-dd if=image.usb of=/dev/sdX bs=4M status=progress oflag=sync
+sudo dd if=image.usb of=/dev/sdX bs=4M status=progress oflag=sync
 ```
 
 After the write finishes, flush the buffers and safely eject the drive:
@@ -83,7 +77,7 @@ sync
 ```
 
 ```bash
-eject /dev/sdX
+sudo eject /dev/sdX
 ```
 
 Alternatively, you can power off the device with:
