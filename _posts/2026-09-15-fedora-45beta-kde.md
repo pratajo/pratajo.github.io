@@ -123,7 +123,7 @@ sudo dnf --repo=rpmfusion-nonfree-tainted install "*-firmware"
 ###### **Install current applications**
 
 ```bash
-dnf install install thunderbird ktorrent gimp gimp-help gimp-help-pt_BR unrar gsmartcontrol libreoffice-langpack-pt-PT haruna amarok inkscape kde-l10n-pt kate kdenlive krita xsane
+sudo dnf install thunderbird ktorrent gimp gimp-help gimp-help-pt_BR unrar gsmartcontrol libreoffice-langpack-pt-PT haruna amarok inkscape kde-l10n-pt kate kdenlive krita xsane
 
 ```
 

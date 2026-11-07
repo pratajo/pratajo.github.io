@@ -6,7 +6,7 @@ last_modified_at: 2026-10-25 21:00:00
 description: OpenIndiana Hipster
 tags: openindiana hipster unix
 categories: operating-systems
-featured: true
+featured: false
 ---
 
 <div class="row mt-3">
