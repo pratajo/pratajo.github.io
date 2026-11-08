@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-<a href="https://openindiana.org/">Snapshot 2026.10</a> released
+<a href="https://openindiana.org/">OpenIndiana Hipster 2026.10</a> released
