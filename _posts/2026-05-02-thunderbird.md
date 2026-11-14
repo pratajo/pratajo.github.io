@@ -2,7 +2,7 @@
 layout: post
 title: How to Backup and Restore Thunderbird Remote Images Whitelist (Clean Install)
 date: 2026-05-02 15:00:00
-last_modified_at: 2026-05-02 15:00:00
+last_modified_at: 2026-11-14 15:00:00
 description: Thunderbird Remote Images Whitelist
 tags: fedora linux
 categories: applications
@@ -21,7 +21,7 @@ Close Thunderbird completely.
 Open a terminal and run:
 
 ```bash
-cp ~/.thunderbird/*.default-esr/permissions.sqlite ~/permissions.sqlite
+cp ~/.config/thunderbird/*.default-release/permissions.sqlite ~/permissions.sqlite
 ```
 
 The file permissions.sqlite will be saved in your Home folder. Copy it to a safe place (USB drive, external disk, etc.).
@@ -32,8 +32,8 @@ The file permissions.sqlite will be saved in your Home folder. Copy it to a safe
 2. Close Thunderbird.
 3. Open your file manager and go to your Home folder.
 4. Press Ctrl + H to show hidden files.
-5. Enter the folder .thunderbird.
-6. Open the folder that ends with .default-esr.
+5. Enter the folder .config/thunderbird.
+6. Open the folder that ends with .default-release.
 7. Rename the existing permissions.sqlite file to permissions-old.sqlite (just in case).
 8. Copy your backup file permissions.sqlite into this folder (replace when asked).
 9. Open Thunderbird again.
